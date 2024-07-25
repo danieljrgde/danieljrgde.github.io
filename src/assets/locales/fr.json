@@ -1,0 +1,89 @@
+{
+    "navbar": {
+        "tabs": {
+            "about": "À propos",
+            "projects": "Projets",
+            "publications": "Publications",
+            "resume": "CV"
+        },
+        "languages": [
+            "Anglais",
+            "Français",
+            "Portugais"
+        ]
+    },
+    "side-menu": {
+        "contact-me-text": "N'hésitez pas à me contacter !"
+    },
+    "about": {
+        "title": "Bonjour !",
+        "paragraphs": [
+            "Je suis un data scientist à la recherche d'un poste dans le domaine, désireux de travailler avec des personnes créatives, bienveillantes et ambitieuses !",
+            "Expérimenté dans la recherche en IA et le développement de solutions d'apprentissage profond. Passionné par l'apprentissage continu et la maîtrise des concepts d'IA, avec une capacité démontrée à naviguer dans des domaines techniques et complexes. Hautement compétent en Python, habile à écrire du code propre, robuste et évolutif pour concevoir, développer et mettre en œuvre des systèmes d'apprentissage automatique.",
+            "Quand je ne suis pas devant un écran d'ordinateur, je suis probablement dehors avec mes amis, en train de jouer au tennis, de savourer un café, ou de me promener dans la ville pour essayer de capturer un beau coucher de soleil !"
+        ]
+    },
+    "projects": {
+        "title": "Projets",
+        "subheader": "Bienvenue dans ma section projets ! Vous trouverez ici quelques-unes de mes créations au fil des années.",
+        "projects": [
+            {
+                "title": "",
+                "description": "",
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "publications": {
+        "title": "Publications",
+        "description": "",
+        "publications": []
+    },
+    "resume-modal": {
+        "title": "",
+        "description": ""
+    },
+    "resume": {
+        "title": "CV",
+        "subheader": "",
+        "sections": [
+            {
+                "title": "Informations de base",
+                "infos": [
+                    {
+                        "key": "Nom",
+                        "value": "Daniel J. Deutsch"
+                    },
+                    {
+                        "key": "Rôles préférés",
+                        "value": "Data Scientist | Ingénieur de Recherche en IA | Ingénieur en Machine Learning"
+                    },
+                    {
+                        "key": "Email",
+                        "value": "daniel.jrgde@gmail.com"
+                    },
+                    {
+                        "key": "LinkedIn",
+                        "value": "https://www.linkedin.com/in/danieljrgde/"
+                    },
+                    {
+                        "key": "GitHub",
+                        "value": "https://github.com/danieljrgde/"
+                    },
+                    {
+                        "key": "Résumé",
+                        "value": "Expérimenté dans la recherche en IA et le développement de solutions d'apprentissage profond. Passionné par l'apprentissage et la maîtrise des concepts d'IA, avec une capacité démontrée à naviguer dans des domaines techniques et complexes. Hautement compétent en Python, habile à écrire du code propre, robuste et évolutif pour concevoir, développer et déployer des systèmes d'apprentissage automatique."
+                    }
+                ]
+            },
+            {
+                "title": "Formation"
+            }
+        ]
+    }
+}

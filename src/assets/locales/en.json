@@ -1,0 +1,89 @@
+{
+    "navbar": {
+        "tabs": {
+            "about": "About",
+            "projects": "Projects",
+            "publications": "Publications",
+            "resume": "Resume"
+        },
+        "languages": [
+            "English",
+            "French",
+            "Portuguese"
+        ]
+    },
+    "side-menu": {
+        "contact-me-text": "Feel free to contact me!"
+    },
+    "about": {
+        "title": "Hello there !",
+        "paragraphs": [
+            "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
+            "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
+            "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "subheader": "Welcome to my projects section! Here you'll find some of my creatins over the years.",
+        "projects": [
+            {
+                "title": "",
+                "description": "",
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            }
+        ]
+    },
+    "publications": {
+        "title": "Publications",
+        "description": "",
+        "publications": []
+    },
+    "resume-modal": {
+        "title": "",
+        "description": ""
+    },
+    "resume": {
+        "title": "Resume",
+        "subheader": "",
+        "sections": [
+            {
+                "title": "Basics",
+                "infos": [
+                    {
+                        "key": "Name",
+                        "value": "Daniel J. Deutsch"
+                    },
+                    {
+                        "key": "Preferred roles",
+                        "value": "Data Scientist | AI Research Engineer | ML Engineer"
+                    },
+                    {
+                        "key": "Email",
+                        "value": "daniel.jrgde@gmail.com"
+                    },
+                    {
+                        "key": "LinkedIn",
+                        "value": "https://www.linkedin.com/in/danieljrgde/"
+                    },
+                    {
+                        "key": "GitHub",
+                        "value": "https://github.com/danieljrgde/"
+                    },
+                    {
+                        "key": "Summary",
+                        "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems."
+                    }
+                ]
+            },
+            {
+                "title": "Education"
+            }
+        ]
+    }
+}
