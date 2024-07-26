@@ -1,35 +1,267 @@
 {
     "navbar": {
         "tabs": {
-            "about": "À propos",
-            "projects": "Projets",
+            "about": "About",
+            "projects": "Projects",
             "publications": "Publications",
-            "resume": "CV"
+            "resume": "Resume"
         },
         "languages": [
-            "Anglais",
-            "Français",
-            "Portugais"
+            "English",
+            "French",
+            "Portuguese"
         ]
     },
-    "side-menu": {
-        "contact-me-text": "N'hésitez pas à me contacter !"
+    "drawer": {
+        "tabs": {
+            "about": "About",
+            "projects": "Projects",
+            "publications": "Publications",
+            "resume": "Resume"
+        }
+    },
+    "sideMenu": {
+        "contactMeText": "Feel free to contact me!"
+    },
+    "resumeModal": {
+        "title": "",
+        "description": ""
     },
     "about": {
-        "title": "Bonjour !",
+        "title": "Hello there!",
         "paragraphs": [
-            "Je suis un data scientist à la recherche d'un poste dans le domaine, désireux de travailler avec des personnes créatives, bienveillantes et ambitieuses !",
-            "Expérimenté dans la recherche en IA et le développement de solutions d'apprentissage profond. Passionné par l'apprentissage continu et la maîtrise des concepts d'IA, avec une capacité démontrée à naviguer dans des domaines techniques et complexes. Hautement compétent en Python, habile à écrire du code propre, robuste et évolutif pour concevoir, développer et mettre en œuvre des systèmes d'apprentissage automatique.",
-            "Quand je ne suis pas devant un écran d'ordinateur, je suis probablement dehors avec mes amis, en train de jouer au tennis, de savourer un café, ou de me promener dans la ville pour essayer de capturer un beau coucher de soleil !"
+            "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
+            "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
+            "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
+        ]
+    },
+    "basics": {
+        "title": "Basics",
+        "infos": [
+            {
+                "key": "Name",
+                "value": "Daniel J. Deutsch"
+            },
+            {
+                "key": "Preferred roles",
+                "value": "Data Scientist | AI Research Engineer | ML Engineer"
+            },
+            {
+                "key": "Email",
+                "value": "daniel.jrgde@gmail.com"
+            },
+            {
+                "key": "LinkedIn",
+                "value": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            {
+                "key": "GitHub",
+                "value": "https://github.com/danieljrgde/"
+            },
+            {
+                "key": "Summary",
+                "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems."
+            }
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "educations": [
+            {
+                "degree": "Master of Engineering (M.Eng)",
+                "major": "Computer Science",
+                "institution": {
+                    "name": "Telecom Paris - Institute Polytechnique de Paris",
+                    "image": "",
+                    "website": ""
+                },
+                "dateStart": "",
+                "dateEnd": ""
+            },
+            {
+                "degree": "Master of Science (M.Sc)",
+                "major": "Computer Science",
+                "institution": {
+                    "name": "University Pantheon-Sorbonne",
+                    "image": "",
+                    "website": ""
+                },
+                "dateStart": "",
+                "dateEnd": ""
+            },
+            {
+                "degree": "Bachelor of Science (B.Sc)",
+                "major": "Electrical Engineering - Control and Automation",
+                "institution": {
+                    "name": "University of Sao Paulo",
+                    "image": "",
+                    "website": ""
+                },
+                "dateStart": "",
+                "dateEnd": ""
+            }
+        ]
+    },
+    "workExperiences": {
+        "title": "Work Experiences",
+        "workExperiences": [
+            {
+                "company": {
+                    "name": "VO2 Group",
+                    "image": "",
+                    "website": ""
+                },
+                "role": "AI Research Engineer",
+                "location": "Paris, France",
+                "dateStart": "September 2023",
+                "dateEnd": "Present",
+                "introductionParagraph": "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries.",
+                "bulletPoints": [
+                    "Built a transformer-based model that leverages text and image information of garments to provide outfit recommendations.",
+                    "Engineered a custom attention mechanism that improved the model's ability to recommend outfits based on a text prompt.",
+                    "Improved model's generalization and performance through the collection and enhancement of training samples via web scraping and Generative AI techniques.",
+                    "Developed a Retrieval Augmented Generation (RAG) system to improve the responses of Large Language Models (LLMs) in the field of ESG (Environmental, Social, and Governance).",
+                    "Authored a quarterly internal newsletter detailing the latest advancements of AI and internal projects, making complex concepts and information accessible to a broad audience.",
+                    "Actively collaborated on projects with technically diverse teams, implementing AI solutions for cross-functional projects."
+                ],
+                "techStack": [
+                    "Python", "PyTorch", "Pandas", "Polars", "Jupyter", "NumPy", "Hugging Face", "LangChain", "LlamaIndex", "Git", "Docker", "GCP"
+                ],
+                "keywords": [
+                    "Deep Learning", "Generative AI", "Natural Language Processing", "LLM", "RAG", "Recommendation System", "Transformers", "Prompt Engineering", "Contrastive Learning", "Web Scraping", "Data Enhancement", "Data Cleaning", "Model Evaluation", "BERT", "CLIP", "Llama"
+                ]
+            },
+            {
+                "company": {
+                    "name": "Gravite.io",
+                    "image": "",
+                    "website": ""
+                },
+                "role": "Data Scientist",
+                "location": "Paris, France",
+                "dateStart": "May 2023",
+                "dateEnd": "September 2023",
+                "introductionParagraph": "Freelance mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback.",
+                "bulletPoints": [
+                    "Designed a topic modeling algorithm to categorize customer feedback and identify company's main pain points, resulting in a 30% increase in valuable KPIs.",
+                    "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
+                    "Engineered a custom relevance metric combining feedback frequency and severity, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
+                ],
+                "techStack": [
+                    "Python", "Scikit-Learn", "OpenAI API", "Jupyter", "Pandas", "Git", "Docker"
+                ],
+                "keywords": [
+                    "Machine Learning", "Topic Modeling", "Text Classification", "Natural Language Processing", "Data Processing", "Parallel Computing", "Model Evaluation", "API Integration"
+                ]
+            },
+            {
+                "company": {
+                    "name": "Kaiko",
+                    "image": "",
+                    "website": ""
+                },
+                "role": "Data Scientist (Intern)",
+                "location": "Paris, France",
+                "dateStart": "September 2021",
+                "dateEnd": "September 2022",
+                "introductionParagraph": "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies.",
+                "bulletPoints": [
+                    "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
+                    "Implemented a deep learning model that detected 13k bot accounts in social media platforms, allowing an in-depth analysis of their influence on the crypto market.",
+                    "Investigated the application of anomaly detection algorithms on live market data, paving the way for more robust risk management strategies and improved market surveillance capabilities.",
+                    "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
+                ],
+                "techStack": [
+                    "Python", "TensorFlow", "Hugging Face", "PySpark", "Jupyter", "gRPC", "Git", "Docker"
+                ],
+                "keywords": [
+                    "Deep Learning", "Time Series Analysis", "Anomaly Detection", "Natural Language Processing", "Sentiment Analysis", "Variational Autoencoder", "Big Data", "Market Analysis", "Distributed Computing"
+                ]
+            },
+            {
+                "company": {
+                    "name": "BTG Pactual",
+                    "image": "",
+                    "website": ""
+                },
+                "role": "Data Engineer (Intern)",
+                "location": "São Paulo, Brazil",
+                "dateStart": "December 2019",
+                "dateEnd": "August 2020",
+                "introductionParagraph": "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets.",
+                "bulletPoints": [
+                    "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
+                    "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
+                    "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
+                ],
+                "techStack": [
+                    "Python", "AWS (Lambda, S3, EMR, EC2, RDS, Athena, API Gateway, DynamoDB)", "Airflow", "PySpark", "Jupyter", "Git", "Docker"
+                ],
+                "keywords": [
+                    "Big Data", "Cloud Computing", "Workflow Orchestration", "Data Processing", "Data Integrity", "Near-Real-time Data Monitoring", "CI/CD", "Distributed Computing", "Data Warehousing", "SQL"
+                ]
+            },
+            {
+                "company": {
+                    "name": "Poli Júnior",
+                    "image": "",
+                    "website": ""
+                },
+                "role": "Tech Leader",
+                "location": "São Paulo, Brazil",
+                "dateStart": "April 2017",
+                "dateEnd": "December 2019",
+                "introductionParagraph": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "bulletPoints": [
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                ],
+                "techStack": [
+                    "Python", "JavaScript", "Git", "MySQL"
+                ],
+                "keywords": [
+                    "Team Leadership", "Software Development", "Scrum", "Agile"
+                ]
+            }
         ]
     },
     "projects": {
-        "title": "Projets",
-        "subheader": "Bienvenue dans ma section projets ! Vous trouverez ici quelques-unes de mes créations au fil des années.",
+        "title": "Projects",
+        "subheader": "Below you'll find a selection of projects I've crafted over the years. Each one represents a unique challenge and showcases different aspects of my skills and creativity. I hope you enjoy exploring my work.",
         "projects": [
             {
-                "title": "",
-                "description": "",
+                "title": "Effects of Social Media Bots on the Crypto Market",
+                "description": "In this research project, the impact of social media bots on the crypto market was investigated through the usage of AI and statistical analysis. A custom data collection script was developed to gather 6M+ market-related social media posts, along with stock price data for the top 50 cryptocurrencies by market cap. Users were classified into two categories (bot or human) based on the content of their posts using an anomaly detection architecture that leverages a Variational Autoencoder and the k-Nearest Neighbors algorithm, taking into account the unbalanced nature of the data. Sentiment analysis was conducted on the social media content using BERT embeddings as input for the neural network, enabling the classification of the emotional tone of social media posts. A custom engagement metric based on the content's metadata was proposed, and the correlation between this engagement metric and the asset's price fluctuations was analyzed.",
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Amazon's User-Based Products Recommendations",
+                "description": "This research project investigated how Amazon personalizes product recommendations and pricing based on user information. We developed a data collection system that simulated different user personas by manipulating browser cookies and history, then collected search results of 60k+ products from Amazon. Using statistical measures like the Jaccard Similarity Index and Kendall's τ coefficient, we analyzed the collected data for evidence of price steering and discrimination. Our analysis revealed strong indications of price steering but limited evidence of price discrimination. To examine Amazon's buy-box recommendations, we implemented a Random Forest classifier that achieved 80% accuracy in predicting the recommended seller, with product price and seller metrics as key features. The project combined web scraping techniques, statistical analysis, and machine learning to gain insights into e-commerce personalization strategies.",
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Effects of the Interest Rate on the Brazilian Stock Market",
+                "description": "This project investigated the impact of interest rates on various sectors of the Brazilian stock market using time series analysis. We developed a custom web scraping application to collect historical stock index data from B3 (the Brazilian stock exchange) and leveraged government APIs to gather macroeconomic indicators. The core of our analysis employed SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) models to account for the non-stationary nature of financial time series, including trends and seasonality. We compared these results against traditional OLS (Ordinary Least Squares) regression to highlight the importance of considering time-dependent structures in financial data. The SARIMAX models were optimized using cross-validation and the Akaike Information Criterion (AIC) to select the best hyperparameters. Our analysis revealed sector-specific sensitivities to interest rate changes, with real estate and consumer goods showing the most significant responses, while providing insights into the complex dynamics of Brazil's financial markets.",
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Economic Incentives of Yelp's Fake Reviews",
+                "description": "This research project analyzed restaurant competition and review fraud on Yelp in Paris using data science and natural language processing techniques. We developed custom web scraping tools and utilized Yelp's API to collect data on over 13k restaurants, including details on 250k reviews, ratings, and geographical information. Using statistical analysis and regression models, we examined the economic incentives behind fake reviews, finding that lower-priced and lower-rated restaurants tended to have slightly higher percentages of fraudulent reviews. We also employed sentiment analysis and polarity detection on review text to differentiate characteristics of fake versus genuine reviews. Our analysis leveraged Python for data collection and processing, along with libraries like pandas for data manipulation and scikit-learn for machine learning tasks. The project provided insights into the dynamics of online review platforms and the factors influencing review fraud in the restaurant industry.",
                 "techStack": [
                     ""
                 ],
@@ -39,51 +271,59 @@
             }
         ]
     },
+    "certificates": {
+        "title": "Certificates",
+        "certificates": [
+            {
+                "title": "Structuring Machine Learning Projects",
+                "description": "",
+                "institution": {
+                    "name": "DeepLearning.AI"
+                },
+                "dateCompletion": "January 2024",
+                "certificateUrl": ""
+            },
+            {
+                "title": "",
+                "description": "",
+                "institution": {
+                    "name": "DeepLearning.AI"
+                },
+                "dateCompletion": "",
+                "certificateUrl": ""
+            },
+            {
+                "title": "",
+                "description": "",
+                "institution": {
+                    "name": "DeepLearning.AI"
+                },
+                "dateCompletion": "",
+                "certificateUrl": ""
+            },
+            {
+                "title": "",
+                "description": "",
+                "institution": {
+                    "name": "DeepLearning.AI"
+                },
+                "dateCompletion": "",
+                "certificateUrl": ""
+            },
+            {
+                "title": "",
+                "description": "",
+                "institution": {
+                    "name": "Google"
+                },
+                "dateCompletion": "",
+                "certificateUrl": ""
+            }
+        ]
+    },
     "publications": {
         "title": "Publications",
         "description": "",
         "publications": []
-    },
-    "resume-modal": {
-        "title": "",
-        "description": ""
-    },
-    "resume": {
-        "title": "CV",
-        "subheader": "",
-        "sections": [
-            {
-                "title": "Informations de base",
-                "infos": [
-                    {
-                        "key": "Nom",
-                        "value": "Daniel J. Deutsch"
-                    },
-                    {
-                        "key": "Rôles préférés",
-                        "value": "Data Scientist | Ingénieur de Recherche en IA | Ingénieur en Machine Learning"
-                    },
-                    {
-                        "key": "Email",
-                        "value": "daniel.jrgde@gmail.com"
-                    },
-                    {
-                        "key": "LinkedIn",
-                        "value": "https://www.linkedin.com/in/danieljrgde/"
-                    },
-                    {
-                        "key": "GitHub",
-                        "value": "https://github.com/danieljrgde/"
-                    },
-                    {
-                        "key": "Résumé",
-                        "value": "Expérimenté dans la recherche en IA et le développement de solutions d'apprentissage profond. Passionné par l'apprentissage et la maîtrise des concepts d'IA, avec une capacité démontrée à naviguer dans des domaines techniques et complexes. Hautement compétent en Python, habile à écrire du code propre, robuste et évolutif pour concevoir, développer et déployer des systèmes d'apprentissage automatique."
-                    }
-                ]
-            },
-            {
-                "title": "Formation"
-            }
-        ]
     }
 }

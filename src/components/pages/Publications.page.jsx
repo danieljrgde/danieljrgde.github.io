@@ -13,7 +13,7 @@ const PublicationsPage = () => {
             <CardHeader
                 sx={styles.cardHeader}
                 title="Publications"
-                titleTypographyProps={{ variant: "h4", fontWeight: 'bold' }}
+                titleTypographyProps={{ variant: "h4", fontWeight: 'bold', gutterBottom: true }}
                 subheader="A brief description of publications overall"
                 subheaderTypographyProps={{ variant: "body1", color: "text.secondary" }}
             />

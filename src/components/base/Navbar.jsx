@@ -1,9 +1,11 @@
-import { AppBar, Toolbar, Container, Avatar, Typography, IconButton, Tabs, Tab, SvgIcon, MenuItem, Menu, ListItemIcon, ListItemText } from "@mui/material";
-import { US as FlagUS, FR as FlagFR, BR as FlagBR } from 'country-flag-icons/react/3x2';
+import { AppBar, Toolbar, Container, IconButton, Tabs, Tab, MenuItem, Menu, ListItemIcon, ListItemText, Link, Tooltip } from "@mui/material";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useTranslation } from "react-i18next";
 import { useState }from "react";
+import TranslateIcon from '@mui/icons-material/Translate';
+import Drawer from "@portfolio/components/base/Drawer";
+import SVG from "@portfolio/components/base/SVG";
 
 const styles = {
   container: {
@@ -19,16 +21,9 @@ const styles = {
     marginRight: 2,
   },
   languageMenuIcon: {
-    marginRight: 1.5,
+    marginRight: 0.5,
   },
 };
-
-const languageFlagMap = {
-  en: <FlagUS />,
-  fr: <FlagFR />,
-  pt: <FlagBR />,
-};
-
 
 
 const Navbar = () => {
@@ -36,6 +31,11 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const [ anchorEl, setAnchorEl ] = useState(null);
+  const [ openDrawer, setOpenDrawer ] = useState(false);
+
+  const handleDrawer = (ev) => {
+    setOpenDrawer(prev => !prev);
+  };
 
   const handleLanguageMenu = (ev) => {
     setAnchorEl(ev ? ev.currentTarget : null);
@@ -53,10 +53,11 @@ const Navbar = () => {
         <Toolbar disableGutters>
 
           <>
-            <IconButton sx={styles.drawerMenuIcon}>
+            <IconButton onClick={handleDrawer} sx={styles.drawerMenuIcon}>
               <MenuIcon sx={{ color: '#ffffff' }} />
             </IconButton>
-            <Typography variant="h6" color="white">Daniel</Typography>
+            <Link component={RouterLink} to="/" underline="none" variant="h6" color="white" fontFamily="cursive" fontWeight="bold" sx={{ cursor: 'pointer' }}>DJD</Link>
+            <Drawer open={openDrawer} onClose={handleDrawer} />
           </>
 
           <Tabs value={pathname} textColor="inherit" sx={styles.tabsContainer}>
@@ -67,9 +68,11 @@ const Navbar = () => {
           </Tabs>
 
           <>
-            <IconButton onClick={handleLanguageMenu}>
-              <SvgIcon>{languageFlagMap[i18n.language] ?? null}</SvgIcon>
-            </IconButton>
+            <Tooltip title="Translate">
+              <IconButton onClick={handleLanguageMenu}>
+                <TranslateIcon sx={{ color: '#ffffff' }} />
+              </IconButton>
+            </Tooltip>
             <Menu
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
@@ -78,15 +81,15 @@ const Navbar = () => {
               transformOrigin={{ vertical: 'top', horizontal: 'right' }}
             >
               <MenuItem onClick={() => handleSelectLanguage("en")} selected={i18n.language === "en"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><FlagUS /></ListItemIcon>
+                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="usa" /></ListItemIcon>
                 <ListItemText>English</ListItemText>
               </MenuItem>
               <MenuItem onClick={() => handleSelectLanguage("fr")} selected={i18n.language === "fr"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><FlagFR /></ListItemIcon>
+                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="france" /></ListItemIcon>
                 <ListItemText>French</ListItemText>
               </MenuItem>
               <MenuItem onClick={() => handleSelectLanguage("pt")} selected={i18n.language === "pt"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><FlagBR /></ListItemIcon>
+                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="brazil" /></ListItemIcon>
                 <ListItemText>Portuguese</ListItemText>
               </MenuItem>
             </Menu>

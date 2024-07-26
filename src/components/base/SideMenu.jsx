@@ -3,6 +3,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { useTranslation } from "react-i18next";
+import ProfileImg from "@portfolio/assets/imgs/profile.jpg";
 
 const styles = {
     container: {
@@ -23,7 +24,8 @@ const styles = {
         height: "auto",
         aspectRatio: "1 / 1",
         marginBottom: 2,
-    }
+        borderRadius: "10%",
+    },
 };
 
 const SideMenu = () => {
@@ -32,7 +34,7 @@ const SideMenu = () => {
 
     return (
         <Box sx={styles.container}>
-            <Avatar variant="rounded" sx={styles.avatar} />
+            <Avatar variant="rounded" sx={styles.avatar} src={ProfileImg} />
             <Typography variant="h5" fontWeight="bold">Daniel J. Deutsch</Typography>
             <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1} marginBottom={3}>
                 <Tooltip title="Email"><Link href="mailto:daniel.jrgde@gmail.com" target="_blank" rel="noreferrer"><EmailIcon /></Link></Tooltip>

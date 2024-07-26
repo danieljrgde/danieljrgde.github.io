@@ -12,10 +12,11 @@ const styles = {
 const BasicsCard = () => {
 
     const { t } = useTranslation();
+    const basics = t("basics");
 
     return (
         <Card>
-            <CardHeader title="Basics" />
+            <CardHeader title={t("BasicsCard.title")} />
             <CardContent>
                 <Grid sx={styles.gridContainer}>
 

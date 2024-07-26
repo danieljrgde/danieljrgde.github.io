@@ -1,5 +1,5 @@
 import { Box, ListItem, Avatar, CardHeader, CardContent, Typography, List, ListItemButton } from '@mui/material';
-import WorkExperienceModal from "@portfolio/components/hoc/resume/work-experience/WorkExperienceModal";
+import WorkExperienceModal from "@portfolio/components/hoc/work-experience/WorkExperienceModal";
 import { useState } from 'react';
 
 
