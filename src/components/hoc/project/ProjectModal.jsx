@@ -1,6 +1,7 @@
-import { Modal, Card, CardContent, Box, Avatar, Typography, Stack, Tooltip, Link, IconButton, Chip } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { Avatar, Box, Card, CardContent, Chip, IconButton, Link, Modal, Stack, Tooltip, Typography } from "@mui/material";
+
 import CloseIcon from "@mui/icons-material/Close";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 
 const styles = {
@@ -70,7 +71,7 @@ const ProjectModal = ({ open, onClose, project }) => {
 
                     <Box sx={styles.contentBox}>
                         <Box sx={styles.infoBox}>
-                            <Avatar variant="rounded" sx={styles.avatar} src={project.image} />
+                            <Avatar variant="rounded" sx={styles.avatar} src={project.img} />
                             <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1}>
                                 <Tooltip title="GitHub"><Link href="https://github.com/danieljrgde/" target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
                                 <Tooltip title="Report"><Link href="https://github.com/danieljrgde/" target="_blank" rel="noreferrer"><InsertDriveFileIcon /></Link></Tooltip>

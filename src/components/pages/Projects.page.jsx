@@ -1,5 +1,6 @@
+import { CardHeader, Grid } from "@mui/material";
+
 import ProjectGridItem from "@portfolio/components/hoc/project/ProjectGridItem";
-import { Box, Typography, Grid, CardHeader, TextField } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -17,15 +18,15 @@ const styles = {
 const ProjectsPage = () => {
 
     const { t } = useTranslation();
-    const projects = t("projects.projects", { returnObjects: true });
+    const projects = t("data.projects", { returnObjects: true }) || [];
 
     return (
         <>
             <CardHeader
                 sx={styles.cardHeader}
-                title={t("projects.title")}
+                title={t("components.ProjectsPage.title")}
                 titleTypographyProps={{ variant: "h4", fontWeight: 'bold', gutterBottom: true }}
-                subheader={t("projects.subheader")}
+                subheader={t("components.ProjectsPage.subheader")}
                 subheaderTypographyProps={{ variant: "body1", color: "text.secondary" }}
             />
 

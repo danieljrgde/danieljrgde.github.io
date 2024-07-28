@@ -1,4 +1,5 @@
-import { Card, CardContent, CardMedia, CardActionArea, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+
 import ProjectModal from "@portfolio/components/hoc/project/ProjectModal";
 import { useState } from "react";
 
@@ -25,7 +26,7 @@ const ProjectGridItem = ({ project }) => {
             <CardActionArea onClick={handleModal}>
                 <CardMedia
                     component="img" height={200}
-                    src="https://img.freepik.com/vecteurs-libre/ordinateur-portable-icone-isometrique-code-programme-developpement-logiciels-applications-programmation-neon-sombre_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1719964800&semt=sph"
+                    src={project.img}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="body1" fontWeight="bold">{project.title}</Typography>

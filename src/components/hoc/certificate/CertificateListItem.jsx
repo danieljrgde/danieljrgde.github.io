@@ -1,4 +1,5 @@
-import { Avatar, CardHeader, Typography, ListItemButton } from '@mui/material';
+import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
+
 import { useTranslation } from 'react-i18next';
 
 const styles = {
@@ -16,10 +17,10 @@ const CertificateListItem = ({ certificate }) => {
         <ListItemButton>
             <CardHeader
                 sx={styles.cardHeader}
-                avatar={<Avatar variant="rounded" src={certificate?.image} />}
-                title={certificate?.title}
-                subheader={certificate?.institution?.name}
-                action={<Typography variant="body2" color="text.secondary">{certificate?.dateCompletion}</Typography>}
+                avatar={<Avatar variant="rounded" src={certificate.img} />}
+                title={certificate.title}
+                subheader={certificate.institution.name}
+                action={<Typography variant="body2" color="text.secondary">{certificate.dateCompletion}</Typography>}
             />
         </ListItemButton>
     );

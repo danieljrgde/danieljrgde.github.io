@@ -1,11 +1,13 @@
-import { AppBar, Toolbar, Container, IconButton, Tabs, Tab, MenuItem, Menu, ListItemIcon, ListItemText, Link, Tooltip } from "@mui/material";
+import { AppBar, Container, IconButton, Link, ListItemIcon, ListItemText, Menu, MenuItem, Tab, Tabs, Toolbar, Tooltip } from "@mui/material";
 import { Link as RouterLink, useLocation } from "react-router-dom";
-import MenuIcon from '@mui/icons-material/Menu';
-import { useTranslation } from "react-i18next";
-import { useState }from "react";
-import TranslateIcon from '@mui/icons-material/Translate';
+
 import Drawer from "@portfolio/components/base/Drawer";
-import SVG from "@portfolio/components/base/SVG";
+import MenuIcon from '@mui/icons-material/Menu';
+import TranslateIcon from '@mui/icons-material/Translate';
+import Vector from "@portfolio/components/base/Vector";
+import dayjs from "dayjs";
+import { useState }from "react";
+import { useTranslation } from "react-i18next";
 
 const styles = {
   container: {
@@ -32,6 +34,7 @@ const Navbar = () => {
   const { pathname } = useLocation();
   const [ anchorEl, setAnchorEl ] = useState(null);
   const [ openDrawer, setOpenDrawer ] = useState(false);
+  const tabs = t("components.Navbar.tabs", { returnObjects: true });
 
   const handleDrawer = (ev) => {
     setOpenDrawer(prev => !prev);
@@ -43,6 +46,7 @@ const Navbar = () => {
 
   const handleSelectLanguage = (lang) => {
     i18n.changeLanguage(lang);
+    dayjs.locale(lang)
     handleLanguageMenu();
   };
 
@@ -56,15 +60,12 @@ const Navbar = () => {
             <IconButton onClick={handleDrawer} sx={styles.drawerMenuIcon}>
               <MenuIcon sx={{ color: '#ffffff' }} />
             </IconButton>
-            <Link component={RouterLink} to="/" underline="none" variant="h6" color="white" fontFamily="cursive" fontWeight="bold" sx={{ cursor: 'pointer' }}>DJD</Link>
+            <Link component={RouterLink} to="/" underline="none" variant="h6" color="white" fontFamily="cursive" fontWeight="bold" sx={{ cursor: 'pointer' }}>{t("components.Navbar.initials")}</Link>
             <Drawer open={openDrawer} onClose={handleDrawer} />
           </>
 
           <Tabs value={pathname} textColor="inherit" sx={styles.tabsContainer}>
-            <Tab key="about" value="/" label={t("navbar.tabs.about")} component={RouterLink} to="/" />
-            <Tab key="publications" value="/publications" label={t("navbar.tabs.publications")} component={RouterLink} to="/publications" />
-            <Tab key="projects" value="/projects" label={t("navbar.tabs.projects")} component={RouterLink} to="/projects" />
-            <Tab key="resume" value="/resume" label={t("navbar.tabs.resume")} component={RouterLink} to="/resume" />
+            {tabs.map((tab, idx) => <Tab key={idx} value={tab.to} label={tab.label} to={tab.to} component={RouterLink} />)}
           </Tabs>
 
           <>
@@ -81,15 +82,15 @@ const Navbar = () => {
               transformOrigin={{ vertical: 'top', horizontal: 'right' }}
             >
               <MenuItem onClick={() => handleSelectLanguage("en")} selected={i18n.language === "en"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="usa" /></ListItemIcon>
+                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="usa" /></ListItemIcon>
                 <ListItemText>English</ListItemText>
               </MenuItem>
               <MenuItem onClick={() => handleSelectLanguage("fr")} selected={i18n.language === "fr"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="france" /></ListItemIcon>
+                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="france" /></ListItemIcon>
                 <ListItemText>French</ListItemText>
               </MenuItem>
-              <MenuItem onClick={() => handleSelectLanguage("pt")} selected={i18n.language === "pt"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><SVG variant="flags" name="brazil" /></ListItemIcon>
+              <MenuItem onClick={() => handleSelectLanguage("pt-br")} selected={i18n.language === "pt-br"}>
+                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="brazil" /></ListItemIcon>
                 <ListItemText>Portuguese</ListItemText>
               </MenuItem>
             </Menu>

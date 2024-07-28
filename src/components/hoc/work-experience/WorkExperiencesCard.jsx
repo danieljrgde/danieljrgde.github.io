@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardContent, Grid, Typography, Link, List } from "@mui/material"
+import { Card, CardContent, CardHeader, Grid, Link, List, Typography } from "@mui/material"
+
 import WorkExperienceListItem from "@portfolio/components/hoc/work-experience/WorkExperienceListItem";
 import { useTranslation } from "react-i18next";
 
@@ -11,19 +12,17 @@ const styles = {
 const WorkExperiencesCard = () => {
 
     const { t } = useTranslation();
-    const workExperiences = t("workExperience");
+    const workExperiences = t("data.workExperiences", { returnObjects: true });
 
     return (
         <Card>
             <CardHeader
                 sx={styles.cardHeader}
-                title={t("WorkExperiencesCard.title")}
+                title={t("components.WorkExperiencesCard.title")}
             />
             <CardContent>
                 <List>
-                    <WorkExperienceListItem />
-                    <WorkExperienceListItem />
-                    <WorkExperienceListItem />
+                    {workExperiences.map((workExperience, idx) => <WorkExperienceListItem key={idx} workExperience={workExperience} />)}
                 </List>           
             </CardContent>
         </Card>

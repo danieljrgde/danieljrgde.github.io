@@ -1,121 +1,134 @@
 {
-    "navbar": {
-        "tabs": {
-            "about": "About",
-            "projects": "Projects",
-            "publications": "Publications",
-            "resume": "Resume"
+    "components": {
+        "Drawer": {
+            "tabs": [
+                { "label": "About", "to": "/" },
+                { "label": "Projects", "to": "/projects" },
+                { "label": "Publications", "to": "/publications" },
+                { "label": "Resume", "to": "/resume" }
+            ],
+            "contactMe": "Feel free to contact me in any of my social!"
         },
-        "languages": [
-            "English",
-            "French",
-            "Portuguese"
-        ]
+        "Footer": {},
+        "Navbar": {
+            "initials": "DJD",
+            "tabs": [
+                { "label": "About", "to": "/" },
+                { "label": "Projects", "to": "/projects" },
+                { "label": "Publications", "to": "/publications" },
+                { "label": "Resume", "to": "/resume" }
+            ],
+            "languages": [
+                { "label": "English", "value": "en", "vector": "/src/assets/vectors/flags/usa.svg" },
+                { "label": "French", "value": "fr", "vector": "/src/assets/vectors/flags/france.svg" },
+                { "label": "Portuguese", "value": "pt", "vector": "/src/assets/vectors/flags/brazil.svg" }
+            ]
+        },
+        "SideMenu": {
+            "contactMe": "Feel free to contact me in any of my social!"
+        },
+        "AchievementsCard": {
+            "title": "Achievements"
+        },
+        "BasicsCard": {
+            "title": "Basics"
+        },
+        "CertificatesCard": {
+            "title": "Certificates"
+        },
+        "EducationsCard": {
+            "title": "Education"
+        },
+        "ProjectsCard": {
+            "title": "Projects"
+        },
+        "PublicationsCard": {
+            "title": "Publications"
+        },
+        "VolunteerExperiencesCard": {
+            "title": "Volunteer Experience"
+        },
+        "WorkExperiencesCard": {
+            "title": "Work Experience"
+        },
+        "AboutPage": {
+            "greetings": "Hello!",
+            "paragraphs": [
+                "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
+                "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
+                "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
+            ]
+        },
+        "ProjectsPage": {
+            "title": "Projects",
+            "subheader": "Below you'll find a selection of projects I've crafted over the years. Each one represents a unique challenge and showcases different aspects of my skills and creativity. I hope you enjoy exploring my work."
+        },
+        "PublicationsPage": {
+            "title": "Projects",
+            "subheader": ""
+        },
+        "ResumePage": {}
     },
-    "drawer": {
-        "tabs": {
-            "about": "About",
-            "projects": "Projects",
-            "publications": "Publications",
-            "resume": "Resume"
-        }
-    },
-    "sideMenu": {
-        "contactMeText": "Feel free to contact me!"
-    },
-    "resumeModal": {
-        "title": "",
-        "description": ""
-    },
-    "about": {
-        "title": "Hello there!",
-        "paragraphs": [
-            "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
-            "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
-            "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
-        ]
-    },
-    "basics": {
-        "title": "Basics",
-        "infos": [
-            {
-                "key": "Name",
-                "value": "Daniel J. Deutsch"
-            },
-            {
-                "key": "Preferred roles",
-                "value": "Data Scientist | AI Research Engineer | ML Engineer"
-            },
-            {
-                "key": "Email",
-                "value": "daniel.jrgde@gmail.com"
-            },
-            {
-                "key": "LinkedIn",
-                "value": "https://www.linkedin.com/in/danieljrgde/"
-            },
-            {
-                "key": "GitHub",
-                "value": "https://github.com/danieljrgde/"
-            },
-            {
-                "key": "Summary",
-                "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems."
-            }
-        ]
-    },
-    "educations": {
-        "title": "Education",
+    "data": {
+        "basics": [
+            { "key": "Name", "value": "Daniel J. Deutsch", "link": "" },
+            { "key": "Preferred Roles", "value": "Data Scientist | AI Research Engineer | ML Engineer", "link": "" },
+            { "key": "Email", "value": "daniel.jrgde@gmail.com", "link": "mailto:daniel.jrgde@gmail.com" },
+            { "key": "LinkedIn", "value": "https://www.linkedin.com/in/danieljrgde/", "link": "https://www.linkedin.com/in/danieljrgde/" },
+            { "key": "GitHub", "value": "https://github.com/danieljrgde/", "link": "https://github.com/danieljrgde/" },
+            { "key": "Summary", "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems.", "link": "" }
+        ],
         "educations": [
             {
                 "degree": "Master of Engineering (M.Eng)",
                 "major": "Computer Science",
                 "institution": {
-                    "name": "Telecom Paris - Institute Polytechnique de Paris",
-                    "image": "",
-                    "website": ""
+                    "name": "Télécom Paris, Polytechnic Institute of Paris",
+                    "img": "/src/assets/imgs/education/telecom-paris.jpg",
+                    "website": { "title": "Website", "link": "https://www.telecom-paris.fr/" },
+                    "linkedin": { "title": "LinkedIn", "link": "" }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2020-08-01",
+                "dateEnd": "2022-09-01"
             },
             {
                 "degree": "Master of Science (M.Sc)",
-                "major": "Computer Science",
+                "major": "Financial Data Science",
                 "institution": {
-                    "name": "University Pantheon-Sorbonne",
-                    "image": "",
-                    "website": ""
+                    "name": "Panthéon-Sorbonne University",
+                    "img": "/src/assets/imgs/education/pantheon-sorbonne.jpg",
+                    "website": { "title": "Website", "link": "https://www.pantheonsorbonne.fr/" },
+                    "linkedin": { "title": "LinkedIn", "link": "" }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2021-09-01",
+                "dateEnd": "2022-09-01"
             },
             {
                 "degree": "Bachelor of Science (B.Sc)",
                 "major": "Electrical Engineering - Control and Automation",
                 "institution": {
-                    "name": "University of Sao Paulo",
-                    "image": "",
-                    "website": ""
+                    "name": "University of São Paulo",
+                    "img": "/src/assets/imgs/education/usp.jpg",
+                    "website": { "title": "Website", "link": "https://www5.usp.br/english/institutional/" },
+                    "linkedin": { "title": "LinkedIn", "link": "" }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2017-01-01",
+                "dateEnd": "2022-12-01"
             }
-        ]
-    },
-    "workExperiences": {
-        "title": "Work Experiences",
+        ],
         "workExperiences": [
             {
                 "company": {
                     "name": "VO2 Group",
-                    "image": "",
-                    "website": ""
+                    "img": "/src/assets/imgs/work-experience/vo2-group.jpg",
+                    "website": { "title": "Website", "link": "https://www.vo2-group.com/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/vo2-group/" }
                 },
                 "role": "AI Research Engineer",
                 "location": "Paris, France",
                 "dateStart": "September 2023",
                 "dateEnd": "Present",
-                "introductionParagraph": "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries.",
+                "intro": "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries.",
                 "bulletPoints": [
                     "Built a transformer-based model that leverages text and image information of garments to provide outfit recommendations.",
                     "Engineered a custom attention mechanism that improved the model's ability to recommend outfits based on a text prompt.",
@@ -125,7 +138,7 @@
                     "Actively collaborated on projects with technically diverse teams, implementing AI solutions for cross-functional projects."
                 ],
                 "techStack": [
-                    "Python", "PyTorch", "Pandas", "Polars", "Jupyter", "NumPy", "Hugging Face", "LangChain", "LlamaIndex", "Git", "Docker", "GCP"
+                    "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
                 ],
                 "keywords": [
                     "Deep Learning", "Generative AI", "Natural Language Processing", "LLM", "RAG", "Recommendation System", "Transformers", "Prompt Engineering", "Contrastive Learning", "Web Scraping", "Data Enhancement", "Data Cleaning", "Model Evaluation", "BERT", "CLIP", "Llama"
@@ -134,21 +147,22 @@
             {
                 "company": {
                     "name": "Gravite.io",
-                    "image": "",
-                    "website": ""
+                    "img": "/src/assets/imgs/work-experience/gravite.jpg",
+                    "website": { "title": "Website", "link": "https://www.gravite.io/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/gravite-hq/" }
                 },
                 "role": "Data Scientist",
                 "location": "Paris, France",
                 "dateStart": "May 2023",
                 "dateEnd": "September 2023",
-                "introductionParagraph": "Freelance mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback.",
+                "intro": "Freelance mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback.",
                 "bulletPoints": [
                     "Designed a topic modeling algorithm to categorize customer feedback and identify company's main pain points, resulting in a 30% increase in valuable KPIs.",
                     "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
                     "Engineered a custom relevance metric combining feedback frequency and severity, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
                 "techStack": [
-                    "Python", "Scikit-Learn", "OpenAI API", "Jupyter", "Pandas", "Git", "Docker"
+                    "python", "scikit-learn", "openai", "jupyter", "pandas", "git", "docker"
                 ],
                 "keywords": [
                     "Machine Learning", "Topic Modeling", "Text Classification", "Natural Language Processing", "Data Processing", "Parallel Computing", "Model Evaluation", "API Integration"
@@ -157,14 +171,15 @@
             {
                 "company": {
                     "name": "Kaiko",
-                    "image": "",
-                    "website": ""
+                    "img": "/src/assets/imgs/work-experience/kaiko.jpg",
+                    "website": { "title": "Website", "link": "https://www.kaiko.com/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/kaikodata/" }
                 },
                 "role": "Data Scientist (Intern)",
                 "location": "Paris, France",
                 "dateStart": "September 2021",
                 "dateEnd": "September 2022",
-                "introductionParagraph": "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies.",
+                "intro": "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies.",
                 "bulletPoints": [
                     "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
                     "Implemented a deep learning model that detected 13k bot accounts in social media platforms, allowing an in-depth analysis of their influence on the crypto market.",
@@ -172,7 +187,7 @@
                     "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
                 ],
                 "techStack": [
-                    "Python", "TensorFlow", "Hugging Face", "PySpark", "Jupyter", "gRPC", "Git", "Docker"
+                    "python", "tensorflow", "transformers", "pyspark", "jupyter", "grpc", "git", "docker"
                 ],
                 "keywords": [
                     "Deep Learning", "Time Series Analysis", "Anomaly Detection", "Natural Language Processing", "Sentiment Analysis", "Variational Autoencoder", "Big Data", "Market Analysis", "Distributed Computing"
@@ -181,87 +196,67 @@
             {
                 "company": {
                     "name": "BTG Pactual",
-                    "image": "",
-                    "website": ""
+                    "img": "/src/assets/imgs/work-experience/btg-pactual.jpg",
+                    "website": { "title": "Website", "link": "https://www.btgpactual.com/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/btgpactual/" }
                 },
                 "role": "Data Engineer (Intern)",
                 "location": "São Paulo, Brazil",
                 "dateStart": "December 2019",
                 "dateEnd": "August 2020",
-                "introductionParagraph": "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets.",
+                "intro": "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets.",
                 "bulletPoints": [
                     "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
                     "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
                 ],
                 "techStack": [
-                    "Python", "AWS (Lambda, S3, EMR, EC2, RDS, Athena, API Gateway, DynamoDB)", "Airflow", "PySpark", "Jupyter", "Git", "Docker"
+                    "Python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
                 ],
                 "keywords": [
                     "Big Data", "Cloud Computing", "Workflow Orchestration", "Data Processing", "Data Integrity", "Near-Real-time Data Monitoring", "CI/CD", "Distributed Computing", "Data Warehousing", "SQL"
                 ]
-            },
+            }
+        ],
+        "volunteerExperiences": [
             {
                 "company": {
                     "name": "Poli Júnior",
-                    "image": "",
-                    "website": ""
+                    "img": "/src/assets/imgs/volunteer-experience/poli-junior.jpg",
+                    "website": { "title": "Website", "link": "https://polijunior.com.br/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/poli-junior/" }
                 },
                 "role": "Tech Leader",
                 "location": "São Paulo, Brazil",
                 "dateStart": "April 2017",
                 "dateEnd": "December 2019",
-                "introductionParagraph": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
                 "techStack": [
-                    "Python", "JavaScript", "Git", "MySQL"
+                    "python", "javascript", "git", "mysql"
                 ],
                 "keywords": [
                     "Team Leadership", "Software Development", "Scrum", "Agile"
                 ]
-            }
-        ]
-    },
-    "projects": {
-        "title": "Projects",
-        "subheader": "Below you'll find a selection of projects I've crafted over the years. Each one represents a unique challenge and showcases different aspects of my skills and creativity. I hope you enjoy exploring my work.",
-        "projects": [
-            {
-                "title": "Effects of Social Media Bots on the Crypto Market",
-                "description": "In this research project, the impact of social media bots on the crypto market was investigated through the usage of AI and statistical analysis. A custom data collection script was developed to gather 6M+ market-related social media posts, along with stock price data for the top 50 cryptocurrencies by market cap. Users were classified into two categories (bot or human) based on the content of their posts using an anomaly detection architecture that leverages a Variational Autoencoder and the k-Nearest Neighbors algorithm, taking into account the unbalanced nature of the data. Sentiment analysis was conducted on the social media content using BERT embeddings as input for the neural network, enabling the classification of the emotional tone of social media posts. A custom engagement metric based on the content's metadata was proposed, and the correlation between this engagement metric and the asset's price fluctuations was analyzed.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
             },
             {
-                "title": "Amazon's User-Based Products Recommendations",
-                "description": "This research project investigated how Amazon personalizes product recommendations and pricing based on user information. We developed a data collection system that simulated different user personas by manipulating browser cookies and history, then collected search results of 60k+ products from Amazon. Using statistical measures like the Jaccard Similarity Index and Kendall's τ coefficient, we analyzed the collected data for evidence of price steering and discrimination. Our analysis revealed strong indications of price steering but limited evidence of price discrimination. To examine Amazon's buy-box recommendations, we implemented a Random Forest classifier that achieved 80% accuracy in predicting the recommended seller, with product price and seller metrics as key features. The project combined web scraping techniques, statistical analysis, and machine learning to gain insights into e-commerce personalization strategies.",
-                "techStack": [
+                "company": {
+                    "name": "Amigos da Poli",
+                    "img": "/src/assets/imgs/volunteer-experience/amigos-da-poli.jpg",
+                    "website": { "title": "Website", "link": "" },
+                    "linkedin": { "title": "LinkedIn", "link": "" }
+                },
+                "role": "Tech Volunteer",
+                "location": "São Paulo, Brazil",
+                "dateStart": "2019-04-01",
+                "dateEnd": "2020-09-01",
+                "intro": "",
+                "bulletPoints": [
                     ""
                 ],
-                "keywords": [
-                    ""
-                ]
-            },
-            {
-                "title": "Effects of the Interest Rate on the Brazilian Stock Market",
-                "description": "This project investigated the impact of interest rates on various sectors of the Brazilian stock market using time series analysis. We developed a custom web scraping application to collect historical stock index data from B3 (the Brazilian stock exchange) and leveraged government APIs to gather macroeconomic indicators. The core of our analysis employed SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) models to account for the non-stationary nature of financial time series, including trends and seasonality. We compared these results against traditional OLS (Ordinary Least Squares) regression to highlight the importance of considering time-dependent structures in financial data. The SARIMAX models were optimized using cross-validation and the Akaike Information Criterion (AIC) to select the best hyperparameters. Our analysis revealed sector-specific sensitivities to interest rate changes, with real estate and consumer goods showing the most significant responses, while providing insights into the complex dynamics of Brazil's financial markets.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
-            },
-            {
-                "title": "Economic Incentives of Yelp's Fake Reviews",
-                "description": "This research project analyzed restaurant competition and review fraud on Yelp in Paris using data science and natural language processing techniques. We developed custom web scraping tools and utilized Yelp's API to collect data on over 13k restaurants, including details on 250k reviews, ratings, and geographical information. Using statistical analysis and regression models, we examined the economic incentives behind fake reviews, finding that lower-priced and lower-rated restaurants tended to have slightly higher percentages of fraudulent reviews. We also employed sentiment analysis and polarity detection on review text to differentiate characteristics of fake versus genuine reviews. Our analysis leveraged Python for data collection and processing, along with libraries like pandas for data manipulation and scikit-learn for machine learning tasks. The project provided insights into the dynamics of online review platforms and the factors influencing review fraud in the restaurant industry.",
                 "techStack": [
                     ""
                 ],
@@ -269,13 +264,11 @@
                     ""
                 ]
             }
-        ]
-    },
-    "certificates": {
-        "title": "Certificates",
+        ],
         "certificates": [
             {
                 "title": "Structuring Machine Learning Projects",
+                "img": "/src/assets/imgs/certificates/struct-ml.jpg",
                 "description": "",
                 "institution": {
                     "name": "DeepLearning.AI"
@@ -286,6 +279,7 @@
 
             {
                 "title": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+                "img": "/src/assets/imgs/certificates/improve-nn.jpg",
                 "description": "",
                 "institution": {
                     "name": "DeepLearning.AI"
@@ -295,6 +289,7 @@
             },
             {
                 "title": "Neural Networks and Deep Learning",
+                "img": "/src/assets/imgs/certificates/nn-and-dl.jpg",
                 "description": "",
                 "institution": {
                     "name": "DeepLearning.AI"
@@ -304,6 +299,7 @@
             },
             {
                 "title": "Foundations of Project Management",
+                "img": "/src/assets/imgs/certificates/foundations-pm.jpg",
                 "description": "",
                 "institution": {
                     "name": "Google"
@@ -311,11 +307,153 @@
                 "dateCompletion": "",
                 "certificateUrl": ""
             }
-        ]
-    },
-    "publications": {
-        "title": "Publications",
-        "description": "",
-        "publications": []
+        ],
+        "projects": [
+            {
+                "title": "Effects of Social Media Bots on the Crypto Market",
+                "img": "/src/assets/imgs/project/bot-market-effects.jpg",
+                "links": [
+                    { "key": "GitHub",  "value": "" },
+                    { "key": "Report",  "value": "" }
+                ],
+                "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "bulletPoints": [
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                ],
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Does Amazon use user Information for Product Recommendation?",
+                "img": "/src/assets/imgs/project/amzn-recommendation.jpg",
+                "links": [
+                    { "key": "GitHub",  "value": "" },
+                    { "key": "Report",  "value": "" }
+                ],
+                "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "bulletPoints": [
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                ],
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Effects of the Interest Rate on the Brazilian Stock Market",
+                "img": "/src/assets/imgs/project/interest-rate-br.jpg",
+                "links": [
+                    { "key": "GitHub",  "value": "" },
+                    { "key": "Report",  "value": "" }
+                ],
+                "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "bulletPoints": [
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                ],
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            },
+            {
+                "title": "Economic Incentives of Yelp's Fake Reviews",
+                "img": "/src/assets/imgs/project/yelp-fake-review.jpg",
+                "links": [
+                    { "key": "GitHub",  "value": "" },
+                    { "key": "Report",  "value": "" }
+                ],
+                "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "bulletPoints": [
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                ],
+                "techStack": [
+                    ""
+                ],
+                "keywords": [
+                    ""
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "title": "Pantheon-Sorbonne's Best Master Thesis Award",
+                "subheader": "",
+                "date": "2022-09-01"
+            },
+            {
+                "title": "Coordination for the Improvement of Higher Education Personnel Scholarship",
+                "subheader": "",
+                "date": "2021-01-01"
+            },
+            {
+                "title": "BTG Pactual Code Challenge",
+                "subheader": "1st place",
+                "date": "2021-01-01"
+            },
+            {
+                "title": "Brazilian Robotics Olympiad",
+                "subheader": "Silver medal",
+                "date": "2021-01-01"
+            },
+            {
+                "title": "Kangaroo Mathmathics Olympiad",
+                "subheader": "Silver medal",
+                "date": "2021-01-01"
+            }
+        ],
+        "skills": [
+            {
+                "key": "Programming",
+                "value": [
+                    "Python",
+                    "C/C++",
+                    "SQL"
+                ]
+            },
+            {
+                "key": "Languages",
+                "value": [
+                    { "key": "Portuguese", "value": "native", "vector": { "variant": "flags", "name": "brazil" } },
+                    { "key": "English", "value": "fluent - C2", "vector": { "variant": "flags", "name": "usa" } },
+                    { "key": "French", "value": "fluent - C1", "vector": { "variant": "flags", "name": "france" } },
+                    { "key": "Spanish", "value": "intermediary - B2", "vector": { "variant": "flags", "name": "spain" } }
+                ]
+            }
+        ],
+        "techStack": {
+            "python": { "label": "Python", "vector": { "variant": "tech-stack", "name": "python" }, "link": "" },
+            "pytorch": { "label": "PyTorch", "vector": { "variant": "tech-stack", "name": "pytorch" }, "link": "" },
+            "pandas": { "label": "Pandas", "vector": { "variant": "tech-stack", "name": "pandas" }, "link": "" },
+            "polars": { "label": "Polars", "vector": { "variant": "tech-stack", "name": "polars" }, "link": "" },
+            "jupyter": { "label": "Jupyter", "vector": { "variant": "tech-stack", "name": "jupyter" }, "link": "" },
+            "numpy": { "label": "NumPy", "vector": { "variant": "tech-stack", "name": "numpy" }, "link": "" },
+            "transformers": { "label": "Transformers", "vector": { "variant": "tech-stack", "name": "transformers" }, "link": "" },
+            "langchain": { "label": "LangChain", "vector": { "variant": "tech-stack", "name": "langchain" }, "link": "" },
+            "llamaindex": { "label": "LlamaIndex", "vector": { "variant": "tech-stack", "name": "llamaindex" }, "link": "" },
+            "git": { "label": "Git", "vector": { "variant": "tech-stack", "name": "git" }, "link": "" },
+            "docker": { "label": "Docker", "vector": { "variant": "tech-stack", "name": "docker" }, "link": "" },
+            "gcp": { "label": "GCP", "vector": { "variant": "tech-stack", "name": "gcp" }, "link": "" },
+            "scikit-learn": { "label": "Scikit-Learn", "vector": { "variant": "tech-stack", "name": "scikit-learn" }, "link": "" },
+            "openai": { "label": "OpenAI", "vector": { "variant": "tech-stack", "name": "openAI" }, "link": "" },
+            "pyspark": { "label": "PySpark", "vector": { "variant": "tech-stack", "name": "pyspark" }, "link": "" },
+            "grpc": { "label": "gRPC", "vector": { "variant": "tech-stack", "name": "grpc" }, "link": "" },
+            "aws": { "label": "AWS", "vector": { "variant": "tech-stack", "name": "aws" }, "link": "" },
+            "aws-lambda": { "label": "AWS Lambda", "vector": { "variant": "tech-stack", "name": "aws-lambda" }, "link": "" },
+            "aws-s3": { "label": "AWS S3", "vector": { "variant": "tech-stack", "name": "aws-s3" }, "link": "" },
+            "aws-emr": { "label": "AWS EMR", "vector": { "variant": "tech-stack", "name": "aws-emr" }, "link": "" },
+            "aws-rds": { "label": "AWS RDS", "vector": { "variant": "tech-stack", "name": "aws-rds" }, "link": "" }
+        }
     }
 }

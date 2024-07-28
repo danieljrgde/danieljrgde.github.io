@@ -1,7 +1,8 @@
-import { Box, ListItem, Avatar, CardHeader, CardContent, Typography, List, ListItemButton } from '@mui/material';
-import WorkExperienceModal from "@portfolio/components/hoc/work-experience/WorkExperienceModal";
-import { useState } from 'react';
+import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
 
+import WorkExperienceModal from "@portfolio/components/hoc/work-experience/WorkExperienceModal";
+import dayjs from 'dayjs';
+import { useState } from 'react';
 
 const styles = {
     cardHeader: {
@@ -11,7 +12,7 @@ const styles = {
 };
 
 
-const WorkExperienceListItem = () => {
+const WorkExperienceListItem = ({ workExperience }) => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -20,16 +21,18 @@ const WorkExperienceListItem = () => {
     };
 
     return (
-        <ListItemButton onClick={handleModal}>
-            <CardHeader
-                sx={styles.cardHeader}
-                avatar={<Avatar />}
-                title="AI Research Engineer"
-                subheader="VO2 Group"
-                action={<Typography variant="body1" color="text.secondary">Sep 2023 - Present</Typography>}
-            />
-            <WorkExperienceModal open={isModalOpen} onClose={handleModal} />
-        </ListItemButton>
+        <>
+            <ListItemButton onClick={handleModal}>
+                <CardHeader
+                    sx={styles.cardHeader}
+                    avatar={<Avatar src={workExperience.company.img} />}
+                    title={workExperience.company.name}
+                    subheader={workExperience.role}
+                    action={<Typography variant="body2" color="text.secondary">{dayjs(workExperience.dateStart).format("MMM YYYY")} - {dayjs(workExperience.dateEnd).isValid() ? dayjs(workExperience.dateEnd).format("MMM YYYY") : workExperience.dateEnd}</Typography>}
+                />
+            </ListItemButton>
+            <WorkExperienceModal open={isModalOpen} onClose={handleModal} workExperience={workExperience} />
+        </>
     );
 };
 

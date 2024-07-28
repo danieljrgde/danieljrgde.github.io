@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardContent, Grid, Typography, Link, List } from "@mui/material"
+import { Card, CardContent, CardHeader, Grid, Link, List, Typography } from "@mui/material"
+
 import EducationListItem from "@portfolio/components/hoc/education/EducationListItem";
 import { useTranslation } from "react-i18next";
 
@@ -11,13 +12,13 @@ const styles = {
 const EducationsCard = () => {
 
     const { t } = useTranslation();
-    const educations = t("educations.educations", { returnObjects: true });
+    const educations = t("data.educations", { returnObjects: true });
 
     return (
         <Card>
             <CardHeader
                 sx={styles.cardHeader}
-                title={t("EducationsCard.title")}
+                title={t("components.EducationsCard.title")}
             />
             <CardContent>
                 <List>

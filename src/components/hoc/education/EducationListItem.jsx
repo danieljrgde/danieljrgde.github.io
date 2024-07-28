@@ -1,4 +1,6 @@
-import { Avatar, CardHeader, Typography, ListItemButton } from '@mui/material';
+import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
+
+import dayjs from 'dayjs';
 
 const styles = {
     cardHeader: {
@@ -12,11 +14,11 @@ const EducationListItem = ({ education }) => {
         <ListItemButton>
             <CardHeader
                 sx={styles.cardHeader}
-                avatar={<Avatar src={education?.institution?.image} />}
-                title={`${education?.degree} | ${education?.major}`}
-                subheader={`${education?.institution?.name}`}
+                avatar={<Avatar src={education.institution.img} />}
+                title={`${education.degree} | ${education.major}`}
+                subheader={`${education.institution.name}`}
                 action={
-                    <Typography variant="body2" color="text.secondary">{education?.dateStart} - {education?.dateEnd}</Typography>
+                    <Typography variant="body2" color="text.secondary">{dayjs(education.dateStart).format("MMM YYYY")} - {dayjs(education.dateEnd).format("MMM YYYY")}</Typography>
                 }
             />
         </ListItemButton>

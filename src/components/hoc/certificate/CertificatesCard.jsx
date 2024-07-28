@@ -1,6 +1,7 @@
-import { Card, CardHeader, CardContent, List } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import { Card, CardContent, CardHeader, List } from "@mui/material";
+
 import CertificateListItem from "@portfolio/components/hoc/certificate/CertificateListItem";
+import { useTranslation } from "react-i18next";
 
 const styles = {
     cardHeader: {
@@ -11,13 +12,13 @@ const styles = {
 const CertificatesCard = () => {
 
     const { t } = useTranslation();
-    const certificates = t("certificates.certificates", { returnObjects: true });
+    const certificates = t("data.certificates", { returnObjects: true });
 
     return (
         <Card>
             <CardHeader
                 sx={styles.cardHeader}
-                title={t("CertificatesCard.title")}
+                title={t("components.CertificatesCard.title")}
             />
             <CardContent>
                 <List>
