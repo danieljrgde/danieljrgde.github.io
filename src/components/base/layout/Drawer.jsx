@@ -1,13 +1,13 @@
-import { Drawer as DrawerMUI, Avatar, Typography, Stack, Tooltip, Link, Box, List, ListItemButton, ListItemIcon, ListItemText, ListItem } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { Avatar, Box, Button, Drawer as DrawerMUI, Link, List, ListItemButton, ListItemText, Stack, Tooltip, Typography } from "@mui/material";
+
+import DownloadIcon from '@mui/icons-material/Download';
+import DownloadResumeModal from "@portfolio/components/base/DownloadResumeModal";
+import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import ProfileImg from "@portfolio/assets/imgs/profile.jpg";
-import PersonIcon from '@mui/icons-material/Person';
-import InfoIcon from '@mui/icons-material/Info';
-import ConstructionIcon from '@mui/icons-material/Construction';
-import ScienceIcon from '@mui/icons-material/Science';
+import { Link as RouterLink } from "react-router-dom";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const styles = {
     container: {
@@ -31,39 +31,48 @@ const styles = {
         marginBottom: 2,
         borderRadius: "10%",
     },
+    downloadBtnBox: {
+        marginTop: 8,
+        display: "flex",
+        justifyContent: 'center'
+    }
 };
 
 const Drawer = ({ open, onClose }) => {
+
+    const { t } = useTranslation();
+    const [ isModalOpen, setIsModalOpen ] = useState(false);
+    const tabs = t("components.Drawer.tabs", { returnObjects: true });
+    
+    
+    const handleModal = (ev) => {
+        setIsModalOpen(prev => !prev);
+    };
+
     return (
         <DrawerMUI open={open} onClose={onClose} variant="temporary" anchor="left" sx={styles.container} >
             <Box sx={styles.headerContainer}>
-                <Avatar variant="rounded" sx={styles.avatar} src={ProfileImg} />
-                <Typography variant="h6" fontWeight="bold">Daniel J. Deutsch</Typography>
+                <Avatar variant="rounded" sx={styles.avatar} src={t("components.Drawer.img")} />
+                <Typography variant="h5" fontWeight="bold">{t("components.Drawer.name")}</Typography>
                 <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1} marginBottom={3}>
-                    <Tooltip title="Email"><Link href="mailto:daniel.jrgde@gmail.com" target="_blank" rel="noreferrer"><EmailIcon /></Link></Tooltip>
-                    <Tooltip title="LinkedIn"><Link href="https://www.linkedin.com/in/danieljrgde/" target="_blank" rel="noreferrer"><LinkedInIcon /></Link></Tooltip>
-                    <Tooltip title="GitHub"><Link href="https://github.com/danieljrgde/" target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
+                    <Tooltip title={t("components.Drawer.email.title")}><Link href={t("components.Drawer.email.link")} target="_blank" rel="noreferrer"><EmailIcon /></Link></Tooltip>
+                    <Tooltip title={t("components.Drawer.linkedin.title")}><Link href={t("components.Drawer.linkedin.link")} target="_blank" rel="noreferrer"><LinkedInIcon /></Link></Tooltip>
+                    <Tooltip title={t("components.Drawer.github.title")}><Link href={t("components.Drawer.github.link")} target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
                 </Stack>
             </Box>
 
             <List>
-                <ListItemButton component={RouterLink} to="/" onClick={onClose}>
-                    <ListItemIcon><InfoIcon /></ListItemIcon>
-                    <ListItemText primary="About" />
-                </ListItemButton>
-                <ListItemButton component={RouterLink} to="/publications" onClick={onClose}>
-                    <ListItemIcon><ScienceIcon /></ListItemIcon>
-                    <ListItemText primary="Publications" />
-                </ListItemButton>
-                <ListItemButton component={RouterLink} to="/projects" onClick={onClose}>
-                    <ListItemIcon><ConstructionIcon /></ListItemIcon>
-                    <ListItemText primary="Projects" />
-                </ListItemButton>
-                <ListItemButton component={RouterLink} to="/resume" onClick={onClose}>
-                    <ListItemIcon><PersonIcon /></ListItemIcon>
-                    <ListItemText primary="Resume" />
-                </ListItemButton>
+                {tabs.map((tab, idx) => (
+                    <ListItemButton key={idx} component={RouterLink} to={tab.to} onClick={onClose}>
+                        <ListItemText primary={tab.label} />
+                    </ListItemButton>
+                ))}
             </List>
+            
+            <Box sx={styles.downloadBtnBox}>
+                <Tooltip title={t("components.SideMenu.downloadResumeBtn.tooltip")}><Button onClick={handleModal} startIcon={<DownloadIcon />} variant="contained">{t("components.SideMenu.downloadResumeBtn.text")}</Button></Tooltip>
+            </Box>
+            <DownloadResumeModal open={isModalOpen} onClose={handleModal} />
 
         </DrawerMUI>
     );

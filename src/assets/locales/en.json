@@ -1,29 +1,32 @@
 {
     "components": {
         "DownloadResumeModal": {
-            "title": "Are you a technical person?",
-            "corpus": "In order to make my website accessible for everyone, I made two versions of my resume, one that uses tech jargon and one that does't. Feel free to download the one that suits you best!",
+            "title": "Are you technical?",
+            "corpus": "I made two versions of my resume: one with tech jargon and one without. This way, everyone can understand my background, no matter their tech know-how. Pick the one you like best and download it!",
             "technicalBtnTxt": "Technical",
             "notTechnicalBtnTxt": "Not technical"
         },
         "Drawer": {
+            "name": "Daniel J. Deutsch",
+            "img": "/src/assets/imgs/profile.jpg",
+            "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
+            "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
+            "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" },
+            "downloadResumeBtn": { "text": "Resume pdf", "tooltip": "Download" },
             "tabs": [
                 { "label": "About", "to": "/" },
                 { "label": "Projects", "to": "/projects" },
-                { "label": "Publications", "to": "/publications" },
                 { "label": "Resume", "to": "/resume" }
             ]
         },
         "Footer": {
-            "about": {
-                "title": "About me",
-                "corpus": ""
-            },
-            "quickLinks": {
-
-            },
+            "initials": "DJD",
+            "links": [
+                { "label": "About", "to": "/" },
+                { "label": "Projects", "to": "/projects" },
+                { "label": "Resume", "to": "/resume" }
+            ],
             "contact": {
-                "title": "Contact",
                 "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
                 "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
                 "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" }
@@ -35,7 +38,6 @@
             "tabs": [
                 { "label": "About", "to": "/" },
                 { "label": "Projects", "to": "/projects" },
-                { "label": "Publications", "to": "/publications" },
                 { "label": "Resume", "to": "/resume" }
             ],
             "languages": [
@@ -70,6 +72,9 @@
         "PublicationsCard": {
             "title": "Publications"
         },
+        "SkillsCard": {
+            "title": "Skills"
+        },
         "VolunteerExperiencesCard": {
             "title": "Volunteer Experience"
         },
@@ -95,6 +100,7 @@
         "ResumePage": {
             "chips": {
                 "basics": "Basics",
+                "skills": "Skills",
                 "educations": "Education",
                 "workExperiences": "Work Experience",
                 "achievements": "Achievements",
@@ -435,37 +441,22 @@
             {
                 "title": "BTG Pactual Code Challenge",
                 "subheader": "1st place",
-                "date": "2021-01-01"
+                "date": "2019-12-01"
             },
             {
                 "title": "Brazilian Robotics Olympiad",
                 "subheader": "Silver medal",
-                "date": "2021-01-01"
+                "date": "2016-05-01"
             },
             {
                 "title": "Kangaroo Mathmathics Olympiad",
                 "subheader": "Silver medal",
-                "date": "2021-01-01"
+                "date": "2016-08-01"
             }
         ],
         "skills": [
-            {
-                "key": "Programming",
-                "value": [
-                    "Python",
-                    "C/C++",
-                    "SQL"
-                ]
-            },
-            {
-                "key": "Languages",
-                "value": [
-                    { "key": "Portuguese", "value": "native", "vector": { "variant": "flags", "name": "brazil" } },
-                    { "key": "English", "value": "fluent - C2", "vector": { "variant": "flags", "name": "usa" } },
-                    { "key": "French", "value": "fluent - C1", "vector": { "variant": "flags", "name": "france" } },
-                    { "key": "Spanish", "value": "intermediary - B2", "vector": { "variant": "flags", "name": "spain" } }
-                ]
-            }
+            { "key": "Programming", "value": "Python, C/C++, SQL." },
+            { "key": "Languages", "value": "Portuguese (native), English (fluent - C2), French (fluent - C1), Spanish (intermediary - B2)" }
         ],
         "techStack": {
             "python": { "label": "Python", "vector": { "variant": "tech-stack", "name": "python" }, "link": "" },
