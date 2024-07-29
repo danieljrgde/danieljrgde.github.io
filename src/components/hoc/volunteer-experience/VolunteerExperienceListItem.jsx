@@ -3,7 +3,7 @@ import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 import { useState } from 'react';
 
-// import volunteerExperienceModal from "@portfolio/components/hoc/work-experience/volunteerExperienceModal";
+import VolunteerExperienceModal from "@portfolio/components/hoc/volunteer-experience/VolunteerExperienceModal";
 
 
 const styles = {
@@ -33,7 +33,7 @@ const VolunteerExperienceListItem = ({ volunteerExperience }) => {
                     action={<Typography variant="body2" color="text.secondary">{dayjs(volunteerExperience.dateStart).format("MMM YYYY")} - {dayjs(volunteerExperience.dateEnd).isValid() ? dayjs(volunteerExperience.dateEnd).format("MMM YYYY") : volunteerExperience.dateEnd}</Typography>}
                 />
             </ListItemButton>
-            {/* <VolunteerExperienceModal open={isModalOpen} onClose={handleModal} volunteerExperience={volunteerExperience} /> */}
+            <VolunteerExperienceModal open={isModalOpen} onClose={handleModal} volunteerExperience={volunteerExperience} />
         </>
     );
 };

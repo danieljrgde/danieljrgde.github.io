@@ -9,10 +9,9 @@ const styles = {
     }
 };
 
-const WorkExperiencesCard = () => {
+const WorkExperiencesCard = ({ workExperiences }) => {
 
     const { t } = useTranslation();
-    const workExperiences = t("data.workExperiences", { returnObjects: true });
 
     return (
         <Card>

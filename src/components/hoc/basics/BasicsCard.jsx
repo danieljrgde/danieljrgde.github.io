@@ -11,10 +11,9 @@ const styles = {
     },
 };
 
-const BasicsCard = () => {
+const BasicsCard = ({ basics }) => {
 
     const { t } = useTranslation();
-    const basics = t("data.basics", { returnObjects: true });
 
     return (
         <Card>

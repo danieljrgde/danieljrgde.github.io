@@ -9,10 +9,9 @@ const styles = {
     }
 };
 
-const VolunteerExperiencesCard = () => {
+const VolunteerExperiencesCard = ({ volunteerExperiences }) => {
 
     const { t } = useTranslation();
-    const volunteerExperiences = t("data.volunteerExperiences", { returnObjects: true });
 
     return (
         <Card>

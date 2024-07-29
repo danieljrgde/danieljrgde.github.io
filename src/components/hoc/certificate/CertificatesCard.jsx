@@ -9,10 +9,9 @@ const styles = {
     }
 };
 
-const CertificatesCard = () => {
+const CertificatesCard = ({ certificates }) => {
 
     const { t } = useTranslation();
-    const certificates = t("data.certificates", { returnObjects: true });
 
     return (
         <Card>

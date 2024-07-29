@@ -1,12 +1,12 @@
 import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
+import dayjs from "dayjs";
 import CloseIcon from "@mui/icons-material/Close";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Vector from "@portfolio/components/base/Vector";
 import { useTranslation } from "react-i18next";
 import LanguageIcon from '@mui/icons-material/Language';
 import { useContext } from "react";
 import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 
 const styles = {
     container: {
@@ -83,7 +83,7 @@ const styles = {
     }
 };
 
-const ProjectModal = ({ open, onClose, project }) => {
+const VolunteerExperienceModal = ({ open, onClose, volunteerExperience }) => {
 
     const { t } = useTranslation();
     const { isTechJargon, setIsTechJargon } = useContext(IsTechJargonContext);
@@ -103,10 +103,10 @@ const ProjectModal = ({ open, onClose, project }) => {
 
                     <Box sx={styles.contentBox}>
                         <Box sx={styles.infoBox}>
-                            <Avatar variant="rounded" sx={styles.avatar} src={project.img} />
+                            <Avatar variant="rounded" sx={styles.avatar} src={volunteerExperience.company.img} />
                             <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1} marginBottom={2}>
-                                <Tooltip title={project.github.title}><Link href={project.github.link} target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
-                                <Tooltip title={project.report.title}><Link href={project.report.link} target="_blank" rel="noreferrer"><InsertDriveFileIcon /></Link></Tooltip>
+                                <Tooltip title={volunteerExperience.company.website.title}><Link href={volunteerExperience.company.website.link} target="_blank" rel="noreferrer"><LanguageIcon /></Link></Tooltip>
+                                <Tooltip title={volunteerExperience.company.linkedin.title}><Link href={volunteerExperience.company.linkedin.link} target="_blank" rel="noreferrer"><LinkedInIcon /></Link></Tooltip>
                             </Stack>
                             <FormControlLabel control={<Switch checked={isTechJargon} onChange={handleTechJargon} />} label={<Typography variant="body2" color="text.secondary">Tech jargon</Typography>} />
                         </Box>
@@ -114,13 +114,18 @@ const ProjectModal = ({ open, onClose, project }) => {
                         <Box sx={styles.detailBox}>
                             <Box sx={styles.headerBox}>
                                 <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={project.github.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{project.title}</Link>
+                                    <Link href={volunteerExperience.company.website.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{volunteerExperience.company.name}</Link>
+                                    <Typography variant="body2" color="text.secondary">{dayjs(volunteerExperience.dateStart).format("MMM YYYY")} - {dayjs(volunteerExperience.dateEnd).isValid() ? dayjs(volunteerExperience.dateEnd).format("MMM YYYY") : volunteerExperience.dateEnd}</Typography>
+                                </Box>
+                                <Box sx={styles.spaceBetweenBox}>
+                                    <Typography variant="body1" color="text.secondary">{volunteerExperience.role}</Typography>
+                                    <Typography variant="body2" color="text.secondary">{volunteerExperience.location}</Typography>
                                 </Box>
                             </Box>
 
-                            <Typography variant="body2" color="text.secondary" gutterBottom>{project.intro}</Typography>
+                            <Typography variant="body2" color="text.secondary" gutterBottom>{volunteerExperience.intro}</Typography>
                             <List sx={styles.bulletPoints}>
-                                {(isTechJargon ? project.technicalBulletPoints : project.bulletPoints).map((bulletPoint, idx) => (
+                                {(isTechJargon ? volunteerExperience.technicalBulletPoints : volunteerExperience.bulletPoints).map((bulletPoint, idx) => (
                                     <ListItem key={idx}>
                                         <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
                                     </ListItem>
@@ -128,7 +133,7 @@ const ProjectModal = ({ open, onClose, project }) => {
                             </List>
                             
                             <Box sx={styles.techStackBox}>
-                                {project.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
+                                {volunteerExperience.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
                             </Box>
                             
                         </Box>
@@ -139,4 +144,4 @@ const ProjectModal = ({ open, onClose, project }) => {
     );
 };
 
-export default ProjectModal;
+export default VolunteerExperienceModal;

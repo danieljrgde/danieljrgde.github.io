@@ -9,10 +9,9 @@ const styles = {
     }
 };
 
-const EducationsCard = () => {
+const EducationsCard = ({ educations }) => {
 
     const { t } = useTranslation();
-    const educations = t("data.educations", { returnObjects: true });
 
     return (
         <Card>

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
-import Layout from "@portfolio/components/base/Layout";
+import Layout from "@portfolio/components/base/layout/Layout";
 import AboutPage from "@portfolio/components/pages/About.page";
 import ProjectsPage from "@portfolio/components/pages/Projects.page";
 import PublicationsPage from "@portfolio/components/pages/Publications.page";

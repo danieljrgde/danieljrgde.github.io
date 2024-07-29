@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "@portfolio/components/base/Navbar";
+import Navbar from "@portfolio/components/base/layout/Navbar";
 import { Box, Container } from "@mui/material";
-import SideMenu from "@portfolio/components/base/SideMenu";
+import SideMenu from "@portfolio/components/base/layout/SideMenu";
+import Footer from "@portfolio/components/base/layout/Footer";
 
 const styles = {
   container: {
@@ -10,6 +11,7 @@ const styles = {
     flexGrow: 1,
     display: "flex",
     flexDirection: "column",
+    minHeight: "calc(100dvh - 104px)"
   },
   boxContainer: {
     display: "flex",
@@ -32,6 +34,7 @@ const Layout = () => {
           </Box>
         </Box>
       </Container>
+      <Footer />
     </>
   );
 };

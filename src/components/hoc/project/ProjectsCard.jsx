@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, Grid, Link, List, Typography } from "@mui/material"
 
-import AchievementListItem from "@portfolio/components/hoc/achievement/AchievementListItem";
+import ProjectListItem from "@portfolio/components/hoc/project/ProjectListItem";
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -9,7 +9,7 @@ const styles = {
     }
 };
 
-const AchievementsCard = ({ achievements }) => {
+const ProjectsCard = ({ projects }) => {
 
     const { t } = useTranslation();
 
@@ -17,15 +17,15 @@ const AchievementsCard = ({ achievements }) => {
         <Card>
             <CardHeader
                 sx={styles.cardHeader}
-                title={t("components.AchievementsCard.title")}
+                title={t("components.ProjectsCard.title")}
             />
             <CardContent>
                 <List>
-                    {achievements.map((achievement, idx) => <AchievementListItem key={idx} achievement={achievement} />)}
+                    {projects.map((project, idx) => <ProjectListItem key={idx} project={project} />)}
                 </List>           
             </CardContent>
         </Card>
     );
 };
 
-export default AchievementsCard;
+export default ProjectsCard;

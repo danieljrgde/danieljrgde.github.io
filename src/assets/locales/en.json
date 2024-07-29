@@ -1,15 +1,35 @@
 {
     "components": {
+        "DownloadResumeModal": {
+            "title": "Are you a technical person?",
+            "corpus": "In order to make my website accessible for everyone, I made two versions of my resume, one that uses tech jargon and one that does't. Feel free to download the one that suits you best!",
+            "technicalBtnTxt": "Technical",
+            "notTechnicalBtnTxt": "Not technical"
+        },
         "Drawer": {
             "tabs": [
                 { "label": "About", "to": "/" },
                 { "label": "Projects", "to": "/projects" },
                 { "label": "Publications", "to": "/publications" },
                 { "label": "Resume", "to": "/resume" }
-            ],
-            "contactMe": "Feel free to contact me in any of my social!"
+            ]
         },
-        "Footer": {},
+        "Footer": {
+            "about": {
+                "title": "About me",
+                "corpus": ""
+            },
+            "quickLinks": {
+
+            },
+            "contact": {
+                "title": "Contact",
+                "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
+                "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
+                "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" }
+            },
+            "copyrights": "Daniel J. Deutsch. All rights reserved."
+        },
         "Navbar": {
             "initials": "DJD",
             "tabs": [
@@ -25,7 +45,12 @@
             ]
         },
         "SideMenu": {
-            "contactMe": "Feel free to contact me in any of my social!"
+            "name": "Daniel J. Deutsch",
+            "img": "/src/assets/imgs/profile.jpg",
+            "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
+            "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
+            "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" },
+            "downloadResumeBtn": { "text": "Resume pdf", "tooltip": "Download" }
         },
         "AchievementsCard": {
             "title": "Achievements"
@@ -67,7 +92,17 @@
             "title": "Projects",
             "subheader": ""
         },
-        "ResumePage": {}
+        "ResumePage": {
+            "chips": {
+                "basics": "Basics",
+                "educations": "Education",
+                "workExperiences": "Work Experience",
+                "achievements": "Achievements",
+                "certificates": "Certificates",
+                "volunteerExperiences": "Volunteer Experience",
+                "projects": "Projects"
+            }
+        }
     },
     "data": {
         "basics": [
@@ -137,11 +172,11 @@
                     "Authored a quarterly internal newsletter detailing the latest advancements of AI and internal projects, making complex concepts and information accessible to a broad audience.",
                     "Actively collaborated on projects with technically diverse teams, implementing AI solutions for cross-functional projects."
                 ],
+                "technicalBulletPoints": [
+                    "Technical"
+                ],
                 "techStack": [
                     "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
-                ],
-                "keywords": [
-                    "Deep Learning", "Generative AI", "Natural Language Processing", "LLM", "RAG", "Recommendation System", "Transformers", "Prompt Engineering", "Contrastive Learning", "Web Scraping", "Data Enhancement", "Data Cleaning", "Model Evaluation", "BERT", "CLIP", "Llama"
                 ]
             },
             {
@@ -161,11 +196,11 @@
                     "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
                     "Engineered a custom relevance metric combining feedback frequency and severity, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
-                "techStack": [
-                    "python", "scikit-learn", "openai", "jupyter", "pandas", "git", "docker"
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
-                    "Machine Learning", "Topic Modeling", "Text Classification", "Natural Language Processing", "Data Processing", "Parallel Computing", "Model Evaluation", "API Integration"
+                "techStack": [
+                    "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
                 ]
             },
             {
@@ -186,11 +221,11 @@
                     "Investigated the application of anomaly detection algorithms on live market data, paving the way for more robust risk management strategies and improved market surveillance capabilities.",
                     "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
                 ],
+                "technicalBulletPoints": [
+                    "Technical"
+                ],
                 "techStack": [
                     "python", "tensorflow", "transformers", "pyspark", "jupyter", "grpc", "git", "docker"
-                ],
-                "keywords": [
-                    "Deep Learning", "Time Series Analysis", "Anomaly Detection", "Natural Language Processing", "Sentiment Analysis", "Variational Autoencoder", "Big Data", "Market Analysis", "Distributed Computing"
                 ]
             },
             {
@@ -210,11 +245,11 @@
                     "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
                 ],
+                "technicalBulletPoints": [
+                    "Technical"
+                ],
                 "techStack": [
                     "Python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
-                ],
-                "keywords": [
-                    "Big Data", "Cloud Computing", "Workflow Orchestration", "Data Processing", "Data Integrity", "Near-Real-time Data Monitoring", "CI/CD", "Distributed Computing", "Data Warehousing", "SQL"
                 ]
             }
         ],
@@ -235,11 +270,11 @@
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
+                "technicalBulletPoints": [
+                    "Technical"
+                ],
                 "techStack": [
                     "python", "javascript", "git", "mysql"
-                ],
-                "keywords": [
-                    "Team Leadership", "Software Development", "Scrum", "Agile"
                 ]
             },
             {
@@ -257,10 +292,10 @@
                 "bulletPoints": [
                     ""
                 ],
-                "techStack": [
-                    ""
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
+                "techStack": [
                     ""
                 ]
             }
@@ -268,43 +303,51 @@
         "certificates": [
             {
                 "title": "Structuring Machine Learning Projects",
-                "img": "/src/assets/imgs/certificates/struct-ml.jpg",
+                "img": "/src/assets/imgs/certificate/struct-ml.jpg",
                 "description": "",
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/deeplearningai" }
                 },
-                "dateCompletion": "January 2024",
+                "dateCompletion": "2024-01-29",
                 "certificateUrl": ""
             },
 
             {
                 "title": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
-                "img": "/src/assets/imgs/certificates/improve-nn.jpg",
+                "img": "/src/assets/imgs/certificate/improve-nn.jpg",
                 "description": "",
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/deeplearningai" }
                 },
-                "dateCompletion": "",
+                "dateCompletion": "2023-11-14",
                 "certificateUrl": ""
             },
             {
                 "title": "Neural Networks and Deep Learning",
-                "img": "/src/assets/imgs/certificates/nn-and-dl.jpg",
+                "img": "/src/assets/imgs/certificate/nn-and-dl.jpg",
                 "description": "",
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/deeplearningai" }
                 },
-                "dateCompletion": "",
+                "dateCompletion": "2023-10-27",
                 "certificateUrl": ""
             },
             {
                 "title": "Foundations of Project Management",
-                "img": "/src/assets/imgs/certificates/foundations-pm.jpg",
+                "img": "/src/assets/imgs/certificate/foundations-pm.jpg",
                 "description": "",
                 "institution": {
-                    "name": "Google"
+                    "name": "Google",
+                    "website": { "title": "Website", "link": "https://www.google.com/" },
+                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/google" }
                 },
-                "dateCompletion": "",
+                "dateCompletion": "2022-12-14",
                 "certificateUrl": ""
             }
         ],
@@ -312,76 +355,68 @@
             {
                 "title": "Effects of Social Media Bots on the Crypto Market",
                 "img": "/src/assets/imgs/project/bot-market-effects.jpg",
-                "links": [
-                    { "key": "GitHub",  "value": "" },
-                    { "key": "Report",  "value": "" }
-                ],
+                "report": { "title": "Report", "link": "" },
+                "github": { "title": "GitHub", "link": "" },
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
-                "techStack": [
-                    ""
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
+                "techStack": [
                     ""
                 ]
             },
             {
-                "title": "Does Amazon use user Information for Product Recommendation?",
+                "title": "Amazon's Secrets: User Data for Recommendations and Pricing?",
                 "img": "/src/assets/imgs/project/amzn-recommendation.jpg",
-                "links": [
-                    { "key": "GitHub",  "value": "" },
-                    { "key": "Report",  "value": "" }
-                ],
+                "report": { "title": "Report", "link": "" },
+                "github": { "title": "GitHub", "link": "" },
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
-                "techStack": [
-                    ""
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
+                "techStack": [
                     ""
                 ]
             },
             {
                 "title": "Effects of the Interest Rate on the Brazilian Stock Market",
                 "img": "/src/assets/imgs/project/interest-rate-br.jpg",
-                "links": [
-                    { "key": "GitHub",  "value": "" },
-                    { "key": "Report",  "value": "" }
-                ],
+                "report": { "title": "Report", "link": "" },
+                "github": { "title": "GitHub", "link": "" },
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
-                "techStack": [
-                    ""
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
+                "techStack": [
                     ""
                 ]
             },
             {
                 "title": "Economic Incentives of Yelp's Fake Reviews",
                 "img": "/src/assets/imgs/project/yelp-fake-review.jpg",
-                "links": [
-                    { "key": "GitHub",  "value": "" },
-                    { "key": "Report",  "value": "" }
-                ],
+                "report": { "title": "Report", "link": "" },
+                "github": { "title": "GitHub", "link": "" },
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
-                "techStack": [
-                    ""
+                "technicalBulletPoints": [
+                    "Technical"
                 ],
-                "keywords": [
+                "techStack": [
                     ""
                 ]
             }
@@ -453,7 +488,8 @@
             "aws-lambda": { "label": "AWS Lambda", "vector": { "variant": "tech-stack", "name": "aws-lambda" }, "link": "" },
             "aws-s3": { "label": "AWS S3", "vector": { "variant": "tech-stack", "name": "aws-s3" }, "link": "" },
             "aws-emr": { "label": "AWS EMR", "vector": { "variant": "tech-stack", "name": "aws-emr" }, "link": "" },
-            "aws-rds": { "label": "AWS RDS", "vector": { "variant": "tech-stack", "name": "aws-rds" }, "link": "" }
+            "aws-rds": { "label": "AWS RDS", "vector": { "variant": "tech-stack", "name": "aws-rds" }, "link": "" },
+            "tensorflow": { "label": "TensorFlow", "vector": { "variant": "tech-stack", "name": "tensorflow" }, "link": "" }
         }
     }
 }

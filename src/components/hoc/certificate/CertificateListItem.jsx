@@ -1,6 +1,7 @@
 import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
-
-import { useTranslation } from 'react-i18next';
+import dayjs from 'dayjs';
+import CertificateModal from '@portfolio/components/hoc/certificate/CertificateModal';
+import { useState } from "react";
 
 const styles = {
     cardHeader: {
@@ -11,18 +12,25 @@ const styles = {
 
 const CertificateListItem = ({ certificate }) => {
 
-    const { t } = useTranslation();
+    const [ isModalOpen, setIsModalOpen ] = useState(false);
+
+    const handleModal = (ev) => {
+        setIsModalOpen(prev => !prev);
+    };
 
     return (
-        <ListItemButton>
-            <CardHeader
-                sx={styles.cardHeader}
-                avatar={<Avatar variant="rounded" src={certificate.img} />}
-                title={certificate.title}
-                subheader={certificate.institution.name}
-                action={<Typography variant="body2" color="text.secondary">{certificate.dateCompletion}</Typography>}
-            />
-        </ListItemButton>
+        <>
+            <ListItemButton onClick={handleModal}>
+                <CardHeader
+                    sx={styles.cardHeader}
+                    avatar={<Avatar variant="rounded" src={certificate.img} />}
+                    title={certificate.title}
+                    subheader={certificate.institution.name}
+                    action={<Typography variant="body2" color="text.secondary">{dayjs(certificate.dateCompletion).format("MMM YYYY")}</Typography>}
+                />
+            </ListItemButton>
+            <CertificateModal open={isModalOpen} onClose={handleModal} certificate={certificate} />
+        </>
     );
 };
 
