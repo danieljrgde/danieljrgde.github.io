@@ -58,7 +58,7 @@ const Navbar = () => {
 
           <>
             <IconButton onClick={handleDrawer} sx={styles.drawerMenuIcon}>
-              <MenuIcon sx={{ color: '#ffffff' }} />
+              <MenuIcon htmlColor="white" />
             </IconButton>
             <Link component={RouterLink} to="/" underline="none" variant="h6" color="white" fontFamily="cursive" fontWeight="bold" sx={{ cursor: 'pointer' }}>{t("components.Navbar.initials")}</Link>
             <Drawer open={openDrawer} onClose={handleDrawer} />
@@ -71,7 +71,7 @@ const Navbar = () => {
           <>
             <Tooltip title="Translate">
               <IconButton onClick={handleLanguageMenu}>
-                <TranslateIcon sx={{ color: '#ffffff' }} />
+                <TranslateIcon htmlColor="white" />
               </IconButton>
             </Tooltip>
             <Menu
