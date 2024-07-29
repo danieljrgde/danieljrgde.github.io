@@ -84,9 +84,10 @@
         "AboutPage": {
             "greetings": "Hello!",
             "paragraphs": [
-                "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
-                "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
-                "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
+                "I'm Daniel, an AI enthusiast with a strong background in deep learning, particularly in Natural Language Processing (NLP). My passion for artificial intelligence drives me to continuously explore and implement new practices in this ever-evolving field.",
+                "Throughout my career, I've had the opportunity to work on numerous projects within the domain of NLP. I thrive on learning and am always eager to understand and apply the latest advancements in AI. Being surrounded by ambitious and talented individuals is a constant source of inspiration for me, as I believe we can learn immensely from each other.",
+                "When I'm not absorbed by the world of AI, you'll likely find me on the tennis court or playing football. Recently, I've also developed a love for hiking. There is no going wrong with sipping coffee or grabbing a beer with friends either!",
+                "I'm always eager to connect with fellow AI enthusiasts, researchers, and professionals. Whether you're looking to collaborate on cutting-edge AI projects or simply want to geek out about the latest in machine learning, don't hesitate to reach out!"
             ]
         },
         "ProjectsPage": {
@@ -179,7 +180,13 @@
                     "Actively collaborated on projects with technically diverse teams, implementing AI solutions for cross-functional projects."
                 ],
                 "technicalBulletPoints": [
-                    "Technical"
+                    "Researched and developed a multimodal transformer-based network for learning outfit-level representations, achieving 84% accuracy in FITB and 96% AUC in garment compatibility prediction.",
+                    "Engineered a hybrid attention mechanism for the transformer decoder, enhancing the model's integration of outfit-level text descriptions and garment features for more accurate and context-aware recommendations.",
+                    "Applied curriculum learning strategies for the outfit ranking loss, substantially improving recall at top-k metrics.",
+                    "Reduced overfitting by expanding the training set with 60k+ web-scraped samples, enhanced via LLaVA's image-to-text model and CLIP's zero-shot classification, improving model generalization and performance.",
+                    "Developed a Retrieval Augmented Generation (RAG) system to improve the responses of large language models in the field of Environmental, Social, and Governance data.",
+                    "Actively collaborated on cross-functional projects, working with various teams to apply AI to different business areas.",
+                    "Authored a quarterly internal newsletter detailing the latest advancements and internal projects in AI, making complex concepts and information accessible to a broad audience."
                 ],
                 "techStack": [
                     "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
@@ -203,7 +210,9 @@
                     "Engineered a custom relevance metric combining feedback frequency and severity, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
                 "technicalBulletPoints": [
-                    "Technical"
+                    "Designed a topic modeling algorithm to categorize customer feedback and identify company's main points of improvement, resulting in a 30% increase in valuable KPIs.",
+                    "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
+                    "Engineered a custom relevance scoring metric combining insight frequency and severity metrics, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
                 "techStack": [
                     "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
@@ -228,7 +237,10 @@
                     "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
                 ],
                 "technicalBulletPoints": [
-                    "Technical"
+                    "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
+                    "Implemented a Variational Autoencoder to detect 13k bot accounts in social media platforms, allowing an in-depth analysis of their influence on the crypto market.",
+                    "Investigated the application of anomaly detection algorithms on live market data, paving the way for more robust risk management strategies and improved market surveillance capabilities.",
+                    "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
                 ],
                 "techStack": [
                     "python", "tensorflow", "transformers", "pyspark", "jupyter", "grpc", "git", "docker"
@@ -252,7 +264,10 @@
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
                 ],
                 "technicalBulletPoints": [
-                    "Technical"
+                    "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
+                    "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
+                    "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
+
                 ],
                 "techStack": [
                     "Python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
@@ -277,7 +292,8 @@
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
                 "technicalBulletPoints": [
-                    "Technical"
+                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
+                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
                 ],
                 "techStack": [
                     "python", "javascript", "git", "mysql"
@@ -294,16 +310,12 @@
                 "location": "São Paulo, Brazil",
                 "dateStart": "2019-04-01",
                 "dateEnd": "2020-09-01",
-                "intro": "",
+                "intro": "The asset fund Amigos da Poli is an association that aims to raise donations and apply the resources from this fundraising to projects at the Escola Politécnica da USP.",
                 "bulletPoints": [
-                    ""
+                    "Assisted in the development and implementation of capital-raising strategies for the financing of engineering projects."
                 ],
-                "technicalBulletPoints": [
-                    "Technical"
-                ],
-                "techStack": [
-                    ""
-                ]
+                "technicalBulletPoints": [],
+                "techStack": []
             }
         ],
         "certificates": [
@@ -365,8 +377,11 @@
                 "github": { "title": "GitHub", "link": "" },
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
-                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
-                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                    "Developed a custom data collection script to gather over 6 million market-related social media posts and stock price data for the top 50 cryptocurrencies by market cap.",
+                    "Classified users into two categories (bot or human) based on their post content using an anomaly detection architecture. This architecture leveraged a Variational Autoencoder and the k-Nearest Neighbors algorithm, accounting for the unbalanced nature of the data.",
+                    "Conducted sentiment analysis on social media content using BERT embeddings as input for the neural network, enabling the classification of the emotional tone of posts.",
+                    "Proposed a custom engagement metric based on the content's metadata.",
+                    "Analyzed the correlation between the custom engagement metric and the price fluctuations of the cryptocurrencies."
                 ],
                 "technicalBulletPoints": [
                     "Technical"

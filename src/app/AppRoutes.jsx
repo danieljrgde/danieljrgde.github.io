@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import AboutPage from "@portfolio/components/pages/About.page";
 import { BrowserRouter } from "react-router-dom";
@@ -16,6 +16,7 @@ const AppRoutes = () => {
                     <Route path="projects" element={<ProjectsPage />} />
                     {/* <Route path="publications" element={<PublicationsPage />} /> */}
                     <Route path="resume" element={<ResumePage />} />
+                    <Route path="*" element={<Navigate to="/" />} />
                 </Route>
             </Routes>
         </BrowserRouter>
