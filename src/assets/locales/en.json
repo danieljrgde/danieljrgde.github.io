@@ -85,7 +85,7 @@
             "greetings": "Hello!",
             "paragraphs": [
                 "I'm Daniel, an AI enthusiast with a strong background in deep learning, particularly in Natural Language Processing (NLP). My passion for artificial intelligence drives me to continuously explore and implement new practices in this ever-evolving field.",
-                "Throughout my career, I've had the opportunity to work on numerous projects within the domain of NLP. I thrive on learning and am always eager to understand and apply the latest advancements in AI. Being surrounded by ambitious and talented individuals is a constant source of inspiration for me, as I believe we can learn immensely from each other.",
+                "Throughout my career, I've had the opportunity to work on numerous projects. I thrive on learning and am always eager to understand and apply the latest advancements in AI. Being surrounded by ambitious and talented individuals is a constant source of inspiration for me, as I am all in for sharing knowledge.",
                 "When I'm not absorbed by the world of AI, you'll likely find me on the tennis court or playing football. Recently, I've also developed a love for hiking. There is no going wrong with sipping coffee or grabbing a beer with friends either!",
                 "I'm always eager to connect with fellow AI enthusiasts, researchers, and professionals. Whether you're looking to collaborate on cutting-edge AI projects or simply want to geek out about the latest in machine learning, don't hesitate to reach out!"
             ]
@@ -446,27 +446,47 @@
             {
                 "title": "Pantheon-Sorbonne's Best Master Thesis Award",
                 "subheader": "",
-                "date": "2022-09-01"
+                "date": "2022-09-01",
+                "paragraphs": [
+                    ""
+                ]
             },
             {
                 "title": "Coordination for the Improvement of Higher Education Personnel Scholarship",
                 "subheader": "",
-                "date": "2021-01-01"
+                "date": "2021-01-01",
+                "paragraphs": [
+                    "The Brafitec (Brasil-France Ingénieurs Technologie) program, established through a partnership between Brazil's CAPES and France's CDEFI, fosters collaboration between engineering students and researchers in both countries. Launched in 2002-2003, it aims to create sustainable partnerships by facilitating student and faculty exchanges, aligning curricula, and promoting the mutual recognition of academic credits.",
+                    "Key objectives of the Brafitec program include developing double-degree opportunities, supporting internships in partner countries, and enhancing language and intercultural skills. The program supports joint projects between Brazilian and French institutions, encouraging innovation, industry collaboration, and academic excellence.",
+                    "Selection for the Brafitec scholarship is competitive and based on student performance, ensuring that participants are highly motivated and academically accomplished. I'm proud to have been awarded the Brafitec scholarship, which enabled me to participate in this enriching exchange program. This experience has broadened my academic and cultural perspectives and strengthened my commitment to international collaboration in engineering education."
+                ]
             },
             {
                 "title": "BTG Pactual Code Challenge",
                 "subheader": "1st place",
-                "date": "2019-12-01"
+                "date": "2019-12-01",
+                "paragraphs": [
+                    "BTG Pactual Code is a programming challenge organized by the investment bank BTG Pactual, which focuses on a different theme each year. In 2019, the theme was Open Banking. The challenge involved three stages: an online registration process that requires solving a problem proposed by the bank's employees, the development of a project based on the Open Banking theme, and a presentation of the project to a judging panel consisting of partners of the bank.",
+                    "My team was awarded first place by the jury for the development of a mobile application that centralized the user's finances using API's from different banks, allowing them to analyze their expenses and perform various banking operations, such as money transfers."
+                ]
             },
             {
                 "title": "Brazilian Robotics Olympiad",
                 "subheader": "Silver medal",
-                "date": "2016-05-01"
+                "date": "2016-05-01",
+                "paragraphs": [
+                    "The Brazilian Robotics Olympiad (OBR) is a competition that combines practical and theoretical challenges to enhance learning through robotics. In the practical competitions, participants build and program robots, while the theoretical exams cover subjects like mathematics, physics, computer science, and engineering principles. This approach demonstrates how academic knowledge can be applied to solve real-world problems through technology.",
+                    "I'm pleased to share that I was awarded a silver medal in the OBR. This experience has fueled my interest in robotics and inspired me to keep exploring the field of technology."
+                ]
             },
             {
                 "title": "Kangaroo Mathmathics Olympiad",
                 "subheader": "Silver medal",
-                "date": "2016-08-01"
+                "date": "2016-08-01",
+                "paragraphs": [
+                    "The Mathematical Kangaroo, also known as Kangourou sans Frontières, is an international competition held in 92 countries. It spans twelve levels of participation, from grade 1 to grade 12, and emphasizes logical thinking and the combination of mathematical concepts. The competition covers a wide range of topics, encouraging creativity, problem-solving skills, and a deep appreciation for mathematics.",
+                    "I'm pleased to share that I was awarded a silver medal in the Mathematical Kangaroo competition. This experience has deepened my appreciation for mathematics and encouraged me to continue developing my problem-solving skills."
+                ]
             }
         ],
         "skills": [

@@ -79,12 +79,6 @@ const styles = {
 const AchievementModal = ({ open, onClose, achievement }) => {
 
     const { t } = useTranslation();
-    const { isTechJargon, setIsTechJargon } = useContext(IsTechJargonContext);
-    const techStackMap = t("data.techStack", { returnObjects: true });
-
-    const handleTechJargon = (ev) => {
-        setIsTechJargon(ev.target.checked);
-    };
 
     return (
         <Modal open={open} onClose={onClose}>
@@ -94,31 +88,18 @@ const AchievementModal = ({ open, onClose, achievement }) => {
                         <IconButton onClick={onClose}><CloseIcon /></IconButton>
                     </Box>
 
-                        <Box sx={styles.detailBox}>
-                            <Box sx={styles.headerBox}>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Typography variant="h5" fontWeight="bold">{achievement.title}</Typography>
-                                    <Typography variant="body2" color="text.secondary">{dayjs(achievement.date).format("MMM YYYY")}</Typography>
-                                </Box>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link underline="none" variant="body1" color="text.secondary">{achievement.subheader}</Link>
-                                </Box>
+                    <Box sx={styles.detailBox}>
+                        <Box sx={styles.headerBox}>
+                            <Box sx={styles.spaceBetweenBox}>
+                                <Typography variant="h5" fontWeight="bold">{achievement.title}</Typography>
+                                <Typography variant="body2" color="text.secondary">{dayjs(achievement.date).format("MMM YYYY")}</Typography>
                             </Box>
-
-                            {/* <Typography variant="body2" color="text.secondary" gutterBottom>{achievement.intro}</Typography>
-                            <List sx={styles.bulletPoints}>
-                                {(isTechJargon ? achievement.technicalBulletPoints : achievement.bulletPoints).map((bulletPoint, idx) => (
-                                    <ListItem key={idx}>
-                                        <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
-                                    </ListItem>
-                                ))}
-                            </List>
-                            
-                            <Box sx={styles.techStackBox}>
-                                {achievement.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
-                            </Box> */}
-                            
+                            <Box sx={styles.spaceBetweenBox}>
+                                <Link underline="none" variant="body1" color="text.secondary">{achievement.subheader}</Link>
+                            </Box>
                         </Box>
+                        {achievement.paragraphs.map((paragraph, idx) => <Typography key={idx} variant="body2" color="text.secondary" paragraph>{paragraph}</Typography>)}
+                    </Box>
                 </CardContent>
             </Card>
         </Modal>
