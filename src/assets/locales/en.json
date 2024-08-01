@@ -4,7 +4,17 @@
             "title": "Are you technical?",
             "corpus": "I made two versions of my resume: one with tech jargon and one without. This way, everyone can understand my background, no matter their tech know-how. Pick the one you like best and download it!",
             "technicalBtnTxt": "Technical",
-            "notTechnicalBtnTxt": "Not technical"
+            "notTechnicalBtnTxt": "Not technical",
+            "resume": {
+                "en": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
+                },
+                "fr": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Not Technical.pdf"
+                }
+            }
         },
         "Drawer": {
             "name": "Daniel J. Deutsch",
@@ -448,7 +458,7 @@
             {
                 "title": "Effects of Social Media Bots on the Crypto Market",
                 "img": "/src/assets/imgs/project/bot-market-effects.jpg",
-                "report": { "title": "Report", "link": "/docs/certificate/bot-market-effects.pdf" },
+                "report": { "title": "Report", "link": "/docs/project/bot-market-effects.pdf" },
                 "github": { "title": "GitHub", "link": "" },
                 "intro": "Conducted an in-depth research project investigating the influence of social media bots on cryptocurrency markets using advanced AI techniques and statistical analysis.",
                 "bulletPoints": [
@@ -466,13 +476,13 @@
                     "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
                 ],
                 "techStack": [
-                    "python", "jupyter", "transformers", "tensorflow", "statsmodels", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "nltk", "wordcloud", "requests", "multiprocessing"
+                    "python", "jupyter", "transformers", "tensorflow", "statsmodels", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "nltk", "multiprocessing"
                 ]
             },
             {
                 "title": "Amazon's Secrets: User Data for Recommendations and Pricing?",
                 "img": "/src/assets/imgs/project/amzn-recommendation.jpg",
-                "report": { "title": "Report", "link": "/docs/certificate/amzn-recommendation.pdf" },
+                "report": { "title": "Report", "link": "/docs/project/amzn-recommendation.pdf" },
                 "github": { "title": "GitHub", "link": "" },
                 "intro": "Conducted a comprehensive research project to investigate Amazon's personalization strategies for product recommendations and pricing, utilizing web scraping, statistical analysis, and machine learning techniques.",
                 "bulletPoints": [
@@ -492,13 +502,13 @@
                     "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
                 ],
                 "techStack": [
-                    "python", "pandas", "numpy", "scipy", "scikit-learn", "matplotlib", "multiprocessing", "jupyter", "bash", "requests", "beautifulsoup"
+                    "python", "pandas", "numpy", "scipy", "scikit-learn", "matplotlib", "multiprocessing", "jupyter", "bash", "beautifulsoup"
                 ]
             },
             {
                 "title": "Effects of the Interest Rate on the Brazilian Stock Market",
                 "img": "/src/assets/imgs/project/interest-rate-br.jpg",
-                "report": { "title": "Report", "link": "/docs/certificate/interest-rate-br.pdf" },
+                "report": { "title": "Report", "link": "/docs/project/interest-rate-br.pdf" },
                 "github": { "title": "GitHub", "link": "" },
                 "intro": "Conducted an in-depth research project analyzing the impact of interest rates on various sectors of the Brazilian stock market using advanced time series analysis techniques.",
                 "bulletPoints": [
@@ -518,13 +528,13 @@
                     "Provided valuable insights into the complex dynamics of Brazil's financial markets through rigorous statistical analysis and modeling."
                 ],
                 "techStack": [
-                    "python", "jupyter", "pandas", "numpy", "matplotlib", "seaborn", "statsmodels", "scikit-learn", "requests", "yfinance"
+                    "python", "jupyter", "pandas", "numpy", "matplotlib", "seaborn", "statsmodels", "scikit-learn", "yfinance"
                 ]
             },
             {
                 "title": "Economic Incentives of Yelp's Fake Reviews",
                 "img": "/src/assets/imgs/project/yelp-fake-review.jpg",
-                "report": { "title": "Report", "link": "/docs/certificate/yelp-fake-review.pdf" },
+                "report": { "title": "Report", "link": "/docs/project/yelp-fake-review.pdf" },
                 "github": { "title": "GitHub", "link": "" },
                 "intro": "Conducted a comprehensive research project analyzing restaurant competition and review fraud on Yelp in Paris using advanced data science and natural language processing techniques.",
                 "bulletPoints": [
@@ -544,7 +554,7 @@
                     "Combined web scraping, statistical analysis, and natural language processing to provide a comprehensive view of restaurant review patterns and potential fraudulent activities."
                 ],
                 "techStack": [
-                    "python", "jupyter", "numpy", "pandas", "statsmodels", "matplotlib", "seaborn", "plotly", "requests"
+                    "python", "jupyter", "numpy", "pandas", "statsmodels", "matplotlib", "seaborn", "plotly"
                 ]
             }
         ],
@@ -632,8 +642,6 @@
             "matplotlib": { "label": "Matplotlib", "link": "https://matplotlib.org/" },
             "seaborn": { "label": "Seaborn", "link": "https://seaborn.pydata.org/" },
             "nltk": { "label": "NLTK", "link": "https://www.nltk.org/" },
-            "wordcloud": { "label": "WordCloud", "link": "https://github.com/amueller/word_cloud" },
-            "requests": { "label": "Requests", "link": "https://docs.python-requests.org/" },
             "multiprocessing": { "label": "Multiprocessing", "link": "https://docs.python.org/3/library/multiprocessing.html" },
             "scipy": { "label": "SciPy", "link": "https://www.scipy.org/" },
             "bash": { "label": "Bash", "link": "https://www.gnu.org/software/bash/" },

@@ -30,7 +30,14 @@ const styles = {
 
 const DownloadResumeModal = ({ open, onClose }) => {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const resumePaths = t("components.DownloadResumeModal.resume", { returnObjects: true });
+
+    const handleBtn = (technical) => {
+        const key = technical ? "technical" : "notTechnical";
+        const resumePath = resumePaths[i18n.language][key];
+        window.open(resumePath, '_blank');
+    };
 
     return (
         <Modal open={open} onClose={onClose}>
@@ -43,8 +50,8 @@ const DownloadResumeModal = ({ open, onClose }) => {
                     <Typography variant="body2" color="text.secondary">{t("components.DownloadResumeModal.corpus")}</Typography>
                 </CardContent>
                 <CardActions>
-                    <Button variant="outlined" fullWidth>{t("components.DownloadResumeModal.notTechnicalBtnTxt")}</Button>
-                    <Button variant="contained" fullWidth>{t("components.DownloadResumeModal.technicalBtnTxt")}</Button>
+                    <Button onClick={() => handleBtn(false)} variant="outlined" fullWidth>{t("components.DownloadResumeModal.notTechnicalBtnTxt")}</Button>
+                    <Button onClick={() => handleBtn(true)} variant="contained" fullWidth>{t("components.DownloadResumeModal.technicalBtnTxt")}</Button>
                 </CardActions>
             </Card>
         </Modal>
