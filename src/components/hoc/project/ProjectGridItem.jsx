@@ -1,6 +1,7 @@
 import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
 
 import ProjectModal from "@portfolio/components/hoc/project/ProjectModal";
+import PropTypes from 'prop-types';
 import { useState } from "react";
 
 const styles = {
@@ -36,6 +37,25 @@ const ProjectGridItem = ({ project }) => {
             <ProjectModal open={openModal} onClose={handleModal} project={project} />
         </Card>
     );
+};
+
+ProjectGridItem.propTypes = {
+    project: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        img: PropTypes.string.isRequired,
+        report: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired,
+        github: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string
+        }).isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
+    }).isRequired
 };
 
 export default ProjectGridItem;

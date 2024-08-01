@@ -1,5 +1,7 @@
 import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
+
 import EducationModal from '@portfolio/components/hoc/education/EducationModal';
+import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import { useState } from "react";
 
@@ -34,6 +36,29 @@ const EducationListItem = ({ education }) => {
             <EducationModal open={isModalOpen} onClose={handleModal} education={education} />
         </>
     );
+};
+
+EducationListItem.propTypes = {
+    education: PropTypes.shape({
+        degree: PropTypes.string.isRequired,
+        major: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        coursework: PropTypes.arrayOf(PropTypes.string).isRequired,
+        institution: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired,
+            linkedin: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string
+            }).isRequired
+        }).isRequired,
+        dateStart: PropTypes.string.isRequired,
+        dateEnd: PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default EducationListItem;

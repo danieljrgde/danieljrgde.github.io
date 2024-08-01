@@ -1,8 +1,8 @@
 import { Box, Card, CardContent, IconButton, Link, Modal, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
+import PropTypes from 'prop-types';
 import dayjs from "dayjs";
-import { useTranslation } from "react-i18next";
 
 const styles = {
     container: {
@@ -15,7 +15,6 @@ const styles = {
         maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
-        maxWidth: "100%",
     },
     closeBox: {
         display: "flex",
@@ -32,9 +31,10 @@ const styles = {
         flexShrink: 0,
     },
     detailBox: {
-        overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
-        paddingBottom: 2,
+    },
+    innerDetailBox: {
+        overflow: { xs: "visible", md: "auto" },
         height: { md: "100%" },
     },
     avatar: {
@@ -87,21 +87,34 @@ const AchievementModal = ({ open, onClose, achievement }) => {
                     </Box>
 
                     <Box sx={styles.detailBox}>
-                        <Box sx={styles.headerBox}>
-                            <Box sx={styles.spaceBetweenBox}>
-                                <Typography variant="h5" fontWeight="bold">{achievement.title}</Typography>
-                                <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(achievement.date).format("MMM YYYY")}</Typography>
+                        <Box sx={styles.innerDetailBox}>
+                            <Box sx={styles.headerBox}>
+                                <Box sx={styles.spaceBetweenBox}>
+                                    <Typography variant="h5" fontWeight="bold">{achievement.title}</Typography>
+                                    <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(achievement.date).format("MMM YYYY")}</Typography>
+                                </Box>
+                                <Box sx={styles.spaceBetweenBox}>
+                                    <Link underline="none" variant="body1" color="text.secondary">{achievement.subheader}</Link>
+                                </Box>
                             </Box>
-                            <Box sx={styles.spaceBetweenBox}>
-                                <Link underline="none" variant="body1" color="text.secondary">{achievement.subheader}</Link>
-                            </Box>
+                            {achievement.paragraphs.map((paragraph, idx) => <Typography key={idx} variant="body2" color="text.secondary" paragraph>{paragraph}</Typography>)}
                         </Box>
-                        {achievement.paragraphs.map((paragraph, idx) => <Typography key={idx} variant="body2" color="text.secondary" paragraph>{paragraph}</Typography>)}
                     </Box>
                 </CardContent>
             </Card>
         </Modal>
     );
+};
+
+AchievementModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    achievement: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        subheader: PropTypes.string,
+        date: PropTypes.string.isRequired,
+        paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired
+    }).isRequired
 };
 
 export default AchievementModal;

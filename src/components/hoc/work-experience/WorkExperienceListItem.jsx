@@ -1,5 +1,6 @@
 import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
 
+import PropTypes from 'prop-types';
 import WorkExperienceModal from "@portfolio/components/hoc/work-experience/WorkExperienceModal";
 import dayjs from 'dayjs';
 import { useState } from 'react';
@@ -34,6 +35,32 @@ const WorkExperienceListItem = ({ workExperience }) => {
             <WorkExperienceModal open={isModalOpen} onClose={handleModal} workExperience={workExperience} />
         </>
     );
+};
+
+
+WorkExperienceListItem.propTypes = {
+    workExperience: PropTypes.shape({
+        company: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string,
+                link: PropTypes.string
+            }).isRequired,
+            linkedin: PropTypes.shape({
+                title: PropTypes.string,
+                link: PropTypes.string
+            }).isRequired
+        }).isRequired,
+        role: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        dateStart: PropTypes.string.isRequired,
+        dateEnd: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        techStack: PropTypes.arrayOf(PropTypes.string).isRequired
+    }).isRequired
 };
 
 export default WorkExperienceListItem;

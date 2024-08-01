@@ -1,10 +1,12 @@
-import { Avatar, Box, Card, CardContent, IconButton, Link, List, ListItem, Modal, Stack, Tooltip, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
 import DescriptionIcon from '@mui/icons-material/Description';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
+import PropTypes from 'prop-types';
 import SchoolIcon from '@mui/icons-material/School';
 import dayjs from "dayjs";
+import { useContext } from "react";
 
 const styles = {
     container: {
@@ -17,7 +19,6 @@ const styles = {
         maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
-        maxWidth: "100%",
     },
     closeBox: {
         display: "flex",
@@ -42,8 +43,10 @@ const styles = {
     },
     detailBox: {
         width: { xs: "100%", md: "75%" },
-        overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
+    },
+    innerDetailBox: {
+        overflow: { xs: "visible", md: "auto" },
         height: { md: "100%" },
     },
     avatar: {
@@ -87,6 +90,13 @@ const styles = {
 };
 
 const CertificateModal = ({ open, onClose, certificate }) => {
+    
+    const { isTechJargon, setIsTechJargon } = useContext(IsTechJargonContext);
+
+    const handleTechJargon = (ev) => {
+        setIsTechJargon(ev.target.checked);
+    };
+
     return (
         <Modal open={open} onClose={onClose}>
             <Card sx={styles.container}>
@@ -102,34 +112,64 @@ const CertificateModal = ({ open, onClose, certificate }) => {
                                 <Tooltip title={certificate.course.title}><Link href={certificate.course.link} target="_blank" rel="noreferrer"><SchoolIcon /></Link></Tooltip>
                                 <Tooltip title={certificate.certificate.title}><Link href={certificate.certificate.link} target="_blank" rel="noreferrer"><DescriptionIcon /></Link></Tooltip>
                             </Stack>
+                            <FormControlLabel control={<Switch checked={isTechJargon} onChange={handleTechJargon} />} label={<Typography variant="body2" color="text.secondary">Tech jargon</Typography>} />
                         </Box>
 
                         <Box sx={styles.detailBox}>
-                            <Box sx={styles.headerBox}>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={certificate.course.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{certificate.title}</Link>
-                                    <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(certificate.dateCompletion).format("MMM YYYY")}</Typography>
+                            <Box sx={styles.innerDetailBox}>
+                                <Box sx={styles.headerBox}>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Link href={certificate.course.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{certificate.title}</Link>
+                                        <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(certificate.dateCompletion).format("MMM YYYY")}</Typography>
+                                    </Box>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Link href={certificate.institution.website.link} target="_blank" rel="noreferrer" underline="none" variant="body1" color="text.secondary">{certificate.institution.name}</Link>
+                                    </Box>
                                 </Box>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={certificate.institution.website.link} target="_blank" rel="noreferrer" underline="none" variant="body1" color="text.secondary">{certificate.institution.name}</Link>
-                                </Box>
-                            </Box>
 
-                            <Typography variant="body2" color="text.secondary" gutterBottom>{certificate.intro}</Typography>
-                            <List sx={styles.bulletPoints}>
-                                {certificate.bulletPoints.map((bulletPoint, idx) => (
-                                    <ListItem key={idx}>
-                                        <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
-                                    </ListItem>
-                                ))}
-                            </List>
-                            
+                                <Typography variant="body2" color="text.secondary" gutterBottom>{certificate.intro}</Typography>
+                                <List sx={styles.bulletPoints}>
+                                    {(isTechJargon ? certificate.technicalBulletPoints : certificate.bulletPoints).map((bulletPoint, idx) => (
+                                        <ListItem key={idx}>
+                                            <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                            </Box>
                         </Box>
                     </Box>
                 </CardContent>
             </Card>
         </Modal>
     );
+};
+
+CertificateModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    certificate: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        img: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        institution: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired
+        }).isRequired,
+        dateCompletion: PropTypes.string.isRequired,
+        certificate: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired,
+        course: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired
+    }).isRequired
 };
 
 export default CertificateModal;

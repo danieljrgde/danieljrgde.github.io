@@ -4,6 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
+import PropTypes from 'prop-types';
 import Vector from "@portfolio/components/base/Vector";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
@@ -19,7 +20,6 @@ const styles = {
         maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
-        maxWidth: "100%",
     },
     closeBox: {
         display: "flex",
@@ -44,8 +44,10 @@ const styles = {
     },
     detailBox: {
         width: { xs: "100%", md: "75%" },
-        overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
+    },
+    innerDetailBox: {
+        overflow: { xs: "visible", md: "auto" },
         height: { md: "100%" },
     },
     avatar: {
@@ -112,29 +114,31 @@ const ProjectModal = ({ open, onClose, project }) => {
                         </Box>
 
                         <Box sx={styles.detailBox}>
-                            <Box sx={styles.headerBox}>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={project.github.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{project.title}</Link>
+                            <Box sx={styles.innerDetailBox}>
+                                <Box sx={styles.headerBox}>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Link href={project.github.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{project.title}</Link>
+                                    </Box>
                                 </Box>
-                            </Box>
 
-                            <Typography variant="body2" color="text.secondary" gutterBottom>{project.intro}</Typography>
-                            <List sx={styles.bulletPoints}>
-                                {(isTechJargon ? project.technicalBulletPoints : project.bulletPoints).map((bulletPoint, idx) => (
-                                    <ListItem key={idx}>
-                                        <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
-                                    </ListItem>
-                                ))}
-                            </List>
-                            
-                            <Box sx={styles.techStackBox}>
-                                {project.techStack.map((tech, idx) => (
-                                    <Chip
-                                        key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
-                                        onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
-                                        avatar={<Vector variant="tech-stack" name={tech} />}
-                                    />
-                                ))}
+                                <Typography variant="body2" color="text.secondary" gutterBottom>{project.intro}</Typography>
+                                <List sx={styles.bulletPoints}>
+                                    {(isTechJargon ? project.technicalBulletPoints : project.bulletPoints).map((bulletPoint, idx) => (
+                                        <ListItem key={idx}>
+                                            <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                                
+                                <Box sx={styles.techStackBox}>
+                                    {project.techStack.map((tech, idx) => (
+                                        <Chip
+                                            key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
+                                            onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
+                                            avatar={<Vector variant="tech-stack" name={tech} />}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                             
                         </Box>
@@ -143,6 +147,27 @@ const ProjectModal = ({ open, onClose, project }) => {
             </Card>
         </Modal>
     );
+};
+
+ProjectModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    project: PropTypes.shape({
+        img: PropTypes.string.isRequired,
+        github: PropTypes.shape({
+            link: PropTypes.string,
+            title: PropTypes.string
+        }).isRequired,
+        report: PropTypes.shape({
+            link: PropTypes.string,
+            title: PropTypes.string
+        }).isRequired,
+        title: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        techStack: PropTypes.arrayOf(PropTypes.string).isRequired
+    }).isRequired
 };
 
 export default ProjectModal;

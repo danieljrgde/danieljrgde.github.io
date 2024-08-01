@@ -1,6 +1,7 @@
-import { Card, CardContent, CardHeader, Grid, Link, Typography } from "@mui/material"
+import { Card, CardContent, CardHeader, Grid, Typography } from "@mui/material"
 
 import { Fragment } from "react";
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
 const styles = {
@@ -30,6 +31,15 @@ const SkillsCard = ({ skills }) => {
             </CardContent>
         </Card>
     );
+};
+
+SkillsCard.propTypes = {
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            key: PropTypes.string.isRequired,
+            value: PropTypes.string.isRequired
+        }).isRequired
+    ).isRequired
 };
 
 export default SkillsCard;

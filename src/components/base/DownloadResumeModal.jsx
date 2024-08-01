@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardActions, CardContent, IconButton, Modal, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
+import PropTypes from 'prop-types';
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -48,6 +49,11 @@ const DownloadResumeModal = ({ open, onClose }) => {
             </Card>
         </Modal>
     );
+};
+
+DownloadResumeModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired
 };
 
 export default DownloadResumeModal;

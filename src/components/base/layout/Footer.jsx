@@ -1,5 +1,4 @@
-import { Box, Container, Grid, IconButton, Link, Stack, Tooltip, Typography } from '@mui/material';
-import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import { Box, Container, Link, Stack, Tooltip, Typography } from '@mui/material';
 
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';

@@ -1,6 +1,8 @@
 import { Avatar, CardHeader, ListItemButton, Typography } from '@mui/material';
-import dayjs from 'dayjs';
+
 import CertificateModal from '@portfolio/components/hoc/certificate/CertificateModal';
+import PropTypes from 'prop-types';
+import dayjs from 'dayjs';
 import { useState } from "react";
 
 const styles = {
@@ -32,6 +34,32 @@ const CertificateListItem = ({ certificate }) => {
             <CertificateModal open={isModalOpen} onClose={handleModal} certificate={certificate} />
         </>
     );
+};
+
+CertificateListItem.propTypes = {
+    certificate: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        img: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        institution: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired
+        }).isRequired,
+        dateCompletion: PropTypes.string.isRequired,
+        certificate: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired,
+        course: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            link: PropTypes.string.isRequired
+        }).isRequired
+    }).isRequired
 };
 
 export default CertificateListItem;

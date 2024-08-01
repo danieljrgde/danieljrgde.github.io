@@ -1,6 +1,7 @@
 import { Box, Card, CardContent, CardHeader, Grid, Link, Typography } from "@mui/material"
 
 import { Fragment } from "react";
+import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 
 const styles = {
@@ -10,8 +11,8 @@ const styles = {
         rowGap: 2,
     },
     linkBox: {
-        wordBreak: "break-word", // Add this to allow word breaking
-        overflowWrap: "break-word", // Ensures long words also break
+        wordBreak: "break-word",
+        overflowWrap: "break-word",
     },
 };
 
@@ -40,6 +41,16 @@ const BasicsCard = ({ basics }) => {
             </CardContent>
         </Card>
     );
+};
+
+BasicsCard.propTypes = {
+    basics: PropTypes.arrayOf(
+        PropTypes.shape({
+            key: PropTypes.string.isRequired,
+            value: PropTypes.string.isRequired,
+            link: PropTypes.string
+        }).isRequired
+    ).isRequired
 };
 
 export default BasicsCard;

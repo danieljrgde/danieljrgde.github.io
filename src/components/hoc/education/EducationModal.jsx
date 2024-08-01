@@ -3,6 +3,7 @@ import { Avatar, Box, Card, CardContent, IconButton, Link, Modal, Stack, Tooltip
 import CloseIcon from "@mui/icons-material/Close";
 import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PropTypes from 'prop-types';
 import dayjs from "dayjs";
 
 const styles = {
@@ -41,8 +42,10 @@ const styles = {
     },
     detailBox: {
         width: { xs: "100%", md: "75%" },
-        overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
+    },
+    innerDetailBox: {
+        overflow: { xs: "visible", md: "auto" },
         height: { md: "100%" },
     },
     avatar: {
@@ -108,29 +111,55 @@ const EducationModal = ({ open, onClose, education }) => {
                         </Box>
 
                         <Box sx={styles.detailBox}>
-                            <Box sx={styles.headerBox}>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={education.institution.website.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{education.institution.name}</Link>
-                                    <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(education.dateStart).format("MMM YYYY")} - {dayjs(education.dateEnd).isValid() ? dayjs(education.dateEnd).format("MMM YYYY") : education.dateEnd}</Typography>
+                            <Box sx={styles.innerDetailBox}>
+                                <Box sx={styles.headerBox}>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Link href={education.institution.website.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{education.institution.name}</Link>
+                                        <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(education.dateStart).format("MMM YYYY")} - {dayjs(education.dateEnd).isValid() ? dayjs(education.dateEnd).format("MMM YYYY") : education.dateEnd}</Typography>
+                                    </Box>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Typography variant="body1" color="text.secondary">{education.degree} | {education.major}</Typography>
+                                    </Box>
                                 </Box>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Typography variant="body1" color="text.secondary">{education.degree} | {education.major}</Typography>
+
+                                <Typography variant="body2" color="text.secondary" gutterBottom>{education.intro}</Typography>
+
+                                <Box sx={styles.courseworkBox}>
+                                    <Typography variant="body2" display="inline" fontWeight="bold">Coursework:&nbsp;</Typography>
+                                    <Typography variant="body2" color="text.secondary" display="inline">{education.coursework.map((course, idx) => idx === education.coursework.length-1 ? `${course}.` : `${course}, `)}</Typography>
                                 </Box>
                             </Box>
-
-                            <Typography variant="body2" color="text.secondary" gutterBottom>{education.intro}</Typography>
-
-                            <Box sx={styles.courseworkBox}>
-                                <Typography variant="body2" display="inline" fontWeight="bold">Coursework:&nbsp;</Typography>
-                                <Typography variant="body2" color="text.secondary" display="inline">{education.coursework.map((course, idx) => idx === education.coursework.length-1 ? `${course}.` : `${course}, `)}</Typography>
-                            </Box>
-                            
                         </Box>
                     </Box>
                 </CardContent>
             </Card>
         </Modal>
     );
+};
+
+EducationModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    education: PropTypes.shape({
+        degree: PropTypes.string.isRequired,
+        major: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        coursework: PropTypes.arrayOf(PropTypes.string).isRequired,
+        institution: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string.isRequired
+            }).isRequired,
+            linkedin: PropTypes.shape({
+                title: PropTypes.string.isRequired,
+                link: PropTypes.string
+            }).isRequired
+        }).isRequired,
+        dateStart: PropTypes.string.isRequired,
+        dateEnd: PropTypes.string.isRequired
+    }).isRequired
 };
 
 export default EducationModal;

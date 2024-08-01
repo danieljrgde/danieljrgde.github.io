@@ -5,6 +5,7 @@ import DownloadResumeModal from "@portfolio/components/base/DownloadResumeModal"
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PropTypes from 'prop-types';
 import { Link as RouterLink } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -76,6 +77,11 @@ const Drawer = ({ open, onClose }) => {
 
         </DrawerMUI>
     );
+};
+
+Drawer.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired
 };
 
 export default Drawer;

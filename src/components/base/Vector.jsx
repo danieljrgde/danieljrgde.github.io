@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 import { SvgIcon } from "@mui/material";
@@ -22,7 +22,7 @@ const Vector = ({ variant, name, size, ...props }) => {
     }, [variant, name]);
 
     if (error) {
-        return null; // or some fallback UI
+        return null;
     }
 
     return (

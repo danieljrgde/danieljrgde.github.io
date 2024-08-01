@@ -1,9 +1,10 @@
-import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
 import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
 import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PropTypes from "prop-types";
 import Vector from "@portfolio/components/base/Vector";
 import dayjs from "dayjs";
 import { useContext } from "react";
@@ -45,8 +46,10 @@ const styles = {
     },
     detailBox: {
         width: { xs: "100%", md: "75%" },
-        overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
+    },
+    innerDetailBox: {
+        overflow: { xs: "visible", md: "auto" },
         height: { md: "100%" },
     },
     avatar: {
@@ -113,42 +116,70 @@ const VolunteerExperienceModal = ({ open, onClose, volunteerExperience }) => {
                         </Box>
 
                         <Box sx={styles.detailBox}>
-                            <Box sx={styles.headerBox}>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Link href={volunteerExperience.company.website.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{volunteerExperience.company.name}</Link>
-                                    <Typography variant="body2" color="text.secondary">{dayjs(volunteerExperience.dateStart).format("MMM YYYY")} - {dayjs(volunteerExperience.dateEnd).isValid() ? dayjs(volunteerExperience.dateEnd).format("MMM YYYY") : volunteerExperience.dateEnd}</Typography>
+                            <Box sx={styles.innerDetailBox}>
+                                <Box sx={styles.headerBox}>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Link href={volunteerExperience.company.website.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{volunteerExperience.company.name}</Link>
+                                        <Typography variant="body2" color="text.secondary">{dayjs(volunteerExperience.dateStart).format("MMM YYYY")} - {dayjs(volunteerExperience.dateEnd).isValid() ? dayjs(volunteerExperience.dateEnd).format("MMM YYYY") : volunteerExperience.dateEnd}</Typography>
+                                    </Box>
+                                    <Box sx={styles.spaceBetweenBox}>
+                                        <Typography variant="body1" color="text.secondary">{volunteerExperience.role}</Typography>
+                                        <Typography variant="body2" color="text.secondary">{volunteerExperience.location}</Typography>
+                                    </Box>
                                 </Box>
-                                <Box sx={styles.spaceBetweenBox}>
-                                    <Typography variant="body1" color="text.secondary">{volunteerExperience.role}</Typography>
-                                    <Typography variant="body2" color="text.secondary">{volunteerExperience.location}</Typography>
-                                </Box>
-                            </Box>
 
-                            <Typography variant="body2" color="text.secondary" gutterBottom>{volunteerExperience.intro}</Typography>
-                            <List sx={styles.bulletPoints}>
-                                {(isTechJargon ? volunteerExperience.technicalBulletPoints : volunteerExperience.bulletPoints).map((bulletPoint, idx) => (
-                                    <ListItem key={idx}>
-                                        <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
-                                    </ListItem>
-                                ))}
-                            </List>
-                            
-                            <Box sx={styles.techStackBox}>
-                                {volunteerExperience.techStack.map((tech, idx) => (
-                                    <Chip
-                                        key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
-                                        onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
-                                        avatar={<Vector variant="tech-stack" name={tech} />}
-                                    />
-                                ))}
+                                <Typography variant="body2" color="text.secondary" gutterBottom>{volunteerExperience.intro}</Typography>
+                                <List sx={styles.bulletPoints}>
+                                    {(isTechJargon ? volunteerExperience.technicalBulletPoints : volunteerExperience.bulletPoints).map((bulletPoint, idx) => (
+                                        <ListItem key={idx}>
+                                            <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                                
+                                <Box sx={styles.techStackBox}>
+                                    {volunteerExperience.techStack.map((tech, idx) => (
+                                        <Chip
+                                            key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
+                                            onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
+                                            avatar={<Vector variant="tech-stack" name={tech} />}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
-                            
                         </Box>
                     </Box>
                 </CardContent>
             </Card>
         </Modal>
     );
+};
+
+VolunteerExperienceModal.propTypes = {
+    open: PropTypes.bool.isRequired,
+    onClose: PropTypes.func.isRequired,
+    volunteerExperience: PropTypes.shape({
+        company: PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            website: PropTypes.shape({
+                title: PropTypes.string,
+                link: PropTypes.string
+            }).isRequired,
+            linkedin: PropTypes.shape({
+                title: PropTypes.string,
+                link: PropTypes.string
+            }).isRequired
+        }).isRequired,
+        role: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        dateStart: PropTypes.string.isRequired,
+        dateEnd: PropTypes.string.isRequired,
+        intro: PropTypes.string.isRequired,
+        bulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string).isRequired,
+        techStack: PropTypes.arrayOf(PropTypes.string).isRequired
+    }).isRequired
 };
 
 export default VolunteerExperienceModal;

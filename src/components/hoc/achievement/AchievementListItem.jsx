@@ -1,6 +1,7 @@
-import { Box, CardHeader, ListItemButton, Typography } from '@mui/material';
+import { Box, ListItemButton, Typography } from '@mui/material';
 
 import AchievementModal from '@portfolio/components/hoc/achievement/AchievementModal';
+import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 import { useState } from 'react';
 
@@ -15,7 +16,7 @@ const styles = {
 
 const AchievementListItem = ({ achievement }) => {
 
-    const [ isModalOpen, setIsModalOpen ] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleModal = (ev) => {
         setIsModalOpen(prev => !prev)
@@ -33,6 +34,15 @@ const AchievementListItem = ({ achievement }) => {
             <AchievementModal open={isModalOpen} onClose={handleModal} achievement={achievement} />
         </>
     );
+};
+
+AchievementListItem.propTypes = {
+    achievement: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        subheader: PropTypes.string,
+        date: PropTypes.string.isRequired,
+        paragraphs: PropTypes.arrayOf(PropTypes.string).isRequired
+    }).isRequired
 };
 
 export default AchievementListItem;

@@ -221,7 +221,7 @@
                     "Engineered a custom relevance scoring metric combining insight frequency and severity metrics, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
                 "techStack": [
-                    "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
+                    "python", "scikit-learn", "openai", "jupyter", "pandas", "git", "docker"
                 ]
             },
             {
@@ -276,7 +276,7 @@
 
                 ],
                 "techStack": [
-                    "Python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
+                    "python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
                 ]
             }
         ],
@@ -329,7 +329,9 @@
                     "Developed and integrated a bank slip donation system on the website, expanding donation methods and increasing overall contributions.",
                     "Fostered relationships with alumni and corporate sponsors, enhancing long-term funding prospects for the association."
                 ],
-                "techStack": []
+                "techStack": [
+                    "python", "git"
+                ]
             }
         ],
         "certificates": [
@@ -338,11 +340,18 @@
                 "img": "/src/assets/imgs/certificate/struct-ml.jpg",
                 "intro": "The course, offered by DeepLearning.AI is a valuable resource for those looking to enhance their machine learning skills. Taught by industry expert Andrew Ng, this course explores key concepts in ML system optimization and management. It provided me with practical insights into diagnosing and addressing errors, prioritizing improvement strategies, and handling complex ML configurations. The course content reinforced my understanding of cutting-edge techniques like transfer learning and multi-task learning.",
                 "bulletPoints": [
-                    "Error diagnosis and reduction strategies in ML systems",
-                    "Handling complex ML configurations and dataset mismatches",
-                    "Techniques for surpassing human-level performance",
-                    "Application of end-to-end learning, transfer learning, and multi-task learning",
-                    "Industry insights on leading AI teams and projects"
+                    "Error diagnosis and reduction strategies in ML systems.",
+                    "Handling complex ML configurations and dataset mismatches.",
+                    "Techniques for surpassing human-level performance.",
+                    "Application of end-to-end learning, transfer learning, and multi-task learning.",
+                    "Industry insights on leading AI teams and projects."
+                ],
+                "technicalBulletPoints": [
+                    "Error diagnosis and reduction strategies in ML systems.",
+                    "Handling complex ML configurations and dataset mismatches.",
+                    "Techniques for surpassing human-level performance.",
+                    "Application of end-to-end learning, transfer learning, and multi-task learning.",
+                    "Industry insights on leading AI teams and projects."
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
@@ -352,17 +361,23 @@
                 "certificate": { "title": "Certificate", "link": "/docs/certificate/struct-ml.pdf" },
                 "course": { "title": "Course", "link": "https://www.coursera.org/learn/machine-learning-projects" }
             },
-
             {
                 "title": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
                 "img": "/src/assets/imgs/certificate/improve-nn.jpg",
                 "intro": "The course from DeepLearning.AI delves into the intricacies of deep learning systems. This course, led by industry expert Andrew Ng, explores crucial techniques for enhancing neural network performance. It provided me with hands-on experience in implementing various optimization algorithms and regularization techniques. The course strengthened my understanding of hyperparameter tuning, bias/variance analysis, and practical TensorFlow implementation, equipping me with valuable skills for developing robust deep learning applications.",
                 "bulletPoints": [
-                    "Best practices for training and test set development",
-                    "Implementation of neural network techniques like L2 regularization, dropout, and batch normalization",
-                    "Hyperparameter tuning and bias/variance analysis",
-                    "Application of optimization algorithms including mini-batch gradient descent, Momentum, RMSprop, and Adam",
-                    "Practical implementation of neural networks using TensorFlow"
+                    "Best practices for training and test set development.",
+                    "Implementation of neural network techniques like L2 regularization, dropout, and batch normalization.",
+                    "Hyperparameter tuning and bias/variance analysis.",
+                    "Application of optimization algorithms including mini-batch gradient descent, Momentum, RMSprop, and Adam.",
+                    "Practical implementation of neural networks using TensorFlow."
+                ],
+                "technicalBulletPoints": [
+                    "Best practices for training and test set development.",
+                    "Implementation of neural network techniques like L2 regularization, dropout, and batch normalization.",
+                    "Hyperparameter tuning and bias/variance analysis.",
+                    "Application of optimization algorithms including mini-batch gradient descent, Momentum, RMSprop, and Adam.",
+                    "Practical implementation of neural networks using TensorFlow."
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
@@ -377,11 +392,18 @@
                 "img": "/src/assets/imgs/certificate/nn-and-dl.jpg",
                 "intro": "The course from DeepLearning.AI delves into advanced techniques for enhancing neural network performance. Led by industry experts, this course explores crucial aspects of deep learning optimization. It strengthened my understanding of hyperparameter tuning, regularization methods, and various optimization algorithms. The course content provided me with practical skills to build more efficient and effective neural networks, broadening my capabilities in applying deep learning to real-world problems.",
                 "bulletPoints": [
-                    "Fundamentals of neural networks and deep learning",
-                    "Techniques for building and training fully connected deep neural networks",
-                    "Implementation of efficient, vectorized neural networks",
-                    "Identification and tuning of key parameters in neural network architecture",
-                    "Application of deep learning in practical scenarios"
+                    "Fundamentals of neural networks and deep learning.",
+                    "Techniques for building and training fully connected deep neural networks.",
+                    "Implementation of efficient, vectorized neural networks.",
+                    "Identification and tuning of key parameters in neural network architecture.",
+                    "Application of deep learning in practical scenarios."
+                ],
+                "technicalBulletPoints": [
+                    "Fundamentals of neural networks and deep learning.",
+                    "Techniques for building and training fully connected deep neural networks.",
+                    "Implementation of efficient, vectorized neural networks.",
+                    "Identification and tuning of key parameters in neural network architecture.",
+                    "Application of deep learning in practical scenarios."
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
@@ -396,13 +418,22 @@
                 "img": "/src/assets/imgs/certificate/foundations-pm.jpg",
                 "intro": "The course offered by Google provides a comprehensive introduction to the field of project management. This course lays the groundwork for understanding the key concepts, methodologies, and best practices in project management. It enhanced my knowledge of project lifecycles, organizational structures, and change management processes. The course content, delivered by experienced Google project managers, offered valuable insights into real-world project management scenarios and helped me develop practical skills applicable across various industries.",
                 "bulletPoints": [
-                    "Fundamentals of project management and project definition",
-                    "Roles and responsibilities of project managers across different sectors",
-                    "Key skills for successful project management",
-                    "Project lifecycle phases and their importance",
-                    "Comparison of various project management methodologies and approaches",
-                    "Impact of organizational structure and culture on project management",
-                    "Basics of change management in project contexts"
+                    "Fundamentals of project management and project definition.",
+                    "Roles and responsibilities of project managers across different sectors.",
+                    "Key skills for successful project management.",
+                    "Project lifecycle phases and their importance.",
+                    "Comparison of various project management methodologies and approaches.",
+                    "Impact of organizational structure and culture on project management.",
+                    "Basics of change management in project contexts."
+                ],
+                "technicalBulletPoints": [
+                    "Fundamentals of project management and project definition.",
+                    "Roles and responsibilities of project managers across different sectors.",
+                    "Key skills for successful project management.",
+                    "Project lifecycle phases and their importance.",
+                    "Comparison of various project management methodologies and approaches.",
+                    "Impact of organizational structure and culture on project management.",
+                    "Basics of change management in project contexts."
                 ],
                 "institution": {
                     "name": "Google",
@@ -428,10 +459,14 @@
                     "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
                 ],
                 "technicalBulletPoints": [
-                    
+                    "Developed a custom data collection script to gather 6M+ market-related social media posts and stock price data for the top 50 cryptocurrencies.",
+                    "Implemented an innovative anomaly detection architecture using Variational Autoencoders and k-Nearest Neighbors to classify users as bots or humans, accounting for data imbalance.",
+                    "Performed sentiment analysis on social media content using BERT embeddings and neural networks to classify the emotional tone of posts.",
+                    "Designed a custom engagement metric based on content metadata to analyze correlation with asset price fluctuations.",
+                    "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
                 ],
                 "techStack": [
-                    ""
+                    "python", "jupyter", "transformers", "tensorflow", "statsmodels", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "nltk", "wordcloud", "requests", "multiprocessing"
                 ]
             },
             {
@@ -449,10 +484,15 @@
                     "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
                 ],
                 "technicalBulletPoints": [
-                    
+                    "Developed a sophisticated data collection system simulating diverse user personas through manipulation of browser cookies and history.",
+                    "Gathered and analyzed search results for 60k+from Amazon, creating a robust dataset for investigation.",
+                    "Employed statistical measures including Jaccard Similarity Index and Kendall's τ coefficient to detect price steering and discrimination patterns.",
+                    "Implemented a Random Forest classifier achieving 80% accuracy in predicting Amazon's buy-box recommendations, identifying key influencing factors.",
+                    "Uncovered strong evidence of price steering practices while finding limited indications of price discrimination in Amazon's e-commerce strategies.",
+                    "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
                 ],
                 "techStack": [
-                    ""
+                    "python", "pandas", "numpy", "scipy", "scikit-learn", "matplotlib", "multiprocessing", "jupyter", "bash", "requests", "beautifulsoup"
                 ]
             },
             {
@@ -470,10 +510,15 @@
                     "Provided valuable insights into the complex dynamics of Brazil's financial markets through rigorous statistical analysis and modeling."
                 ],
                 "technicalBulletPoints": [
-                    
+                    "Developed a custom web scraping application to collect historical stock index data from B3 (Brazilian stock exchange) and utilized government APIs for macroeconomic indicators.",
+                    "Implemented SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) models to account for non-stationary nature, trends, and seasonality in financial time series.",
+                    "Compared SARIMAX results against traditional OLS (Ordinary Least Squares) regression to demonstrate the importance of time-dependent structures in financial data analysis.",
+                    "Optimized SARIMAX models using cross-validation and Akaike Information Criterion (AIC) for optimal hyperparameter selection.",
+                    "Uncovered sector-specific sensitivities to interest rate changes, with real estate and consumer goods sectors showing the most significant responses.",
+                    "Provided valuable insights into the complex dynamics of Brazil's financial markets through rigorous statistical analysis and modeling."
                 ],
                 "techStack": [
-                    ""
+                    "python", "jupyter", "pandas", "numpy", "matplotlib", "seaborn", "statsmodels", "scikit-learn", "requests", "yfinance"
                 ]
             },
             {
@@ -491,10 +536,15 @@
                     "Combined web scraping, statistical analysis, and natural language processing to provide a comprehensive view of restaurant review patterns and potential fraudulent activities."
                 ],
                 "technicalBulletPoints": [
-                    
+                    "Developed custom web scraping tools and leveraged Yelp's API to collect extensive data on 13k+ restaurants, including 250k+ reviews, ratings, and geographical information.",
+                    "Utilized statistical analysis and regression models to examine economic incentives behind fake reviews, revealing higher fraud tendencies among lower-priced and lower-rated restaurants.",
+                    "Implemented sentiment analysis and polarity detection on review text to identify distinguishing characteristics between fake and genuine reviews.",
+                    "Employed Python for data collection and processing, utilizing libraries such as pandas for data manipulation and scikit-learn for machine learning tasks.",
+                    "Uncovered insights into the dynamics of online review platforms and factors influencing review fraud in the competitive Paris restaurant industry.",
+                    "Combined web scraping, statistical analysis, and natural language processing to provide a comprehensive view of restaurant review patterns and potential fraudulent activities."
                 ],
                 "techStack": [
-                    ""
+                    "python", "jupyter", "numpy", "pandas", "statsmodels", "matplotlib", "seaborn", "plotly", "requests"
                 ]
             }
         ],
@@ -571,7 +621,25 @@
             "aws-s3": { "label": "AWS S3", "link": "https://aws.amazon.com/s3/" },
             "aws-emr": { "label": "AWS EMR", "link": "https://aws.amazon.com/emr/" },
             "aws-rds": { "label": "AWS RDS", "link": "https://aws.amazon.com/rds/" },
-            "tensorflow": { "label": "TensorFlow", "link": "https://www.tensorflow.org/" }
+            "tensorflow": { "label": "TensorFlow", "link": "https://www.tensorflow.org/" },
+            "aws-ec2": { "label": "AWS EC2", "link": "https://aws.amazon.com/ec2/" },
+            "aws-athena": { "label": "AWS Athena", "link": "https://aws.amazon.com/athena/" },
+            "aws-apigateway": { "label": "AWS API Gateway", "link": "https://aws.amazon.com/api-gateway/" },
+            "aws-dynamodb": { "label": "AWS DynamoDB", "link": "https://aws.amazon.com/dynamodb/" },
+            "airflow": { "label": "Apache Airflow", "link": "https://airflow.apache.org/" },
+            "javascript": { "label": "JavaScript", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+            "statsmodels": { "label": "StatsModels", "link": "https://www.statsmodels.org/" },
+            "matplotlib": { "label": "Matplotlib", "link": "https://matplotlib.org/" },
+            "seaborn": { "label": "Seaborn", "link": "https://seaborn.pydata.org/" },
+            "nltk": { "label": "NLTK", "link": "https://www.nltk.org/" },
+            "wordcloud": { "label": "WordCloud", "link": "https://github.com/amueller/word_cloud" },
+            "requests": { "label": "Requests", "link": "https://docs.python-requests.org/" },
+            "multiprocessing": { "label": "Multiprocessing", "link": "https://docs.python.org/3/library/multiprocessing.html" },
+            "scipy": { "label": "SciPy", "link": "https://www.scipy.org/" },
+            "bash": { "label": "Bash", "link": "https://www.gnu.org/software/bash/" },
+            "beautifulsoup": { "label": "Beautiful Soup", "link": "https://www.crummy.com/software/BeautifulSoup/" },
+            "yfinance": { "label": "yfinance", "link": "https://github.com/ranaroussi/yfinance" },
+            "plotly": { "label": "Plotly", "link": "https://plotly.com/python/" }
         }
     }
 }
