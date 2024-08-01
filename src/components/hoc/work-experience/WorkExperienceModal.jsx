@@ -1,12 +1,13 @@
 import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
-import dayjs from "dayjs";
+
 import CloseIcon from "@mui/icons-material/Close";
+import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
+import LanguageIcon from '@mui/icons-material/Language';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Vector from "@portfolio/components/base/Vector";
-import { useTranslation } from "react-i18next";
-import LanguageIcon from '@mui/icons-material/Language';
+import dayjs from "dayjs";
 import { useContext } from "react";
-import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
+import { useTranslation } from "react-i18next";
 
 const styles = {
     container: {
@@ -15,11 +16,11 @@ const styles = {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: { xs: "100%", md: "60dvw" },
-        height: { xs: "100dvh", md: "80dvh" },
+        height: { xs: "100dvh", md: "auto" },
+        maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
         maxWidth: "100%",
-        maxHeight: "100%",
     },
     closeBox: {
         display: "flex",
@@ -133,7 +134,13 @@ const WorkExperienceModal = ({ open, onClose, workExperience }) => {
                             </List>
                             
                             <Box sx={styles.techStackBox}>
-                                {workExperience.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
+                                {workExperience.techStack.map((tech, idx) => (
+                                    <Chip
+                                        key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
+                                        onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
+                                        avatar={<Vector variant="tech-stack" name={tech} />}
+                                    />
+                                ))}
                             </Box>
                             
                         </Box>

@@ -1,12 +1,12 @@
-import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
+
 import CloseIcon from "@mui/icons-material/Close";
+import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Vector from "@portfolio/components/base/Vector";
-import { useTranslation } from "react-i18next";
-import LanguageIcon from '@mui/icons-material/Language';
-import { useContext } from "react";
 import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import Vector from "@portfolio/components/base/Vector";
+import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 const styles = {
     container: {
@@ -15,11 +15,11 @@ const styles = {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: { xs: "100%", md: "60dvw" },
-        height: { xs: "100dvh", md: "80dvh" },
+        height: { xs: "100dvh", md: "auto" },
+        maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
         maxWidth: "100%",
-        maxHeight: "100%",
     },
     closeBox: {
         display: "flex",
@@ -105,8 +105,8 @@ const ProjectModal = ({ open, onClose, project }) => {
                         <Box sx={styles.infoBox}>
                             <Avatar variant="rounded" sx={styles.avatar} src={project.img} />
                             <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1} marginBottom={2}>
-                                <Tooltip title={project.github.title}><Link href={project.github.link} target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
-                                <Tooltip title={project.report.title}><Link href={project.report.link} target="_blank" rel="noreferrer"><InsertDriveFileIcon /></Link></Tooltip>
+                                {project.github.link && <Tooltip title={project.github.title}><Link href={project.github.link} target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>}
+                                {project.report.link && <Tooltip title={project.report.title}><Link href={project.report.link} target="_blank" rel="noreferrer"><DescriptionIcon /></Link></Tooltip>}
                             </Stack>
                             <FormControlLabel control={<Switch checked={isTechJargon} onChange={handleTechJargon} />} label={<Typography variant="body2" color="text.secondary">Tech jargon</Typography>} />
                         </Box>
@@ -128,7 +128,13 @@ const ProjectModal = ({ open, onClose, project }) => {
                             </List>
                             
                             <Box sx={styles.techStackBox}>
-                                {project.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
+                                {project.techStack.map((tech, idx) => (
+                                    <Chip
+                                        key={idx} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable
+                                        onClick={() => window.open(techStackMap[tech]?.link, "_blank")}
+                                        avatar={<Vector variant="tech-stack" name={tech} />}
+                                    />
+                                ))}
                             </Box>
                             
                         </Box>

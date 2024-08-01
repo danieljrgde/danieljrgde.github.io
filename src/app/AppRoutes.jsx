@@ -16,7 +16,7 @@ const AppRoutes = () => {
                     <Route path="projects" element={<ProjectsPage />} />
                     {/* <Route path="publications" element={<PublicationsPage />} /> */}
                     <Route path="resume" element={<ResumePage />} />
-                    <Route path="*" element={<Navigate to="/" />} />
+                    {/* <Route path="*" element={<Navigate to="/" />} /> */}
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -1,4 +1,5 @@
-import { Modal, Box, Card, CardContent, CardActions, Button, Typography, IconButton } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, IconButton, Modal, Typography } from "@mui/material";
+
 import CloseIcon from "@mui/icons-material/Close";
 import { useTranslation } from "react-i18next";
 
@@ -8,11 +9,14 @@ const styles = {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        width: { xs: "100%", md: "40dvw" },
+        width: { xs: "100%", md: "35dvw" },
         display: "flex",
         flexDirection: "column",
         maxWidth: "100%",
         maxHeight: "100%",
+    },
+    cardContent: {
+        paddingBottom: 3
     },
     closeBox: {
         display: "flex",

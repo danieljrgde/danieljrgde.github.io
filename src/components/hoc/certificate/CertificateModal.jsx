@@ -1,12 +1,10 @@
-import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
-import dayjs from "dayjs";
+import { Avatar, Box, Card, CardContent, IconButton, Link, List, ListItem, Modal, Stack, Tooltip, Typography } from "@mui/material";
+
 import CloseIcon from "@mui/icons-material/Close";
+import DescriptionIcon from '@mui/icons-material/Description';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Vector from "@portfolio/components/base/Vector";
-import { useTranslation } from "react-i18next";
-import LanguageIcon from '@mui/icons-material/Language';
-import { useContext } from "react";
-import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
+import SchoolIcon from '@mui/icons-material/School';
+import dayjs from "dayjs";
 
 const styles = {
     container: {
@@ -15,11 +13,11 @@ const styles = {
         left: "50%",
         transform: "translate(-50%, -50%)",
         width: { xs: "100%", md: "60dvw" },
-        height: { xs: "100dvh", md: "80dvh" },
+        height: { xs: "100dvh", md: "auto" },
+        maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
         maxWidth: "100%",
-        maxHeight: "100%",
     },
     closeBox: {
         display: "flex",
@@ -78,21 +76,17 @@ const styles = {
     },
     spaceBetweenBox: {
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         justifyContent: "space-between",
+    },
+    dateTypography: {
+        marginLeft: 2,
+        marginTop: 1,
+        minWidth: "fit-content"
     }
 };
 
 const CertificateModal = ({ open, onClose, certificate }) => {
-
-    const { t } = useTranslation();
-    const { isTechJargon, setIsTechJargon } = useContext(IsTechJargonContext);
-    const techStackMap = t("data.techStack", { returnObjects: true });
-
-    const handleTechJargon = (ev) => {
-        setIsTechJargon(ev.target.checked);
-    };
-
     return (
         <Modal open={open} onClose={onClose}>
             <Card sx={styles.container}>
@@ -105,36 +99,30 @@ const CertificateModal = ({ open, onClose, certificate }) => {
                         <Box sx={styles.infoBox}>
                             <Avatar variant="rounded" sx={styles.avatar} src={certificate.img} />
                             <Stack direction="row" gap={0.5} alignItems="center" justifyContent="center" marginTop={1} marginBottom={2}>
-                                <Tooltip title={certificate.institution.website.title}><Link href={certificate.institution.website.link} target="_blank" rel="noreferrer"><LanguageIcon /></Link></Tooltip>
-                                <Tooltip title={certificate.institution.linkedin.title}><Link href={certificate.institution.linkedin.link} target="_blank" rel="noreferrer"><LinkedInIcon /></Link></Tooltip>
+                                <Tooltip title={certificate.course.title}><Link href={certificate.course.link} target="_blank" rel="noreferrer"><SchoolIcon /></Link></Tooltip>
+                                <Tooltip title={certificate.certificate.title}><Link href={certificate.certificate.link} target="_blank" rel="noreferrer"><DescriptionIcon /></Link></Tooltip>
                             </Stack>
-                            <FormControlLabel control={<Switch checked={isTechJargon} onChange={handleTechJargon} />} label={<Typography variant="body2" color="text.secondary">Tech jargon</Typography>} />
                         </Box>
 
                         <Box sx={styles.detailBox}>
                             <Box sx={styles.headerBox}>
                                 <Box sx={styles.spaceBetweenBox}>
-                                    <Typography variant="h5" fontWeight="bold">{certificate.title}</Typography>
-                                    <Typography variant="body2" color="text.secondary">{dayjs(certificate.dateCompletion).format("MMM YYYY")}</Typography>
+                                    <Link href={certificate.course.link} target="_blank" rel="noreferrer" underline="none" variant="h5" fontWeight="bold">{certificate.title}</Link>
+                                    <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(certificate.dateCompletion).format("MMM YYYY")}</Typography>
                                 </Box>
                                 <Box sx={styles.spaceBetweenBox}>
                                     <Link href={certificate.institution.website.link} target="_blank" rel="noreferrer" underline="none" variant="body1" color="text.secondary">{certificate.institution.name}</Link>
-                                    {/* <Typography variant="body2" color="text.secondary">{certificate.location}</Typography> */}
                                 </Box>
                             </Box>
 
-                            {/* <Typography variant="body2" color="text.secondary" gutterBottom>{certificate.intro}</Typography>
+                            <Typography variant="body2" color="text.secondary" gutterBottom>{certificate.intro}</Typography>
                             <List sx={styles.bulletPoints}>
-                                {(isTechJargon ? certificate.technicalBulletPoints : certificate.bulletPoints).map((bulletPoint, idx) => (
+                                {certificate.bulletPoints.map((bulletPoint, idx) => (
                                     <ListItem key={idx}>
                                         <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
                                     </ListItem>
                                 ))}
                             </List>
-                            
-                            <Box sx={styles.techStackBox}>
-                                {certificate.techStack.map((tech, idx) => <Chip key={idx} avatar={<Vector variant="tech-stack" name={tech} />} label={techStackMap[tech]?.label} variant="outlined" size="small" clickable />)}
-                            </Box> */}
                             
                         </Box>
                     </Box>

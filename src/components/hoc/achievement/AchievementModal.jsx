@@ -1,12 +1,7 @@
-import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
+import { Box, Card, CardContent, IconButton, Link, Modal, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
-import { IsTechJargonContext } from '@portfolio/contexts/IsTechJargonContext';
-import LanguageIcon from '@mui/icons-material/Language';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Vector from "@portfolio/components/base/Vector";
 import dayjs from "dayjs";
-import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -15,12 +10,12 @@ const styles = {
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -50%)",
-        width: { xs: "100%", md: "60dvw" },
-        height: { xs: "100dvh", md: "80dvh" },
+        width: { xs: "100%", md: "40dvw" },
+        height: { xs: "100dvh", md: "auto" },
+        maxHeight: { xs: "100dvh", md: "80dvh" },
         display: "flex",
         flexDirection: "column",
         maxWidth: "100%",
-        maxHeight: "100%",
     },
     closeBox: {
         display: "flex",
@@ -39,6 +34,7 @@ const styles = {
     detailBox: {
         overflow: { xs: "visible", md: "auto" },
         paddingRight: { xs: 2, md: 2 },
+        paddingBottom: 2,
         height: { md: "100%" },
     },
     avatar: {
@@ -56,7 +52,7 @@ const styles = {
         overflow: "hidden",
     },
     headerBox: {
-        paddingBottom: 2,
+        paddingBottom: 4,
     },
     bulletPoints: {
         listStyleType: 'disc',
@@ -71,15 +67,17 @@ const styles = {
     },
     spaceBetweenBox: {
         display: "flex",
-        alignItems: "center",
+        alignItems: "flex-start",
         justifyContent: "space-between",
+    },
+    dateTypography: {
+        marginLeft: 2,
+        marginTop: 1,
+        minWidth: "fit-content"
     }
 };
 
 const AchievementModal = ({ open, onClose, achievement }) => {
-
-    const { t } = useTranslation();
-
     return (
         <Modal open={open} onClose={onClose}>
             <Card sx={styles.container}>
@@ -92,7 +90,7 @@ const AchievementModal = ({ open, onClose, achievement }) => {
                         <Box sx={styles.headerBox}>
                             <Box sx={styles.spaceBetweenBox}>
                                 <Typography variant="h5" fontWeight="bold">{achievement.title}</Typography>
-                                <Typography variant="body2" color="text.secondary">{dayjs(achievement.date).format("MMM YYYY")}</Typography>
+                                <Typography variant="body2" color="text.secondary" sx={styles.dateTypography}>{dayjs(achievement.date).format("MMM YYYY")}</Typography>
                             </Box>
                             <Box sx={styles.spaceBetweenBox}>
                                 <Link underline="none" variant="body1" color="text.secondary">{achievement.subheader}</Link>
