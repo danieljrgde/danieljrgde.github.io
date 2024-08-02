@@ -7,12 +7,12 @@
       "notTechnicalBtnTxt": "Non technique",
       "resume": {
         "en": {
-          "technical": "/docs/resume/Daniel J. Deutsch - CV (EN) - Technique.pdf",
-          "notTechnical": "/docs/resume/Daniel J. Deutsch - CV (EN) - Non technique.pdf"
+          "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
+          "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
         },
         "fr": {
-          "technical": "/docs/resume/Daniel J. Deutsch - CV (FR) - Technique.pdf",
-          "notTechnical": "/docs/resume/Daniel J. Deutsch - CV (FR) - Not Technical.pdf"
+          "technical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Technical.pdf",
+          "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Not Technical.pdf"
         },
         "pt-BR": {
             "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
