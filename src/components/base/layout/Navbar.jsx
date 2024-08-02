@@ -35,6 +35,7 @@ const Navbar = () => {
   const [ anchorEl, setAnchorEl ] = useState(null);
   const [ openDrawer, setOpenDrawer ] = useState(false);
   const tabs = t("components.Navbar.tabs", { returnObjects: true });
+  const languages = t("components.Navbar.languages", { returnObjects: true });
 
   const handleDrawer = (ev) => {
     setOpenDrawer(prev => !prev);
@@ -81,18 +82,12 @@ const Navbar = () => {
               anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
               transformOrigin={{ vertical: 'top', horizontal: 'right' }}
             >
-              <MenuItem onClick={() => handleSelectLanguage("en")} selected={i18n.language === "en"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="usa" /></ListItemIcon>
-                <ListItemText>English</ListItemText>
-              </MenuItem>
-              <MenuItem onClick={() => handleSelectLanguage("fr")} selected={i18n.language === "fr"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="france" /></ListItemIcon>
-                <ListItemText>French</ListItemText>
-              </MenuItem>
-              <MenuItem onClick={() => handleSelectLanguage("pt-br")} selected={i18n.language === "pt-br"}>
-                <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name="brazil" /></ListItemIcon>
-                <ListItemText>Portuguese</ListItemText>
-              </MenuItem>
+              {languages.map((language, idx) => (
+                <MenuItem key={idx} onClick={() => handleSelectLanguage(language.value)} selected={i18n.language === language.value}>
+                  <ListItemIcon sx={styles.languageMenuIcon}><Vector variant="flags" name={language.vectorName} /></ListItemIcon>
+                  <ListItemText>{language.label}</ListItemText>
+                </MenuItem>
+              ))}
             </Menu>
           </>
 

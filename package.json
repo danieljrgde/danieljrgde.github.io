@@ -1,5 +1,5 @@
 {
-  "homepage": "http://danieljrgde.github.io/",
+  "homepage": "https://danieljrgde.github.io/portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -7,17 +7,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
-    "country-flag-icons": "^1.5.13",
     "dayjs": "^1.11.12",
     "i18next": "^23.12.2",
     "prop-types": "^15.8.1",

@@ -1,329 +1,1089 @@
 {
-    "navbar": {
-        "tabs": {
-            "about": "About",
-            "projects": "Projects",
-            "publications": "Publications",
-            "resume": "Resume"
+    "components": {
+        "DownloadResumeModal": {
+            "title": "Você é técnico?",
+            "corpus": "Eu fiz duas versões do meu currículo: uma com jargão técnico e outra sem. Dessa forma, todos podem entender meu histórico, independentemente do conhecimento técnico. Escolha a que você preferir e faça o download!",
+            "technicalBtnTxt": "Técnico",
+            "notTechnicalBtnTxt": "Não técnico",
+            "resume": {
+                "en": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
+                },
+                "fr": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Not Technical.pdf"
+                },
+                "pt-BR": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
+                }
+            }
         },
-        "languages": [
-            "English",
-            "French",
-            "Portuguese"
-        ]
-    },
-    "drawer": {
-        "tabs": {
-            "about": "About",
-            "projects": "Projects",
-            "publications": "Publications",
-            "resume": "Resume"
+        "Drawer": {
+            "name": "Daniel J. Deutsch",
+            "img": "/imgs/profile.jpg",
+            "email": {
+                "title": "Email",
+                "link": "mailto:daniel.jrgde@gmail.com"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            "github": {
+                "title": "GitHub",
+                "link": "https://github.com/danieljrgde/"
+            },
+            "downloadResumeBtn": {
+                "text": "Currículo em PDF",
+                "tooltip": "Baixar"
+            },
+            "tabs": [
+                {
+                    "label": "Sobre",
+                    "to": "/"
+                },
+                {
+                    "label": "Projetos",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Currículo",
+                    "to": "/resume"
+                }
+            ]
+        },
+        "Footer": {
+            "initials": "DJD",
+            "links": [
+                {
+                    "label": "Sobre",
+                    "to": "/"
+                },
+                {
+                    "label": "Projetos",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Currículo",
+                    "to": "/resume"
+                }
+            ],
+            "contact": {
+                "email": {
+                    "title": "Email",
+                    "link": "mailto:daniel.jrgde@gmail.com"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/danieljrgde/"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": "https://github.com/danieljrgde/"
+                }
+            },
+            "copyrights": "Daniel J. Deutsch. Todos os direitos reservados."
+        },
+        "Navbar": {
+            "initials": "DJD",
+            "tabs": [
+                {
+                    "label": "Sobre",
+                    "to": "/"
+                },
+                {
+                    "label": "Projetos",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Currículo",
+                    "to": "/resume"
+                }
+            ],
+            "languages": [
+                {
+                    "label": "Inglês",
+                    "value": "en",
+                    "vectorName": "usa"
+                },
+                {
+                    "label": "Francês",
+                    "value": "fr",
+                    "vectorName": "france"
+                },
+                {
+                    "label": "Português",
+                    "value": "pt-BR",
+                    "vectorName": "brazil"
+                }
+            ]
+        },
+        "SideMenu": {
+            "name": "Daniel J. Deutsch",
+            "img": "/imgs/profile.jpg",
+            "email": {
+                "title": "Email",
+                "link": "mailto:daniel.jrgde@gmail.com"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            "github": {
+                "title": "GitHub",
+                "link": "https://github.com/danieljrgde/"
+            },
+            "downloadResumeBtn": {
+                "text": "Currículo em PDF",
+                "tooltip": "Baixar"
+            }
+        },
+        "AchievementsCard": {
+            "title": "Conquistas"
+        },
+        "BasicsCard": {
+            "title": "Informações Básicas"
+        },
+        "CertificatesCard": {
+            "title": "Certificados"
+        },
+        "EducationsCard": {
+            "title": "Educação"
+        },
+        "ProjectsCard": {
+            "title": "Projetos"
+        },
+        "PublicationsCard": {
+            "title": "Publicações"
+        },
+        "SkillsCard": {
+            "title": "Habilidades"
+        },
+        "VolunteerExperiencesCard": {
+            "title": "Experiência Voluntária"
+        },
+        "WorkExperiencesCard": {
+            "title": "Experiência de Trabalho"
+        },
+        "AboutPage": {
+            "greetings": "Olá!",
+            "paragraphs": [
+                "Sou Daniel, um entusiasta de IA com uma sólida experiência em aprendizado profundo, especialmente em Processamento de Linguagem Natural (NLP). Minha paixão por inteligência artificial me impulsiona a explorar e implementar novas práticas neste campo em constante evolução.",
+                "Ao longo da minha carreira, tive a oportunidade de trabalhar em vários projetos. Adoro aprender e estou sempre ansioso para entender e aplicar os avanços mais recentes em IA. Estar rodeado por pessoas ambiciosas e talentosas é uma fonte constante de inspiração para mim, pois estou sempre disposto a compartilhar conhecimento.",
+                "Quando não estou imerso no mundo da IA, você provavelmente me encontrará na quadra de tênis ou jogando futebol. Recentemente, também desenvolvi um gosto por trilhas. Também não há problema em tomar um café ou uma cerveja com amigos!",
+                "Estou sempre ansioso para conectar com outros entusiastas de IA, pesquisadores e profissionais. Se você deseja colaborar em projetos de IA de ponta ou simplesmente conversar sobre as últimas novidades em aprendizado de máquina, não hesite em entrar em contato!"
+            ]
+        },
+        "ProjectsPage": {
+            "title": "Projetos",
+            "subheader": "Abaixo você encontrará uma seleção de projetos que eu criei ao longo dos anos. Cada um representa um desafio único e mostra diferentes aspectos das minhas habilidades e criatividade. Espero que você goste de explorar meu trabalho."
+        },
+        "PublicationsPage": {
+            "title": "Projetos",
+            "subheader": ""
+        },
+        "ResumePage": {
+            "chips": {
+                "basics": "Informações Básicas",
+                "skills": "Habilidades",
+                "educations": "Educação",
+                "workExperiences": "Experiência de Trabalho",
+                "achievements": "Conquistas",
+                "certificates": "Certificados",
+                "volunteerExperiences": "Experiência Voluntária",
+                "projects": "Projetos"
+            }
         }
     },
-    "sideMenu": {
-        "contactMeText": "Feel free to contact me!"
-    },
-    "resumeModal": {
-        "title": "",
-        "description": ""
-    },
-    "about": {
-        "title": "Hello there!",
-        "paragraphs": [
-            "I'm a data scientist looking for a position in the field, eager to work with creative, kind and ambitious people!",
-            "Experienced in AI research and the development of deep learning solutions. Passionate about continuous learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and implement machine learning systems.",
-            "When I'm not in front of a computer screen, I'm probably out with my friends, playing tennis, enjoying a cup of coffee, or wandering around the city trying to catch a great sunset!"
-        ]
-    },
-    "basics": {
-        "title": "Basics",
-        "infos": [
+    "data": {
+        "basics": [
             {
-                "key": "Name",
-                "value": "Daniel J. Deutsch"
+                "key": "Nome",
+                "value": "Daniel J. Deutsch",
+                "link": ""
             },
             {
-                "key": "Preferred roles",
-                "value": "Data Scientist | AI Research Engineer | ML Engineer"
+                "key": "Funções Preferidas",
+                "value": "Cientista de Dados | Engenheiro de Pesquisa em IA | Engenheiro de ML",
+                "link": ""
             },
             {
                 "key": "Email",
-                "value": "daniel.jrgde@gmail.com"
+                "value": "daniel.jrgde@gmail.com",
+                "link": "mailto:daniel.jrgde@gmail.com"
             },
             {
                 "key": "LinkedIn",
-                "value": "https://www.linkedin.com/in/danieljrgde/"
+                "value": "https://www.linkedin.com/in/danieljrgde/",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
             },
             {
                 "key": "GitHub",
-                "value": "https://github.com/danieljrgde/"
+                "value": "https://github.com/danieljrgde/",
+                "link": "https://github.com/danieljrgde/"
             },
             {
-                "key": "Summary",
-                "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems."
+                "key": "Resumo",
+                "value": "Experiência em pesquisa de IA e desenvolvimento de soluções de aprendizado profundo. Apaixonado por aprender e dominar conceitos de IA, com uma habilidade comprovada para navegar por campos técnicos e complexos. Altamente proficiente em Python, com habilidades para escrever código limpo, robusto e escalável para projetar, desenvolver e implementar sistemas de aprendizado de máquina.",
+                "link": ""
             }
-        ]
-    },
-    "education": {
-        "title": "Education",
+        ],
         "educations": [
             {
-                "degree": "Master of Engineering (M.Eng)",
-                "major": "Computer Science",
+                "degree": "Mestre em Engenharia (M.Eng)",
+                "major": "Ciência da Computação",
+                "intro": "A Télécom Paris é uma prestigiada Grande École francesa e membro fundador do Institut Polytechnique de Paris. Conhecida por seus rigorosos padrões acadêmicos e pesquisas de ponta, a escola é renomada por formar líderes em tecnologia. Localizada no campus Paris-Saclay, a Télécom Paris oferece uma combinação excepcional de profundidade teórica e experiência prática, preparando os alunos para enfrentar os desafios mais urgentes no mundo digital.",
+                "coursework": [
+                    "Aprendizado Profundo",
+                    "Aprendizado de Máquina",
+                    "Séries Temporais",
+                    "Estatística",
+                    "Probabilidade",
+                    "Teoria da Otimização",
+                    "Liderança",
+                    "Gestão",
+                    "Empreendedorismo"
+                ],
                 "institution": {
-                    "name": "Telecom Paris - Institute Polytechnique de Paris",
-                    "image": "",
-                    "website": ""
+                    "name": "Télécom Paris, Instituto Politécnico de Paris",
+                    "img": "/imgs/education/telecom-paris.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.telecom-paris.fr/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2020-08-01",
+                "dateEnd": "2022-09-01"
             },
             {
-                "degree": "Master of Science (M.Sc)",
-                "major": "Computer Science",
+                "degree": "Mestre em Ciências (M.Sc)",
+                "major": "Ciência de Dados Financeiros",
+                "intro": "A Université Paris 1 Panthéon-Sorbonne, frequentemente chamada de Panthéon-Sorbonne, é uma prestigiada instituição multidisciplinar na França, especializada em economia e gestão. Localizada principalmente nas áreas históricas da Sorbonne e do Panthéon em Paris, possui instalações adicionais em vários bairros parisienses. Estabelecida em 1971, resultou da fusão de partes das faculdades de direito e economia e das humanidades, tornando-se um ator-chave na educação superior e na pesquisa. A universidade é membro da Sorbonne Alliance e fundadora da Una Europa, refletindo seu compromisso com a colaboração internacional e a excelência acadêmica.",
+                "coursework": [
+                    "Econometria",
+                    "Precificação de Ativos",
+                    "Gestão de Riscos",
+                    "Aprendizado de Máquina Aplicado",
+                    "Análise de Big Data Aplicada em Finanças"
+                ],
                 "institution": {
-                    "name": "University Pantheon-Sorbonne",
-                    "image": "",
-                    "website": ""
+                    "name": "Universidade Panthéon-Sorbonne",
+                    "img": "/imgs/education/pantheon-sorbonne.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.pantheonsorbonne.fr/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2021-09-01",
+                "dateEnd": "2022-09-01"
             },
             {
-                "degree": "Bachelor of Science (B.Sc)",
-                "major": "Electrical Engineering - Control and Automation",
+                "degree": "Bacharel em Ciências (B.Sc)",
+                "major": "Engenharia Elétrica - Controle e Automação",
+                "intro": "A Universidade de São Paulo (USP) é uma das principais universidades públicas do Brasil e uma das mais importantes da América Latina. Fundada em 1934, é renomada por suas extensas contribuições à educação, pesquisa e desenvolvimento da sociedade brasileira. A USP consistentemente figura entre as melhores universidades do mundo, conhecida por produzir alumni influentes e por sua produção científica significativa, contribuindo com 25% da produção científica do Brasil. Com uma forte ênfase na educação superior e na pesquisa científica, a USP desempenha um papel fundamental na formação do cenário intelectual e cultural do Brasil.",
+                "coursework": [
+                    "Cálculo",
+                    "Álgebra Linear",
+                    "Teoria da Probabilidade",
+                    "Estatística",
+                    "Matemática Aplicada",
+                    "Aprendizado de Máquina",
+                    "Ciência de Dados",
+                    "Sistemas de Controle",
+                    "Controle Multivariável",
+                    "Processamento de Sinais Digitais"
+                ],
                 "institution": {
-                    "name": "University of Sao Paulo",
-                    "image": "",
-                    "website": ""
+                    "name": "Universidade de São Paulo",
+                    "img": "/imgs/education/usp.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www5.usp.br/english/institutional/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
-                "dateStart": "",
-                "dateEnd": ""
+                "dateStart": "2017-01-01",
+                "dateEnd": "2022-12-01"
             }
-        ]
-    },
-    "workExperiences": {
-        "title": "Work Experiences",
+        ],
         "workExperiences": [
             {
                 "company": {
                     "name": "VO2 Group",
-                    "image": "",
-                    "website": ""
+                    "img": "/imgs/work-experience/vo2-group.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.vo2-group.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/vo2-group/"
+                    }
                 },
-                "role": "AI Research Engineer",
-                "location": "Paris, France",
-                "dateStart": "September 2023",
-                "dateEnd": "Present",
-                "introductionParagraph": "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries.",
+                "role": "Engenheiro de Pesquisa em IA",
+                "location": "Paris, França",
+                "dateStart": "2023-09-18",
+                "dateEnd": "Atual",
+                "intro": "Membro do departamento de Pesquisa em IA da empresa, pesquisando algoritmos de aprendizado profundo multimodal que podem ser aplicados nas indústrias financeira e de alta moda.",
                 "bulletPoints": [
-                    "Built a transformer-based model that leverages text and image information of garments to provide outfit recommendations.",
-                    "Engineered a custom attention mechanism that improved the model's ability to recommend outfits based on a text prompt.",
-                    "Improved model's generalization and performance through the collection and enhancement of training samples via web scraping and Generative AI techniques.",
-                    "Developed a Retrieval Augmented Generation (RAG) system to improve the responses of Large Language Models (LLMs) in the field of ESG (Environmental, Social, and Governance).",
-                    "Authored a quarterly internal newsletter detailing the latest advancements of AI and internal projects, making complex concepts and information accessible to a broad audience.",
-                    "Actively collaborated on projects with technically diverse teams, implementing AI solutions for cross-functional projects."
+                    "Desenvolveu um modelo baseado em transformer que utiliza informações de texto e imagem de roupas para fornecer recomendações de conjuntos.",
+                    "Projetou um mecanismo de atenção personalizado que melhorou a capacidade do modelo de recomendar conjuntos com base em um prompt de texto.",
+                    "Melhorou a generalização e o desempenho do modelo através da coleta e aprimoramento de amostras de treinamento via web scraping e técnicas de IA Generativa.",
+                    "Desenvolveu um sistema de Geração Aumentada por Recuperação (RAG) para melhorar as respostas de Modelos de Linguagem Grande (LLMs) no campo de ESG (Ambiental, Social e Governança).",
+                    "Redigiu um boletim informativo interno trimestral detalhando os avanços mais recentes em IA e projetos internos, tornando conceitos e informações complexas acessíveis a um público amplo.",
+                    "Colaborou ativamente em projetos com equipes tecnicamente diversas, implementando soluções de IA para projetos multifuncionais."
+                ],
+                "technicalBulletPoints": [
+                    "Pesquisou e desenvolveu uma rede baseada em transformer multimodal para aprender representações de nível de conjunto, alcançando 84% de precisão em FITB e 96% de AUC na previsão de compatibilidade de roupas.",
+                    "Projetou um mecanismo de atenção híbrido para o decodificador transformer, melhorando a integração das descrições textuais dos conjuntos e características das roupas para recomendações mais precisas e contextualizadas.",
+                    "Aplicou estratégias de aprendizado curricular para a perda de ranking de conjuntos, melhorando substancialmente o recall nas métricas top-k.",
+                    "Reduziu o overfitting expandindo o conjunto de treinamento com mais de 60 mil amostras coletadas da web, aprimoradas via modelo de imagem-para-texto LLaVA e classificação zero-shot do CLIP, melhorando a generalização e o desempenho do modelo.",
+                    "Desenvolveu um sistema de Geração Aumentada por Recuperação (RAG) para melhorar as respostas de grandes modelos de linguagem no campo de dados ESG.",
+                    "Colaborou ativamente em projetos multifuncionais, trabalhando com várias equipes para aplicar IA em diferentes áreas de negócios.",
+                    "Redigiu um boletim informativo interno trimestral detalhando os avanços mais recentes e projetos internos em IA, tornando conceitos e informações complexas acessíveis a um público amplo."
                 ],
                 "techStack": [
-                    "Python", "PyTorch", "Pandas", "Polars", "Jupyter", "NumPy", "Hugging Face", "LangChain", "LlamaIndex", "Git", "Docker", "GCP"
-                ],
-                "keywords": [
-                    "Deep Learning", "Generative AI", "Natural Language Processing", "LLM", "RAG", "Recommendation System", "Transformers", "Prompt Engineering", "Contrastive Learning", "Web Scraping", "Data Enhancement", "Data Cleaning", "Model Evaluation", "BERT", "CLIP", "Llama"
+                    "python",
+                    "pytorch",
+                    "pandas",
+                    "polars",
+                    "jupyter",
+                    "numpy",
+                    "transformers",
+                    "langchain",
+                    "llamaindex",
+                    "git",
+                    "docker",
+                    "gcp"
                 ]
             },
             {
                 "company": {
                     "name": "Gravite.io",
-                    "image": "",
-                    "website": ""
+                    "img": "/imgs/work-experience/gravite.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.gravite.io/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/gravite-hq/"
+                    }
                 },
-                "role": "Data Scientist",
-                "location": "Paris, France",
-                "dateStart": "May 2023",
-                "dateEnd": "September 2023",
-                "introductionParagraph": "Freelance mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback.",
+                "role": "Cientista de Dados",
+                "location": "Paris, França",
+                "dateStart": "2023-05-01",
+                "dateEnd": "2023-09-01",
+                "intro": "Missão freelance para projetar, desenvolver e implantar o recurso de IA da startup para identificar e formular pontos críticos com base no feedback dos clientes.",
                 "bulletPoints": [
-                    "Designed a topic modeling algorithm to categorize customer feedback and identify company's main pain points, resulting in a 30% increase in valuable KPIs.",
-                    "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
-                    "Engineered a custom relevance metric combining feedback frequency and severity, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
+                    "Projetou um algoritmo de modelagem de tópicos para categorizar o feedback dos clientes e identificar os principais pontos críticos da empresa, resultando em um aumento de 30% nos KPIs valiosos.",
+                    "Otimizou o pipeline de análise de feedback através do processamento paralelo, levando a uma redução de 80% no tempo de processamento.",
+                    "Desenvolveu uma métrica de relevância personalizada combinando frequência e gravidade do feedback, permitindo que as partes interessadas priorizassem e abordassem de forma eficiente os problemas mais críticos dos clientes."
+                ],
+                "technicalBulletPoints": [
+                    "Projetou um algoritmo de modelagem de tópicos para categorizar o feedback dos clientes e identificar os principais pontos de melhoria da empresa, resultando em um aumento de 30% nos KPIs valiosos.",
+                    "Otimizou o pipeline de análise de feedback através do processamento paralelo, levando a uma redução de 80% no tempo de processamento.",
+                    "Desenvolveu uma métrica de pontuação de relevância personalizada combinando frequência e gravidade das informações, permitindo que as partes interessadas priorizassem e resolvessem de forma eficiente os problemas mais críticos dos clientes."
                 ],
                 "techStack": [
-                    "Python", "Scikit-Learn", "OpenAI API", "Jupyter", "Pandas", "Git", "Docker"
-                ],
-                "keywords": [
-                    "Machine Learning", "Topic Modeling", "Text Classification", "Natural Language Processing", "Data Processing", "Parallel Computing", "Model Evaluation", "API Integration"
+                    "python",
+                    "scikit-learn",
+                    "openai",
+                    "jupyter",
+                    "pandas",
+                    "git",
+                    "docker"
                 ]
             },
             {
                 "company": {
                     "name": "Kaiko",
-                    "image": "",
-                    "website": ""
+                    "img": "/imgs/work-experience/kaiko.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.kaiko.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/kaikodata/"
+                    }
                 },
-                "role": "Data Scientist (Intern)",
-                "location": "Paris, France",
-                "dateStart": "September 2021",
-                "dateEnd": "September 2022",
-                "introductionParagraph": "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies.",
+                "role": "Cientista de Dados (Estágio)",
+                "location": "Paris, França",
+                "dateStart": "2021-09-01",
+                "dateEnd": "2022-09-01",
+                "intro": "Trabalhou no departamento de Produtos, principalmente realizando pesquisas sobre tendências de mercado e aplicando algoritmos de aprendizado profundo para aprimorar insights de mercado e estratégias de gerenciamento de risco.",
                 "bulletPoints": [
-                    "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
-                    "Implemented a deep learning model that detected 13k bot accounts in social media platforms, allowing an in-depth analysis of their influence on the crypto market.",
-                    "Investigated the application of anomaly detection algorithms on live market data, paving the way for more robust risk management strategies and improved market surveillance capabilities.",
-                    "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
+                    "Realizou pesquisa de análise de sentimento em mais de 6 milhões de postagens em redes sociais para verificar sua correlação com tendências de mercado, propondo métricas para o desenvolvimento de um índice de sentimento.",
+                    "Implementou um modelo de aprendizado profundo que detectou 13 mil contas bots em plataformas de redes sociais, permitindo uma análise aprofundada de sua influência no mercado de criptomoedas.",
+                    "Investigou a aplicação de algoritmos de detecção de anomalias em dados de mercado ao vivo, abrindo caminho para estratégias de gerenciamento de risco mais robustas e melhores capacidades de monitoramento de mercado.",
+                    "Implantou um pipeline PySpark de alto desempenho para analisar de forma eficiente grandes volumes de dados históricos de mercado, levando a um processo de tomada de decisão mais ágil."
+                ],
+                "technicalBulletPoints": [
+                    "Realizou pesquisa de análise de sentimento em mais de 6 milhões de postagens em redes sociais para verificar sua correlação com tendências de mercado, propondo métricas para o desenvolvimento de um índice de sentimento.",
+                    "Implementou um Autoencoder Variacional para detectar 13 mil contas bots em plataformas de redes sociais, permitindo uma análise aprofundada de sua influência no mercado de criptomoedas.",
+                    "Investigou a aplicação de algoritmos de detecção de anomalias em dados de mercado ao vivo, abrindo caminho para estratégias de gerenciamento de risco mais robustas e melhores capacidades de monitoramento de mercado.",
+                    "Implantou um pipeline PySpark de alto desempenho para analisar de forma eficiente grandes volumes de dados históricos de mercado, levando a um processo de tomada de decisão mais ágil."
                 ],
                 "techStack": [
-                    "Python", "TensorFlow", "Hugging Face", "PySpark", "Jupyter", "gRPC", "Git", "Docker"
-                ],
-                "keywords": [
-                    "Deep Learning", "Time Series Analysis", "Anomaly Detection", "Natural Language Processing", "Sentiment Analysis", "Variational Autoencoder", "Big Data", "Market Analysis", "Distributed Computing"
+                    "python",
+                    "tensorflow",
+                    "transformers",
+                    "pyspark",
+                    "jupyter",
+                    "grpc",
+                    "git",
+                    "docker"
                 ]
             },
             {
                 "company": {
                     "name": "BTG Pactual",
-                    "image": "",
-                    "website": ""
+                    "img": "/imgs/work-experience/btg-pactual.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.btgpactual.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/btgpactual/"
+                    }
                 },
-                "role": "Data Engineer (Intern)",
-                "location": "São Paulo, Brazil",
-                "dateStart": "December 2019",
-                "dateEnd": "August 2020",
-                "introductionParagraph": "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets.",
+                "role": "Engenheiro de Dados (Estágio)",
+                "location": "São Paulo, Brasil",
+                "dateStart": "2019-12-01",
+                "dateEnd": "2020-08-01",
+                "intro": "Membro da equipe de Análise de Dados, focado no monitoramento e otimização de pipelines de Big Data para dados de negociação, com ênfase principal nos mercados de ações brasileiro e americano.",
                 "bulletPoints": [
-                    "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
-                    "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
-                    "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
+                    "Desenvolveu uma arquitetura escalável com Airflow para orquestrar o uso de máquinas virtuais para execução de scripts, melhorando o monitoramento do fluxo de dados e reduzindo os custos com infraestrutura em nuvem em 25%.",
+                    "Desenvolveu uma estrutura sem servidor para monitorar a ingestão, processamento e aprimoramento dos dados de negociação, garantindo feedback quase em tempo real sobre a integridade dos dados.",
+                    "Implementou um pipeline CI/CD para automatizar a implantação de DAGs do Airflow, facilitando as atualizações no fluxo de dados de ativos financeiros."
+                ],
+                "technicalBulletPoints": [
+                    "Desenvolveu uma arquitetura escalável com Airflow para orquestrar o uso de máquinas virtuais para execução de scripts, melhorando o monitoramento do fluxo de dados e reduzindo os custos com infraestrutura em nuvem em 25%.",
+                    "Desenvolveu uma estrutura sem servidor para monitorar a ingestão, processamento e aprimoramento dos dados de negociação, garantindo feedback quase em tempo real sobre a integridade dos dados.",
+                    "Implementou um pipeline CI/CD para automatizar a implantação de DAGs do Airflow, facilitando as atualizações no fluxo de dados de ativos financeiros."
                 ],
                 "techStack": [
-                    "Python", "AWS (Lambda, S3, EMR, EC2, RDS, Athena, API Gateway, DynamoDB)", "Airflow", "PySpark", "Jupyter", "Git", "Docker"
+                    "python",
+                    "aws",
+                    "aws-lambda",
+                    "aws-s3",
+                    "aws-emr",
+                    "aws-ec2",
+                    "aws-rds",
+                    "aws-athena",
+                    "aws-apigateway",
+                    "aws-dynamodb",
+                    "airflow",
+                    "pyspark",
+                    "jupyter",
+                    "git",
+                    "docker"
+                ]
+            }
+        ],
+        "volunteerExperiences": [
+            {
+                "company": {
+                    "name": "Poli Júnior",
+                    "img": "/imgs/volunteer-experience/poli-junior.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://polijunior.com.br/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/poli-junior/"
+                    }
+                },
+                "role": "Líder Técnico",
+                "location": "São Paulo, Brasil",
+                "dateStart": "2017-04-01",
+                "dateEnd": "2019-12-01",
+                "intro": "Especializado tanto em desenvolvimento quanto em funções de liderança no departamento de Tecnologia da empresa júnior. Contribuiu para diversos projetos, supervisionando equipes e orientando decisões tecnológicas.",
+                "bulletPoints": [
+                    "Gerenciou uma equipe de desenvolvedores durante todo o ciclo de vida de um aplicativo móvel, desde o conceito inicial até a entrega final.",
+                    "Colaborou no desenvolvimento de APIs, sites e aplicativos móveis, atendendo às necessidades específicas dos clientes.",
+                    "Realizou revisões de código e forneceu orientação a desenvolvedores juniores, promovendo uma cultura de aprendizado contínuo e melhoria dentro da equipe."
                 ],
-                "keywords": [
-                    "Big Data", "Cloud Computing", "Workflow Orchestration", "Data Processing", "Data Integrity", "Near-Real-time Data Monitoring", "CI/CD", "Distributed Computing", "Data Warehousing", "SQL"
+                "technicalBulletPoints": [
+                    "Gerenciou uma equipe de desenvolvedores durante todo o ciclo de vida de um aplicativo móvel, desde o conceito inicial até a entrega final.",
+                    "Colaborou no desenvolvimento de APIs, sites e aplicativos móveis, atendendo às necessidades específicas dos clientes.",
+                    "Realizou revisões de código e forneceu orientação a desenvolvedores juniores, promovendo uma cultura de aprendizado contínuo e melhoria dentro da equipe."
+                ],
+                "techStack": [
+                    "python",
+                    "javascript",
+                    "git"
                 ]
             },
             {
                 "company": {
-                    "name": "Poli Júnior",
-                    "image": "",
-                    "website": ""
+                    "name": "Amigos da Poli",
+                    "img": "/imgs/volunteer-experience/amigos-da-poli.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": ""
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
-                "role": "Tech Leader",
-                "location": "São Paulo, Brazil",
-                "dateStart": "April 2017",
-                "dateEnd": "December 2019",
-                "introductionParagraph": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
+                "role": "Voluntário Técnico",
+                "location": "São Paulo, Brasil",
+                "dateStart": "2019-04-01",
+                "dateEnd": "2020-09-01",
+                "intro": "O fundo de ativos Amigos da Poli é uma associação que visa levantar doações e aplicar os recursos dessa arrecadação em projetos na Escola Politécnica da USP.",
                 "bulletPoints": [
-                    "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
-                    "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements."
+                    "Auxiliou no desenvolvimento e implementação de estratégias de captação de recursos para o financiamento de projetos de engenharia.",
+                    "Desenvolveu e integrou um sistema de doações por boleto no site, expandindo os métodos de doação e aumentando as contribuições totais.",
+                    "Fomentou relacionamentos com ex-alunos e patrocinadores corporativos, aprimorando as perspectivas de financiamento de longo prazo para a associação."
+                ],
+                "technicalBulletPoints": [
+                    "Auxiliou no desenvolvimento e implementação de estratégias de captação de recursos para o financiamento de projetos de engenharia.",
+                    "Desenvolveu e integrou um sistema de doações por boleto no site, expandindo os métodos de doação e aumentando as contribuições totais.",
+                    "Fomentou relacionamentos com ex-alunos e patrocinadores corporativos, aprimorando as perspectivas de financiamento de longo prazo para a associação."
                 ],
                 "techStack": [
-                    "Python", "JavaScript", "Git", "MySQL"
-                ],
-                "keywords": [
-                    "Team Leadership", "Software Development", "Scrum", "Agile"
+                    "python",
+                    "git"
                 ]
             }
-        ]
-    },
-    "projects": {
-        "title": "Projects",
-        "subheader": "Below you'll find a selection of projects I've crafted over the years. Each one represents a unique challenge and showcases different aspects of my skills and creativity. I hope you enjoy exploring my work.",
-        "projects": [
-            {
-                "title": "Effects of Social Media Bots on the Crypto Market",
-                "description": "In this research project, the impact of social media bots on the crypto market was investigated through the usage of AI and statistical analysis. A custom data collection script was developed to gather 6M+ market-related social media posts, along with stock price data for the top 50 cryptocurrencies by market cap. Users were classified into two categories (bot or human) based on the content of their posts using an anomaly detection architecture that leverages a Variational Autoencoder and the k-Nearest Neighbors algorithm, taking into account the unbalanced nature of the data. Sentiment analysis was conducted on the social media content using BERT embeddings as input for the neural network, enabling the classification of the emotional tone of social media posts. A custom engagement metric based on the content's metadata was proposed, and the correlation between this engagement metric and the asset's price fluctuations was analyzed.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
-            },
-            {
-                "title": "Amazon's User-Based Products Recommendations",
-                "description": "This research project investigated how Amazon personalizes product recommendations and pricing based on user information. We developed a data collection system that simulated different user personas by manipulating browser cookies and history, then collected search results of 60k+ products from Amazon. Using statistical measures like the Jaccard Similarity Index and Kendall's τ coefficient, we analyzed the collected data for evidence of price steering and discrimination. Our analysis revealed strong indications of price steering but limited evidence of price discrimination. To examine Amazon's buy-box recommendations, we implemented a Random Forest classifier that achieved 80% accuracy in predicting the recommended seller, with product price and seller metrics as key features. The project combined web scraping techniques, statistical analysis, and machine learning to gain insights into e-commerce personalization strategies.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
-            },
-            {
-                "title": "Effects of the Interest Rate on the Brazilian Stock Market",
-                "description": "This project investigated the impact of interest rates on various sectors of the Brazilian stock market using time series analysis. We developed a custom web scraping application to collect historical stock index data from B3 (the Brazilian stock exchange) and leveraged government APIs to gather macroeconomic indicators. The core of our analysis employed SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) models to account for the non-stationary nature of financial time series, including trends and seasonality. We compared these results against traditional OLS (Ordinary Least Squares) regression to highlight the importance of considering time-dependent structures in financial data. The SARIMAX models were optimized using cross-validation and the Akaike Information Criterion (AIC) to select the best hyperparameters. Our analysis revealed sector-specific sensitivities to interest rate changes, with real estate and consumer goods showing the most significant responses, while providing insights into the complex dynamics of Brazil's financial markets.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
-            },
-            {
-                "title": "Economic Incentives of Yelp's Fake Reviews",
-                "description": "This research project analyzed restaurant competition and review fraud on Yelp in Paris using data science and natural language processing techniques. We developed custom web scraping tools and utilized Yelp's API to collect data on over 13k restaurants, including details on 250k reviews, ratings, and geographical information. Using statistical analysis and regression models, we examined the economic incentives behind fake reviews, finding that lower-priced and lower-rated restaurants tended to have slightly higher percentages of fraudulent reviews. We also employed sentiment analysis and polarity detection on review text to differentiate characteristics of fake versus genuine reviews. Our analysis leveraged Python for data collection and processing, along with libraries like pandas for data manipulation and scikit-learn for machine learning tasks. The project provided insights into the dynamics of online review platforms and the factors influencing review fraud in the restaurant industry.",
-                "techStack": [
-                    ""
-                ],
-                "keywords": [
-                    ""
-                ]
-            }
-        ]
-    },
-    "certificates": {
-        "title": "Certificates",
+        ],
         "certificates": [
             {
-                "title": "Structuring Machine Learning Projects",
-                "description": "",
+                "title": "Estruturando Projetos de Machine Learning",
+                "img": "/imgs/certificate/struct-ml.jpg",
+                "intro": "O curso, oferecido pela DeepLearning.AI, é um recurso valioso para aqueles que buscam aprimorar suas habilidades em machine learning. Ministrado pelo especialista da indústria Andrew Ng, este curso explora conceitos-chave na otimização e gestão de sistemas ML. Ele me proporcionou insights práticos sobre diagnóstico e resolução de erros, priorização de estratégias de melhoria e manejo de configurações complexas de ML. O conteúdo do curso reforçou minha compreensão de técnicas avançadas como aprendizado por transferência e aprendizado multitarefa.",
+                "bulletPoints": [
+                    "Diagnóstico e estratégias de redução de erros em sistemas ML.",
+                    "Manejo de configurações complexas de ML e incompatibilidades de dados.",
+                    "Técnicas para superar o desempenho humano.",
+                    "Aplicação de aprendizado end-to-end, aprendizado por transferência e aprendizado multitarefa.",
+                    "Insights da indústria sobre liderança de equipes e projetos de IA."
+                ],
+                "technicalBulletPoints": [
+                    "Diagnóstico e estratégias de redução de erros em sistemas ML.",
+                    "Manejo de configurações complexas de ML e incompatibilidades de dados.",
+                    "Técnicas para superar o desempenho humano.",
+                    "Aplicação de aprendizado end-to-end, aprendizado por transferência e aprendizado multitarefa.",
+                    "Insights da indústria sobre liderança de equipes e projetos de IA."
+                ],
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
-                "dateCompletion": "January 2024",
-                "certificateUrl": ""
+                "dateCompletion": "2024-01-29",
+                "certificate": {
+                    "title": "Certificado",
+                    "link": "/docs/certificate/struct-ml.pdf"
+                },
+                "course": {
+                    "title": "Curso",
+                    "link": "https://www.coursera.org/learn/machine-learning-projects"
+                }
             },
             {
-                "title": "",
-                "description": "",
+                "title": "Melhorando Redes Neurais Profundas: Ajuste de Hiperparâmetros, Regularização e Otimização",
+                "img": "/imgs/certificate/improve-nn.jpg",
+                "intro": "O curso da DeepLearning.AI explora as complexidades dos sistemas de deep learning. Ministrado pelo especialista da indústria Andrew Ng, este curso explora técnicas cruciais para aprimorar o desempenho das redes neurais. Ele me proporcionou experiência prática na implementação de vários algoritmos de otimização e técnicas de regularização. O curso fortaleceu minha compreensão sobre ajuste de hiperparâmetros, análise de viés/variância e implementação prática no TensorFlow, equipando-me com habilidades valiosas para desenvolver aplicações robustas de deep learning.",
+                "bulletPoints": [
+                    "Melhores práticas para desenvolvimento de conjuntos de treinamento e teste.",
+                    "Implementação de técnicas de redes neurais como regularização L2, dropout e normalização em lote.",
+                    "Ajuste de hiperparâmetros e análise de viés/variância.",
+                    "Aplicação de algoritmos de otimização, incluindo gradiente descendente por mini-lotes, Momentum, RMSprop e Adam.",
+                    "Implementação prática de redes neurais usando TensorFlow."
+                ],
+                "technicalBulletPoints": [
+                    "Melhores práticas para desenvolvimento de conjuntos de treinamento e teste.",
+                    "Implementação de técnicas de redes neurais como regularização L2, dropout e normalização em lote.",
+                    "Ajuste de hiperparâmetros e análise de viés/variância.",
+                    "Aplicação de algoritmos de otimização, incluindo gradiente descendente por mini-lotes, Momentum, RMSprop e Adam.",
+                    "Implementação prática de redes neurais usando TensorFlow."
+                ],
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
-                "dateCompletion": "",
-                "certificateUrl": ""
+                "dateCompletion": "2023-11-14",
+                "certificate": {
+                    "title": "Certificado",
+                    "link": "/docs/certificate/improve-nn.pdf"
+                },
+                "course": {
+                    "title": "Curso",
+                    "link": "https://www.coursera.org/learn/deep-neural-network"
+                }
             },
             {
-                "title": "",
-                "description": "",
+                "title": "Redes Neurais e Deep Learning",
+                "img": "/imgs/certificate/nn-and-dl.jpg",
+                "intro": "O curso da DeepLearning.AI explora técnicas avançadas para melhorar o desempenho das redes neurais. Ministrado por especialistas da indústria, este curso explora aspectos cruciais da otimização de deep learning. Ele fortaleceu minha compreensão sobre ajuste de hiperparâmetros, métodos de regularização e vários algoritmos de otimização. O conteúdo do curso me proporcionou habilidades práticas para construir redes neurais mais eficientes e eficazes, ampliando minhas capacidades na aplicação de deep learning a problemas reais.",
+                "bulletPoints": [
+                    "Fundamentos de redes neurais e deep learning.",
+                    "Técnicas para construir e treinar redes neurais profundas totalmente conectadas.",
+                    "Implementação de redes neurais eficientes e vetorizadas.",
+                    "Identificação e ajuste de parâmetros-chave na arquitetura de redes neurais.",
+                    "Aplicação de deep learning em cenários práticos."
+                ],
+                "technicalBulletPoints": [
+                    "Fundamentos de redes neurais e deep learning.",
+                    "Técnicas para construir e treinar redes neurais profundas totalmente conectadas.",
+                    "Implementação de redes neurais eficientes e vetorizadas.",
+                    "Identificação e ajuste de parâmetros-chave na arquitetura de redes neurais.",
+                    "Aplicação de deep learning em cenários práticos."
+                ],
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "DeepLearning.AI",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
-                "dateCompletion": "",
-                "certificateUrl": ""
+                "dateCompletion": "2023-10-27",
+                "certificate": {
+                    "title": "Certificado",
+                    "link": "/docs/certificate/nn-and-dl.pdf"
+                },
+                "course": {
+                    "title": "Curso",
+                    "link": "https://www.coursera.org/learn/neural-networks-deep-learning"
+                }
             },
             {
-                "title": "",
-                "description": "",
+                "title": "Fundamentos de Gerenciamento de Projetos",
+                "img": "/imgs/certificate/foundations-pm.jpg",
+                "intro": "O curso oferecido pelo Google fornece uma introdução abrangente ao campo do gerenciamento de projetos. Este curso estabelece a base para entender os conceitos-chave, metodologias e melhores práticas em gerenciamento de projetos. Ele ampliou meu conhecimento sobre ciclos de vida de projetos, estruturas organizacionais e processos de gerenciamento de mudanças. O conteúdo do curso, ministrado por gerentes de projetos experientes do Google, ofereceu insights valiosos sobre cenários reais de gerenciamento de projetos e me ajudou a desenvolver habilidades práticas aplicáveis a várias indústrias.",
+                "bulletPoints": [
+                    "Fundamentos do gerenciamento de projetos e definição de projetos.",
+                    "Papéis e responsabilidades dos gerentes de projetos em diferentes setores.",
+                    "Habilidades essenciais para um gerenciamento de projetos bem-sucedido.",
+                    "Fases do ciclo de vida do projeto e sua importância.",
+                    "Comparação de várias metodologias e abordagens de gerenciamento de projetos.",
+                    "Impacto da estrutura organizacional e cultura no gerenciamento de projetos.",
+                    "Noções básicas de gerenciamento de mudanças em contextos de projetos."
+                ],
+                "technicalBulletPoints": [
+                    "Fundamentos do gerenciamento de projetos e definição de projetos.",
+                    "Papéis e responsabilidades dos gerentes de projetos em diferentes setores.",
+                    "Habilidades essenciais para um gerenciamento de projetos bem-sucedido.",
+                    "Fases do ciclo de vida do projeto e sua importância.",
+                    "Comparação de várias metodologias e abordagens de gerenciamento de projetos.",
+                    "Impacto da estrutura organizacional e cultura no gerenciamento de projetos.",
+                    "Noções básicas de gerenciamento de mudanças em contextos de projetos."
+                ],
                 "institution": {
-                    "name": "DeepLearning.AI"
+                    "name": "Google",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.google.com/"
+                    }
                 },
-                "dateCompletion": "",
-                "certificateUrl": ""
-            },
-            {
-                "title": "",
-                "description": "",
-                "institution": {
-                    "name": "Google"
+                "dateCompletion": "2022-12-14",
+                "certificate": {
+                    "title": "Certificado",
+                    "link": "/docs/certificate/foundations-pm.pdf"
                 },
-                "dateCompletion": "",
-                "certificateUrl": ""
+                "course": {
+                    "title": "Curso",
+                    "link": "https://www.coursera.org/learn/project-management-foundations"
+                }
             }
-        ]
-    },
-    "publications": {
-        "title": "Publications",
-        "description": "",
-        "publications": []
+        ],
+        "projects": [
+            {
+                "title": "Efeitos dos Bots de Mídia Social no Mercado de Criptoativos",
+                "img": "/imgs/project/bot-market-effects.jpg",
+                "report": {
+                    "title": "Relatório",
+                    "link": "/docs/project/bot-market-effects.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
+                "intro": "Realizei um projeto de pesquisa aprofundada investigando a influência dos bots de mídia social nos mercados de criptomoedas utilizando técnicas avançadas de IA e análise estatística.",
+                "bulletPoints": [
+                    "Desenvolvi um script de coleta de dados personalizado para reunir mais de 6 milhões de postagens relacionadas ao mercado e dados de preços de ações para as 50 principais criptomoedas.",
+                    "Implementei uma arquitetura inovadora de detecção de anomalias usando Autoencoders Variacionais e k-Nearest Neighbors para classificar usuários como bots ou humanos, levando em conta o desbalanceamento de dados.",
+                    "Realizei análise de sentimento no conteúdo das mídias sociais utilizando embeddings BERT e redes neurais para classificar o tom emocional das postagens.",
+                    "Projetei uma métrica de engajamento personalizada com base em metadados de conteúdo para analisar a correlação com as flutuações dos preços dos ativos.",
+                    "Utilizei métodos de IA e estatística para revelar percepções sobre a relação entre a atividade de bots de mídia social e as dinâmicas do mercado de criptomoedas."
+                ],
+                "technicalBulletPoints": [
+                    "Desenvolvi um script de coleta de dados personalizado para reunir mais de 6 milhões de postagens relacionadas ao mercado e dados de preços de ações para as 50 principais criptomoedas.",
+                    "Implementei uma arquitetura inovadora de detecção de anomalias usando Autoencoders Variacionais e k-Nearest Neighbors para classificar usuários como bots ou humanos, levando em conta o desbalanceamento de dados.",
+                    "Realizei análise de sentimento no conteúdo das mídias sociais utilizando embeddings BERT e redes neurais para classificar o tom emocional das postagens.",
+                    "Projetei uma métrica de engajamento personalizada com base em metadados de conteúdo para analisar a correlação com as flutuações dos preços dos ativos.",
+                    "Utilizei métodos de IA e estatística para revelar percepções sobre a relação entre a atividade de bots de mídia social e as dinâmicas do mercado de criptomoedas."
+                ],
+                "techStack": [
+                    "python",
+                    "jupyter",
+                    "transformers",
+                    "tensorflow",
+                    "statsmodels",
+                    "scikit-learn",
+                    "pandas",
+                    "numpy",
+                    "matplotlib",
+                    "seaborn",
+                    "nltk",
+                    "multiprocessing"
+                ]
+            },
+            {
+                "title": "Segredos da Amazon: Dados dos Usuários para Recomendação e Precificação?",
+                "img": "/imgs/project/amzn-recommendation.jpg",
+                "report": {
+                    "title": "Relatório",
+                    "link": "/docs/project/amzn-recommendation.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
+                "intro": "Realizei um projeto de pesquisa abrangente para investigar as estratégias de personalização da Amazon para recomendações de produtos e precificação, utilizando web scraping, análise estatística e técnicas de machine learning.",
+                "bulletPoints": [
+                    "Desenvolvi um sofisticado sistema de coleta de dados simulando diversas personas de usuários por meio da manipulação de cookies e histórico do navegador.",
+                    "Coletou e analisou resultados de busca para mais de 60 mil produtos da Amazon, criando um conjunto de dados robusto para investigação.",
+                    "Empreguei medidas estatísticas, incluindo o Índice de Similaridade de Jaccard e o coeficiente τ de Kendall, para detectar padrões de direcionamento e discriminação de preços.",
+                    "Implementei um classificador Random Forest alcançando 80% de precisão na previsão das recomendações de buy-box da Amazon, identificando fatores influentes.",
+                    "Descobri evidências robustas de práticas de direcionamento de preços enquanto encontrei indicações limitadas de discriminação de preços nas estratégias de e-commerce da Amazon.",
+                    "Combinei web scraping, análise estatística e machine learning para fornecer insights valiosos sobre técnicas de personalização no e-commerce."
+                ],
+                "technicalBulletPoints": [
+                    "Desenvolvi um sofisticado sistema de coleta de dados simulando diversas personas de usuários por meio da manipulação de cookies e histórico do navegador.",
+                    "Coletou e analisou resultados de busca para mais de 60 mil produtos da Amazon, criando um conjunto de dados robusto para investigação.",
+                    "Empreguei medidas estatísticas, incluindo o Índice de Similaridade de Jaccard e o coeficiente τ de Kendall, para detectar padrões de direcionamento e discriminação de preços.",
+                    "Implementei um classificador Random Forest alcançando 80% de precisão na previsão das recomendações de buy-box da Amazon, identificando fatores influentes.",
+                    "Descobri evidências robustas de práticas de direcionamento de preços enquanto encontrei indicações limitadas de discriminação de preços nas estratégias de e-commerce da Amazon.",
+                    "Combinei web scraping, análise estatística e machine learning para fornecer insights valiosos sobre técnicas de personalização no e-commerce."
+                ],
+                "techStack": [
+                    "python",
+                    "pandas",
+                    "numpy",
+                    "scipy",
+                    "scikit-learn",
+                    "matplotlib",
+                    "multiprocessing",
+                    "jupyter",
+                    "bash",
+                    "beautifulsoup"
+                ]
+            },
+            {
+                "title": "Efeitos da Taxa de Juros no Mercado de Ações Brasileiro",
+                "img": "/imgs/project/interest-rate-br.jpg",
+                "report": {
+                    "title": "Relatório",
+                    "link": "/docs/project/interest-rate-br.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
+                "intro": "Realizei um projeto de pesquisa aprofundada analisando o impacto das taxas de juros em vários setores do mercado de ações brasileiro utilizando técnicas avançadas de análise de séries temporais.",
+                "bulletPoints": [
+                    "Desenvolvi um aplicativo de web scraping personalizado para coletar dados históricos de índices de ações da B3 (bolsa de valores brasileira) e utilizei APIs governamentais para indicadores macroeconômicos.",
+                    "Implementei modelos SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) para lidar com a natureza não estacionária, tendências e sazonalidade nas séries temporais financeiras.",
+                    "Comparei os resultados do SARIMAX com a regressão tradicional OLS (Ordinary Least Squares) para demonstrar a importância das estruturas temporais na análise de dados financeiros.",
+                    "Otimizei os modelos SARIMAX usando validação cruzada e o Critério de Informação de Akaike (AIC) para seleção ideal de hiperparâmetros.",
+                    "Descobri sensibilidades específicas dos setores às mudanças nas taxas de juros, com os setores imobiliário e de bens de consumo mostrando as respostas mais significativas.",
+                    "Forneci insights valiosos sobre as dinâmicas complexas dos mercados financeiros brasileiros por meio de análise estatística e modelagem rigorosas."
+                ],
+                "technicalBulletPoints": [
+                    "Desenvolvi um aplicativo de web scraping personalizado para coletar dados históricos de índices de ações da B3 (bolsa de valores brasileira) e utilizei APIs governamentais para indicadores macroeconômicos.",
+                    "Implementei modelos SARIMAX (Seasonal Autoregressive Integrated Moving Average with Exogenous variables) para lidar com a natureza não estacionária, tendências e sazonalidade nas séries temporais financeiras.",
+                    "Comparei os resultados do SARIMAX com a regressão tradicional OLS (Ordinary Least Squares) para demonstrar a importância das estruturas temporais na análise de dados financeiros.",
+                    "Otimizei os modelos SARIMAX usando validação cruzada e o Critério de Informação de Akaike (AIC) para seleção ideal de hiperparâmetros.",
+                    "Descobri sensibilidades específicas dos setores às mudanças nas taxas de juros, com os setores imobiliário e de bens de consumo mostrando as respostas mais significativas.",
+                    "Forneci insights valiosos sobre as dinâmicas complexas dos mercados financeiros brasileiros por meio de análise estatística e modelagem rigorosas."
+                ],
+                "techStack": [
+                    "python",
+                    "jupyter",
+                    "pandas",
+                    "numpy",
+                    "matplotlib",
+                    "seaborn",
+                    "statsmodels",
+                    "scikit-learn",
+                    "yfinance"
+                ]
+            },
+            {
+                "title": "Incentivos Econômicos das Avaliações Falsas no Yelp",
+                "img": "/imgs/project/yelp-fake-review.jpg",
+                "report": {
+                    "title": "Relatório",
+                    "link": "/docs/project/yelp-fake-review.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
+                "intro": "Realizei um projeto de pesquisa abrangente analisando a competição entre restaurantes e fraudes de avaliações no Yelp em Paris utilizando técnicas avançadas de ciência de dados e processamento de linguagem natural.",
+                "bulletPoints": [
+                    "Desenvolvi ferramentas personalizadas de web scraping e utilizei a API do Yelp para coletar dados extensivos sobre mais de 13 mil restaurantes, incluindo mais de 250 mil avaliações, classificações e informações geográficas.",
+                    "Utilizei análise estatística e modelos de regressão para examinar os incentivos econômicos por trás das avaliações falsas, revelando maiores tendências de fraude entre restaurantes com preços mais baixos e avaliações mais baixas.",
+                    "Implementei análise de sentimento e detecção de polaridade no texto das avaliações para identificar características distintivas entre avaliações falsas e genuínas.",
+                    "Utilizei Python para coleta e processamento de dados, empregando bibliotecas como pandas para manipulação de dados e scikit-learn para tarefas de machine learning.",
+                    "Descobri insights sobre a dinâmica das plataformas de avaliações online e os fatores que influenciam a fraude em avaliações na competitiva indústria de restaurantes de Paris.",
+                    "Combinei web scraping, análise estatística e processamento de linguagem natural para fornecer uma visão abrangente dos padrões de avaliações de restaurantes e atividades fraudulentas potenciais."
+                ],
+                "technicalBulletPoints": [
+                    "Desenvolvi ferramentas personalizadas de web scraping e utilizei a API do Yelp para coletar dados extensivos sobre mais de 13 mil restaurantes, incluindo mais de 250 mil avaliações, classificações e informações geográficas.",
+                    "Utilizei análise estatística e modelos de regressão para examinar os incentivos econômicos por trás das avaliações falsas, revelando maiores tendências de fraude entre restaurantes com preços mais baixos e avaliações mais baixas.",
+                    "Implementei análise de sentimento e detecção de polaridade no texto das avaliações para identificar características distintivas entre avaliações falsas e genuínas.",
+                    "Utilizei Python para coleta e processamento de dados, empregando bibliotecas como pandas para manipulação de dados e scikit-learn para tarefas de machine learning.",
+                    "Descobri insights sobre a dinâmica das plataformas de avaliações online e os fatores que influenciam a fraude em avaliações na competitiva indústria de restaurantes de Paris.",
+                    "Combinei web scraping, análise estatística e processamento de linguagem natural para fornecer uma visão abrangente dos padrões de avaliações de restaurantes e atividades fraudulentas potenciais."
+                ],
+                "techStack": [
+                    "python",
+                    "jupyter",
+                    "numpy",
+                    "pandas",
+                    "statsmodels",
+                    "matplotlib",
+                    "seaborn",
+                    "plotly"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "title": "Prêmio de Melhor Tese de Mestrado da Panthéon-Sorbonne",
+                "subheader": "",
+                "date": "2022-09-01",
+                "paragraphs": [
+                    "Tenho orgulho em compartilhar que fui agraciado com o Prêmio de Melhor Tese de Mestrado da Universidade Pantheon-Sorbonne. Este prestigiado reconhecimento avalia as teses de mestrado com base na inovação e no impacto. Receber este prêmio é um testemunho da qualidade e importância do meu trabalho dentro da comunidade acadêmica.",
+                    "Minha tese premiada, \"Efeitos dos Bots de Mídia Social no Mercado de Criptoativos\", investiga a influência das contas automatizadas na negociação de criptomoedas e na estabilidade do mercado. Por meio de uma pesquisa extensa e análise de dados, descobri correlações significativas entre a atividade dos bots de mídia social e as flutuações do mercado. O que diferenciou minha tese foi a profundidade da pesquisa e a demonstração de conhecimento abrangente na condução de pesquisas e na utilização de algoritmos de IA de ponta."
+                ]
+            },
+            {
+                "title": "Bolsa de Coordenação para o Aperfeiçoamento de Pessoal de Nível Superior",
+                "subheader": "",
+                "date": "2021-01-01",
+                "paragraphs": [
+                    "O programa Brafitec (Brasil-França Ingénieurs Technologie), uma colaboração entre a CAPES do Brasil e a CDEFI da França, promove intercâmbios de alunos e professores, alinhamento curricular e reconhecimento mútuo de créditos acadêmicos. Lançado em 2002-2003, visa fomentar parcerias sustentáveis entre os dois países.",
+                    "Recebi a bolsa competitiva Brafitec, permitindo-me participar deste enriquecedor programa de intercâmbio. Essa experiência ampliou minhas perspectivas acadêmicas e culturais e reforçou meu compromisso com a colaboração internacional na educação em engenharia."
+                ]
+            },
+            {
+                "title": "Desafio de Código BTG Pactual",
+                "subheader": "1º lugar",
+                "date": "2019-12-01",
+                "paragraphs": [
+                    "O Desafio de Código BTG Pactual é uma competição nacional de programação organizada pelo BTG Pactual, um dos principais bancos de investimento do Brasil. Em 2019, o tema da competição foi Open Banking, atraindo alunos talentosos de todo o país. O desafio foi dividido em três etapas: um registro inicial online exigindo resolução de problemas, o desenvolvimento de um projeto alinhado ao tema Open Banking e uma apresentação final para um painel de parceiros do banco.",
+                    "Minha equipe conquistou o primeiro lugar nesta competição com nosso inovador aplicativo móvel, que consolidava as informações financeiras dos usuários de vários bancos por meio de APIs. Nosso app permitia aos usuários analisar suas despesas de forma abrangente e realizar várias operações bancárias, como transferências de dinheiro e pagamentos de contas, tudo em uma única plataforma. O júri ficou impressionado com a praticidade e o design amigável da nossa solução, concedendo-nos o prêmio máximo."
+                ]
+            },
+            {
+                "title": "Olimpíada Brasileira de Robótica",
+                "subheader": "Medalha de prata",
+                "date": "2016-05-01",
+                "paragraphs": [
+                    "A Olimpíada Brasileira de Robótica (OBR) é uma competição que combina desafios práticos e teóricos para aprimorar a aprendizagem por meio da robótica. Nas competições práticas, os participantes constroem e programam robôs, enquanto os exames teóricos abordam matérias como matemática, física, ciência da computação e princípios de engenharia. Esta abordagem demonstra como o conhecimento acadêmico pode ser aplicado para resolver problemas reais por meio da tecnologia.",
+                    "Tenho o prazer de compartilhar que fui premiado com a medalha de prata na OBR. Essa experiência alimentou meu interesse em robótica e me inspirou a continuar explorando o campo da tecnologia."
+                ]
+            },
+            {
+                "title": "Olimpíada Matemática Kangaroo",
+                "subheader": "Medalha de prata",
+                "date": "2016-08-01",
+                "paragraphs": [
+                    "O Kangaroo Matemático, também conhecido como Kangourou sans Frontières, é uma competição internacional realizada em 92 países. Abrange doze níveis de participação, desde o 1º ano até o 12º ano, e enfatiza o pensamento lógico e a combinação de conceitos matemáticos. A competição cobre uma ampla gama de tópicos, incentivando a criatividade, habilidades de resolução de problemas e uma profunda apreciação pela matemática.",
+                    "Tenho o prazer de compartilhar que fui premiado com a medalha de prata na competição Kangaroo Matemático. Essa experiência aprofundou minha apreciação pela matemática e me encorajou a continuar desenvolvendo minhas habilidades de resolução de problemas."
+                ]
+            }
+        ],
+        "skills": [
+            {
+                "key": "Programação",
+                "value": "Python, C/C++, SQL."
+            },
+            {
+                "key": "Idiomas",
+                "value": "Português (nativo), Inglês (fluente - C2), Francês (fluente - C1), Espanhol (intermediário - B2)"
+            }
+        ],
+        "techStack": {
+            "python": {
+                "label": "Python",
+                "link": "https://www.python.org/"
+            },
+            "pytorch": {
+                "label": "PyTorch",
+                "link": "https://pytorch.org/"
+            },
+            "pandas": {
+                "label": "Pandas",
+                "link": "https://pandas.pydata.org/"
+            },
+            "polars": {
+                "label": "Polars",
+                "link": "https://pola.rs/"
+            },
+            "jupyter": {
+                "label": "Jupyter",
+                "link": "https://jupyter.org/"
+            },
+            "numpy": {
+                "label": "NumPy",
+                "link": "https://numpy.org/"
+            },
+            "transformers": {
+                "label": "Transformers",
+                "link": "https://huggingface.co/transformers/"
+            },
+            "langchain": {
+                "label": "LangChain",
+                "link": "https://www.langchain.com/"
+            },
+            "llamaindex": {
+                "label": "LlamaIndex",
+                "link": "https://www.llamaindex.ai/"
+            },
+            "git": {
+                "label": "Git",
+                "link": "https://git-scm.com/"
+            },
+            "docker": {
+                "label": "Docker",
+                "link": "https://www.docker.com/"
+            },
+            "gcp": {
+                "label": "GCP",
+                "link": "https://cloud.google.com/"
+            },
+            "scikit-learn": {
+                "label": "Scikit-Learn",
+                "link": "https://scikit-learn.org/"
+            },
+            "openai": {
+                "label": "OpenAI",
+                "link": "https://openai.com/"
+            },
+            "pyspark": {
+                "label": "PySpark",
+                "link": "https://spark.apache.org/docs/latest/api/python/"
+            },
+            "grpc": {
+                "label": "gRPC",
+                "link": "https://grpc.io/"
+            },
+            "aws": {
+                "label": "AWS",
+                "link": "https://aws.amazon.com/"
+            },
+            "aws-lambda": {
+                "label": "AWS Lambda",
+                "link": "https://aws.amazon.com/lambda/"
+            },
+            "aws-s3": {
+                "label": "AWS S3",
+                "link": "https://aws.amazon.com/s3/"
+            },
+            "aws-emr": {
+                "label": "AWS EMR",
+                "link": "https://aws.amazon.com/emr/"
+            },
+            "aws-rds": {
+                "label": "AWS RDS",
+                "link": "https://aws.amazon.com/rds/"
+            },
+            "tensorflow": {
+                "label": "TensorFlow",
+                "link": "https://www.tensorflow.org/"
+            },
+            "aws-ec2": {
+                "label": "AWS EC2",
+                "link": "https://aws.amazon.com/ec2/"
+            },
+            "aws-athena": {
+                "label": "AWS Athena",
+                "link": "https://aws.amazon.com/athena/"
+            },
+            "aws-apigateway": {
+                "label": "AWS API Gateway",
+                "link": "https://aws.amazon.com/api-gateway/"
+            },
+            "aws-dynamodb": {
+                "label": "AWS DynamoDB",
+                "link": "https://aws.amazon.com/dynamodb/"
+            },
+            "airflow": {
+                "label": "Apache Airflow",
+                "link": "https://airflow.apache.org/"
+            },
+            "javascript": {
+                "label": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            "statsmodels": {
+                "label": "StatsModels",
+                "link": "https://www.statsmodels.org/"
+            },
+            "matplotlib": {
+                "label": "Matplotlib",
+                "link": "https://matplotlib.org/"
+            },
+            "seaborn": {
+                "label": "Seaborn",
+                "link": "https://seaborn.pydata.org/"
+            },
+            "nltk": {
+                "label": "NLTK",
+                "link": "https://www.nltk.org/"
+            },
+            "multiprocessing": {
+                "label": "Multiprocessing",
+                "link": "https://docs.python.org/3/library/multiprocessing.html"
+            },
+            "scipy": {
+                "label": "SciPy",
+                "link": "https://www.scipy.org/"
+            },
+            "bash": {
+                "label": "Bash",
+                "link": "https://www.gnu.org/software/bash/"
+            },
+            "beautifulsoup": {
+                "label": "Beautiful Soup",
+                "link": "https://www.crummy.com/software/BeautifulSoup/"
+            },
+            "yfinance": {
+                "label": "yfinance",
+                "link": "https://github.com/ranaroussi/yfinance"
+            },
+            "plotly": {
+                "label": "Plotly",
+                "link": "https://plotly.com/python/"
+            }
+        }
     }
 }

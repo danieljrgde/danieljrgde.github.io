@@ -13,56 +13,132 @@
                 "fr": {
                     "technical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Technical.pdf",
                     "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Not Technical.pdf"
+                },
+                "pt-BR": {
+                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
+                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
                 }
             }
         },
         "Drawer": {
             "name": "Daniel J. Deutsch",
-            "img": "/src/assets/imgs/profile.jpg",
-            "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
-            "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
-            "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" },
-            "downloadResumeBtn": { "text": "Resume pdf", "tooltip": "Download" },
+            "img": "/imgs/profile.jpg",
+            "email": {
+                "title": "Email",
+                "link": "mailto:daniel.jrgde@gmail.com"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            "github": {
+                "title": "GitHub",
+                "link": "https://github.com/danieljrgde/"
+            },
+            "downloadResumeBtn": {
+                "text": "Resume pdf",
+                "tooltip": "Download"
+            },
             "tabs": [
-                { "label": "About", "to": "/" },
-                { "label": "Projects", "to": "/projects" },
-                { "label": "Resume", "to": "/resume" }
+                {
+                    "label": "About",
+                    "to": "/"
+                },
+                {
+                    "label": "Projects",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Resume",
+                    "to": "/resume"
+                }
             ]
         },
         "Footer": {
             "initials": "DJD",
             "links": [
-                { "label": "About", "to": "/" },
-                { "label": "Projects", "to": "/projects" },
-                { "label": "Resume", "to": "/resume" }
+                {
+                    "label": "About",
+                    "to": "/"
+                },
+                {
+                    "label": "Projects",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Resume",
+                    "to": "/resume"
+                }
             ],
             "contact": {
-                "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
-                "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
-                "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" }
+                "email": {
+                    "title": "Email",
+                    "link": "mailto:daniel.jrgde@gmail.com"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "link": "https://www.linkedin.com/in/danieljrgde/"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": "https://github.com/danieljrgde/"
+                }
             },
             "copyrights": "Daniel J. Deutsch. All rights reserved."
         },
         "Navbar": {
             "initials": "DJD",
             "tabs": [
-                { "label": "About", "to": "/" },
-                { "label": "Projects", "to": "/projects" },
-                { "label": "Resume", "to": "/resume" }
+                {
+                    "label": "About",
+                    "to": "/"
+                },
+                {
+                    "label": "Projects",
+                    "to": "/projects"
+                },
+                {
+                    "label": "Resume",
+                    "to": "/resume"
+                }
             ],
             "languages": [
-                { "label": "English", "value": "en", "vector": "/src/assets/vectors/flags/usa.svg" },
-                { "label": "French", "value": "fr", "vector": "/src/assets/vectors/flags/france.svg" },
-                { "label": "Portuguese", "value": "pt", "vector": "/src/assets/vectors/flags/brazil.svg" }
+                {
+                    "label": "English",
+                    "value": "en",
+                    "vectorName": "usa"
+                },
+                {
+                    "label": "French",
+                    "value": "fr",
+                    "vectorName": "france"
+                },
+                {
+                    "label": "Portuguese",
+                    "value": "pt-BR",
+                    "vectorName": "brazil"
+                }
             ]
         },
         "SideMenu": {
             "name": "Daniel J. Deutsch",
-            "img": "/src/assets/imgs/profile.jpg",
-            "email": { "title": "Email", "link": "mailto:daniel.jrgde@gmail.com" },
-            "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/in/danieljrgde/" },
-            "github": { "title": "GitHub", "link": "https://github.com/danieljrgde/" },
-            "downloadResumeBtn": { "text": "Resume pdf", "tooltip": "Download" }
+            "img": "/imgs/profile.jpg",
+            "email": {
+                "title": "Email",
+                "link": "mailto:daniel.jrgde@gmail.com"
+            },
+            "linkedin": {
+                "title": "LinkedIn",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            "github": {
+                "title": "GitHub",
+                "link": "https://github.com/danieljrgde/"
+            },
+            "downloadResumeBtn": {
+                "text": "Resume pdf",
+                "tooltip": "Download"
+            }
         },
         "AchievementsCard": {
             "title": "Achievements"
@@ -96,7 +172,7 @@
             "paragraphs": [
                 "I'm Daniel, an AI enthusiast with a strong background in deep learning, particularly in Natural Language Processing (NLP). My passion for artificial intelligence drives me to continuously explore and implement new practices in this ever-evolving field.",
                 "Throughout my career, I've had the opportunity to work on numerous projects. I thrive on learning and am always eager to understand and apply the latest advancements in AI. Being surrounded by ambitious and talented individuals is a constant source of inspiration for me, as I am all in for sharing knowledge.",
-                "When I'm not absorbed by the world of AI, you'll likely find me on the tennis court or playing football. Recently, I've also developed a love for hiking. There is no going wrong with sipping coffee or grabbing a beer with friends either!",
+                "When I'm not absorbed by the world of AI, you'll likely find me on the tennis court or playing football. Recently, I've also developed a love for hiking. There's nothing wrong with sipping coffee or grabbing a beer with friends either!",
                 "I'm always eager to connect with fellow AI enthusiasts, researchers, and professionals. Whether you're looking to collaborate on cutting-edge AI projects or simply want to geek out about the latest in machine learning, don't hesitate to reach out!"
             ]
         },
@@ -123,24 +199,64 @@
     },
     "data": {
         "basics": [
-            { "key": "Name", "value": "Daniel J. Deutsch", "link": "" },
-            { "key": "Preferred Roles", "value": "Data Scientist | AI Research Engineer | ML Engineer", "link": "" },
-            { "key": "Email", "value": "daniel.jrgde@gmail.com", "link": "mailto:daniel.jrgde@gmail.com" },
-            { "key": "LinkedIn", "value": "https://www.linkedin.com/in/danieljrgde/", "link": "https://www.linkedin.com/in/danieljrgde/" },
-            { "key": "GitHub", "value": "https://github.com/danieljrgde/", "link": "https://github.com/danieljrgde/" },
-            { "key": "Summary", "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems.", "link": "" }
+            {
+                "key": "Name",
+                "value": "Daniel J. Deutsch",
+                "link": ""
+            },
+            {
+                "key": "Preferred Roles",
+                "value": "Data Scientist | AI Research Engineer | ML Engineer",
+                "link": ""
+            },
+            {
+                "key": "Email",
+                "value": "daniel.jrgde@gmail.com",
+                "link": "mailto:daniel.jrgde@gmail.com"
+            },
+            {
+                "key": "LinkedIn",
+                "value": "https://www.linkedin.com/in/danieljrgde/",
+                "link": "https://www.linkedin.com/in/danieljrgde/"
+            },
+            {
+                "key": "GitHub",
+                "value": "https://github.com/danieljrgde/",
+                "link": "https://github.com/danieljrgde/"
+            },
+            {
+                "key": "Summary",
+                "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems.",
+                "link": ""
+            }
         ],
         "educations": [
             {
                 "degree": "Master of Engineering (M.Eng)",
                 "major": "Computer Science",
                 "intro": "Télécom Paris is a prestigious french Grande École and founding member of the Institut Polytechnique de Paris. Known for its rigorous academic standards and cutting-edge research, the school is renowned for shaping leaders in technology. Situated at the Paris-Saclay campus, Télécom Paris offers an exceptional blend of theoretical depth and practical experience, equipping students to tackle the most pressing challenges in the digital world.",
-                "coursework": [ "Deep Learning", "Machine Learning", "Time Series", "Statistics", "Probability", "Optimization Theory", "Leadership", "Management", "Entrepreneurship" ],
+                "coursework": [
+                    "Deep Learning",
+                    "Machine Learning",
+                    "Time Series",
+                    "Statistics",
+                    "Probability",
+                    "Optimization Theory",
+                    "Leadership",
+                    "Management",
+                    "Entrepreneurship"
+                ],
                 "institution": {
                     "name": "Télécom Paris, Polytechnic Institute of Paris",
-                    "img": "/src/assets/imgs/education/telecom-paris.jpg",
-                    "website": { "title": "Website", "link": "https://www.telecom-paris.fr/" },
-                    "linkedin": { "title": "LinkedIn", "link": "" }
+                    "img": "/imgs/education/telecom-paris.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.telecom-paris.fr/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
                 "dateStart": "2020-08-01",
                 "dateEnd": "2022-09-01"
@@ -149,12 +265,24 @@
                 "degree": "Master of Science (M.Sc)",
                 "major": "Financial Data Science",
                 "intro": "The Université Paris 1 Panthéon-Sorbonne, often referred to as Panthéon-Sorbonne, is a prestigious multidisciplinary institution in France, specializing in economics and management. Located primarily in the historic Sorbonne and Panthéon areas of Paris, it has additional facilities across several Parisian districts. Established in 1971, it resulted from the merger of parts of the faculties of law and economics and the humanities, making it a key player in higher education and research. The university is a member of the Sorbonne Alliance and a founding member of Una Europa, reflecting its commitment to international collaboration and academic excellence.",
-                "coursework": [ "Econometrics", "Asset Pricing", "Risk Management", "Applied Machine Learning", "Applied Big Data Analytics in Finance" ],
+                "coursework": [
+                    "Econometrics",
+                    "Asset Pricing",
+                    "Risk Management",
+                    "Applied Machine Learning",
+                    "Applied Big Data Analytics in Finance"
+                ],
                 "institution": {
                     "name": "Panthéon-Sorbonne University",
-                    "img": "/src/assets/imgs/education/pantheon-sorbonne.jpg",
-                    "website": { "title": "Website", "link": "https://www.pantheonsorbonne.fr/" },
-                    "linkedin": { "title": "LinkedIn", "link": "" }
+                    "img": "/imgs/education/pantheon-sorbonne.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.pantheonsorbonne.fr/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
                 "dateStart": "2021-09-01",
                 "dateEnd": "2022-09-01"
@@ -163,12 +291,29 @@
                 "degree": "Bachelor of Science (B.Sc)",
                 "major": "Electrical Engineering - Control and Automation",
                 "intro": "The University of São Paulo (USP) is a premier public university in Brazil and one of the most important institutions in Latin America. Established in 1934, it is renowned for its extensive contributions to education, research, and the development of Brazilian society. USP consistently ranks among the top universities globally, known for producing influential alumni and significant scientific output, contributing to 25% of Brazil's scientific production. With a strong emphasis on higher education and scientific research, USP plays a pivotal role in shaping the intellectual and cultural landscape of Brazil.",
-                "coursework": [ "Calculus", "Linear Algebra", "Probability Theory", "Statistics", "Applied Mathematics", "Machine Learning", "Data Science", "Control Systems", "Multivariable Control", "Digital Signal Processing" ],
+                "coursework": [
+                    "Calculus",
+                    "Linear Algebra",
+                    "Probability Theory",
+                    "Statistics",
+                    "Applied Mathematics",
+                    "Machine Learning",
+                    "Data Science",
+                    "Control Systems",
+                    "Multivariable Control",
+                    "Digital Signal Processing"
+                ],
                 "institution": {
                     "name": "University of São Paulo",
-                    "img": "/src/assets/imgs/education/usp.jpg",
-                    "website": { "title": "Website", "link": "https://www5.usp.br/english/institutional/" },
-                    "linkedin": { "title": "LinkedIn", "link": "" }
+                    "img": "/imgs/education/usp.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www5.usp.br/english/institutional/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
                 "dateStart": "2017-01-01",
                 "dateEnd": "2022-12-01"
@@ -178,13 +323,19 @@
             {
                 "company": {
                     "name": "VO2 Group",
-                    "img": "/src/assets/imgs/work-experience/vo2-group.jpg",
-                    "website": { "title": "Website", "link": "https://www.vo2-group.com/" },
-                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/vo2-group/" }
+                    "img": "/imgs/work-experience/vo2-group.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.vo2-group.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/vo2-group/"
+                    }
                 },
                 "role": "AI Research Engineer",
                 "location": "Paris, France",
-                "dateStart": "September 2023",
+                "dateStart": "2023-09-18",
                 "dateEnd": "Present",
                 "intro": "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries.",
                 "bulletPoints": [
@@ -205,20 +356,37 @@
                     "Authored a quarterly internal newsletter detailing the latest advancements and internal projects in AI, making complex concepts and information accessible to a broad audience."
                 ],
                 "techStack": [
-                    "python", "pytorch", "pandas", "polars", "jupyter", "numpy", "transformers", "langchain", "llamaindex", "git", "docker", "gcp"
+                    "python",
+                    "pytorch",
+                    "pandas",
+                    "polars",
+                    "jupyter",
+                    "numpy",
+                    "transformers",
+                    "langchain",
+                    "llamaindex",
+                    "git",
+                    "docker",
+                    "gcp"
                 ]
             },
             {
                 "company": {
                     "name": "Gravite.io",
-                    "img": "/src/assets/imgs/work-experience/gravite.jpg",
-                    "website": { "title": "Website", "link": "https://www.gravite.io/" },
-                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/gravite-hq/" }
+                    "img": "/imgs/work-experience/gravite.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.gravite.io/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/gravite-hq/"
+                    }
                 },
                 "role": "Data Scientist",
                 "location": "Paris, France",
-                "dateStart": "May 2023",
-                "dateEnd": "September 2023",
+                "dateStart": "2023-05-01",
+                "dateEnd": "2023-09-01",
                 "intro": "Freelance mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback.",
                 "bulletPoints": [
                     "Designed a topic modeling algorithm to categorize customer feedback and identify company's main pain points, resulting in a 30% increase in valuable KPIs.",
@@ -231,20 +399,32 @@
                     "Engineered a custom relevance scoring metric combining insight frequency and severity metrics, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
                 ],
                 "techStack": [
-                    "python", "scikit-learn", "openai", "jupyter", "pandas", "git", "docker"
+                    "python",
+                    "scikit-learn",
+                    "openai",
+                    "jupyter",
+                    "pandas",
+                    "git",
+                    "docker"
                 ]
             },
             {
                 "company": {
                     "name": "Kaiko",
-                    "img": "/src/assets/imgs/work-experience/kaiko.jpg",
-                    "website": { "title": "Website", "link": "https://www.kaiko.com/" },
-                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/kaikodata/" }
+                    "img": "/imgs/work-experience/kaiko.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.kaiko.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/kaikodata/"
+                    }
                 },
                 "role": "Data Scientist (Intern)",
                 "location": "Paris, France",
-                "dateStart": "September 2021",
-                "dateEnd": "September 2022",
+                "dateStart": "2021-09-01",
+                "dateEnd": "2022-09-01",
                 "intro": "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies.",
                 "bulletPoints": [
                     "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
@@ -259,20 +439,33 @@
                     "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
                 ],
                 "techStack": [
-                    "python", "tensorflow", "transformers", "pyspark", "jupyter", "grpc", "git", "docker"
+                    "python",
+                    "tensorflow",
+                    "transformers",
+                    "pyspark",
+                    "jupyter",
+                    "grpc",
+                    "git",
+                    "docker"
                 ]
             },
             {
                 "company": {
                     "name": "BTG Pactual",
-                    "img": "/src/assets/imgs/work-experience/btg-pactual.jpg",
-                    "website": { "title": "Website", "link": "https://www.btgpactual.com/" },
-                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/btgpactual/" }
+                    "img": "/imgs/work-experience/btg-pactual.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.btgpactual.com/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/btgpactual/"
+                    }
                 },
                 "role": "Data Engineer (Intern)",
                 "location": "São Paulo, Brazil",
-                "dateStart": "December 2019",
-                "dateEnd": "August 2020",
+                "dateStart": "2019-12-01",
+                "dateEnd": "2020-08-01",
                 "intro": "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets.",
                 "bulletPoints": [
                     "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
@@ -283,10 +476,23 @@
                     "Designed a scalable Airflow architecture to orchestrate the usage of virtual machines for script executions, improving data-flow monitoring while reducing cloud infrastructure costs by 25%.",
                     "Developed a serverless framework to monitor the ingestion, processing, and enhancement of trading data, ensuring near real-time feedback on data integrity.",
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, easing updates to financial assets' data flow."
-
                 ],
                 "techStack": [
-                    "python", "aws", "aws-lambda", "aws-s3", "aws-emr", "aws-ec2", "aws-rds", "aws-athena", "aws-apigateway", "aws-dynamodb", "airflow", "pyspark", "jupyter", "git", "docker"
+                    "python",
+                    "aws",
+                    "aws-lambda",
+                    "aws-s3",
+                    "aws-emr",
+                    "aws-ec2",
+                    "aws-rds",
+                    "aws-athena",
+                    "aws-apigateway",
+                    "aws-dynamodb",
+                    "airflow",
+                    "pyspark",
+                    "jupyter",
+                    "git",
+                    "docker"
                 ]
             }
         ],
@@ -294,14 +500,20 @@
             {
                 "company": {
                     "name": "Poli Júnior",
-                    "img": "/src/assets/imgs/volunteer-experience/poli-junior.jpg",
-                    "website": { "title": "Website", "link": "https://polijunior.com.br/" },
-                    "linkedin": { "title": "LinkedIn", "link": "https://www.linkedin.com/company/poli-junior/" }
+                    "img": "/imgs/volunteer-experience/poli-junior.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": "https://polijunior.com.br/"
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": "https://www.linkedin.com/company/poli-junior/"
+                    }
                 },
                 "role": "Tech Leader",
                 "location": "São Paulo, Brazil",
-                "dateStart": "April 2017",
-                "dateEnd": "December 2019",
+                "dateStart": "2017-04-01",
+                "dateEnd": "2019-12-01",
                 "intro": "Specialized in both development and leadership roles within the Technology department of the junior company. Contributed to numerous projects, overseeing teams and guiding technology decisions.",
                 "bulletPoints": [
                     "Managed a team of developers throughout the entire lifecycle of a mobile application, from initial concept to final delivery.",
@@ -314,15 +526,23 @@
                     "Conducted code reviews and provided mentorship to junior developers, fostering a culture of continuous learning and improvement within the team."
                 ],
                 "techStack": [
-                    "python", "javascript", "git"
+                    "python",
+                    "javascript",
+                    "git"
                 ]
             },
             {
                 "company": {
                     "name": "Amigos da Poli",
-                    "img": "/src/assets/imgs/volunteer-experience/amigos-da-poli.jpg",
-                    "website": { "title": "Website", "link": "" },
-                    "linkedin": { "title": "LinkedIn", "link": "" }
+                    "img": "/imgs/volunteer-experience/amigos-da-poli.jpg",
+                    "website": {
+                        "title": "Website",
+                        "link": ""
+                    },
+                    "linkedin": {
+                        "title": "LinkedIn",
+                        "link": ""
+                    }
                 },
                 "role": "Tech Volunteer",
                 "location": "São Paulo, Brazil",
@@ -340,14 +560,15 @@
                     "Fostered relationships with alumni and corporate sponsors, enhancing long-term funding prospects for the association."
                 ],
                 "techStack": [
-                    "python", "git"
+                    "python",
+                    "git"
                 ]
             }
         ],
         "certificates": [
             {
                 "title": "Structuring Machine Learning Projects",
-                "img": "/src/assets/imgs/certificate/struct-ml.jpg",
+                "img": "/imgs/certificate/struct-ml.jpg",
                 "intro": "The course, offered by DeepLearning.AI is a valuable resource for those looking to enhance their machine learning skills. Taught by industry expert Andrew Ng, this course explores key concepts in ML system optimization and management. It provided me with practical insights into diagnosing and addressing errors, prioritizing improvement strategies, and handling complex ML configurations. The course content reinforced my understanding of cutting-edge techniques like transfer learning and multi-task learning.",
                 "bulletPoints": [
                     "Error diagnosis and reduction strategies in ML systems.",
@@ -365,15 +586,24 @@
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
-                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" }
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
                 "dateCompletion": "2024-01-29",
-                "certificate": { "title": "Certificate", "link": "/docs/certificate/struct-ml.pdf" },
-                "course": { "title": "Course", "link": "https://www.coursera.org/learn/machine-learning-projects" }
+                "certificate": {
+                    "title": "Certificate",
+                    "link": "/docs/certificate/struct-ml.pdf"
+                },
+                "course": {
+                    "title": "Course",
+                    "link": "https://www.coursera.org/learn/machine-learning-projects"
+                }
             },
             {
                 "title": "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
-                "img": "/src/assets/imgs/certificate/improve-nn.jpg",
+                "img": "/imgs/certificate/improve-nn.jpg",
                 "intro": "The course from DeepLearning.AI delves into the intricacies of deep learning systems. This course, led by industry expert Andrew Ng, explores crucial techniques for enhancing neural network performance. It provided me with hands-on experience in implementing various optimization algorithms and regularization techniques. The course strengthened my understanding of hyperparameter tuning, bias/variance analysis, and practical TensorFlow implementation, equipping me with valuable skills for developing robust deep learning applications.",
                 "bulletPoints": [
                     "Best practices for training and test set development.",
@@ -391,15 +621,24 @@
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
-                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" }
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
                 "dateCompletion": "2023-11-14",
-                "certificate": { "title": "Certificate", "link": "/docs/certificate/improve-nn.pdf" },
-                "course": { "title": "Course", "link": "https://www.coursera.org/learn/deep-neural-network" }
+                "certificate": {
+                    "title": "Certificate",
+                    "link": "/docs/certificate/improve-nn.pdf"
+                },
+                "course": {
+                    "title": "Course",
+                    "link": "https://www.coursera.org/learn/deep-neural-network"
+                }
             },
             {
                 "title": "Neural Networks and Deep Learning",
-                "img": "/src/assets/imgs/certificate/nn-and-dl.jpg",
+                "img": "/imgs/certificate/nn-and-dl.jpg",
                 "intro": "The course from DeepLearning.AI delves into advanced techniques for enhancing neural network performance. Led by industry experts, this course explores crucial aspects of deep learning optimization. It strengthened my understanding of hyperparameter tuning, regularization methods, and various optimization algorithms. The course content provided me with practical skills to build more efficient and effective neural networks, broadening my capabilities in applying deep learning to real-world problems.",
                 "bulletPoints": [
                     "Fundamentals of neural networks and deep learning.",
@@ -417,15 +656,24 @@
                 ],
                 "institution": {
                     "name": "DeepLearning.AI",
-                    "website": { "title": "Website", "link": "https://www.deeplearning.ai/" }
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.deeplearning.ai/"
+                    }
                 },
                 "dateCompletion": "2023-10-27",
-                "certificate": { "title": "Certificate", "link": "/docs/certificate/nn-and-dl.pdf" },
-                "course": { "title": "Course", "link": "https://www.coursera.org/learn/neural-networks-deep-learning" }
+                "certificate": {
+                    "title": "Certificate",
+                    "link": "/docs/certificate/nn-and-dl.pdf"
+                },
+                "course": {
+                    "title": "Course",
+                    "link": "https://www.coursera.org/learn/neural-networks-deep-learning"
+                }
             },
             {
                 "title": "Foundations of Project Management",
-                "img": "/src/assets/imgs/certificate/foundations-pm.jpg",
+                "img": "/imgs/certificate/foundations-pm.jpg",
                 "intro": "The course offered by Google provides a comprehensive introduction to the field of project management. This course lays the groundwork for understanding the key concepts, methodologies, and best practices in project management. It enhanced my knowledge of project lifecycles, organizational structures, and change management processes. The course content, delivered by experienced Google project managers, offered valuable insights into real-world project management scenarios and helped me develop practical skills applicable across various industries.",
                 "bulletPoints": [
                     "Fundamentals of project management and project definition.",
@@ -447,19 +695,34 @@
                 ],
                 "institution": {
                     "name": "Google",
-                    "website": { "title": "Website", "link": "https://www.google.com/" }
+                    "website": {
+                        "title": "Website",
+                        "link": "https://www.google.com/"
+                    }
                 },
                 "dateCompletion": "2022-12-14",
-                "certificate": { "title": "Certificate", "link": "/docs/certificate/foundations-pm.pdf" },
-                "course": { "title": "Course", "link": "https://www.coursera.org/learn/project-management-foundations" }
+                "certificate": {
+                    "title": "Certificate",
+                    "link": "/docs/certificate/foundations-pm.pdf"
+                },
+                "course": {
+                    "title": "Course",
+                    "link": "https://www.coursera.org/learn/project-management-foundations"
+                }
             }
         ],
         "projects": [
             {
                 "title": "Effects of Social Media Bots on the Crypto Market",
-                "img": "/src/assets/imgs/project/bot-market-effects.jpg",
-                "report": { "title": "Report", "link": "/docs/project/bot-market-effects.pdf" },
-                "github": { "title": "GitHub", "link": "" },
+                "img": "/imgs/project/bot-market-effects.jpg",
+                "report": {
+                    "title": "Report",
+                    "link": "/docs/project/bot-market-effects.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
                 "intro": "Conducted an in-depth research project investigating the influence of social media bots on cryptocurrency markets using advanced AI techniques and statistical analysis.",
                 "bulletPoints": [
                     "Developed a custom data collection script to gather 6M+ market-related social media posts and stock price data for the top 50 cryptocurrencies.",
@@ -476,14 +739,31 @@
                     "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
                 ],
                 "techStack": [
-                    "python", "jupyter", "transformers", "tensorflow", "statsmodels", "scikit-learn", "pandas", "numpy", "matplotlib", "seaborn", "nltk", "multiprocessing"
+                    "python",
+                    "jupyter",
+                    "transformers",
+                    "tensorflow",
+                    "statsmodels",
+                    "scikit-learn",
+                    "pandas",
+                    "numpy",
+                    "matplotlib",
+                    "seaborn",
+                    "nltk",
+                    "multiprocessing"
                 ]
             },
             {
                 "title": "Amazon's Secrets: User Data for Recommendations and Pricing?",
-                "img": "/src/assets/imgs/project/amzn-recommendation.jpg",
-                "report": { "title": "Report", "link": "/docs/project/amzn-recommendation.pdf" },
-                "github": { "title": "GitHub", "link": "" },
+                "img": "/imgs/project/amzn-recommendation.jpg",
+                "report": {
+                    "title": "Report",
+                    "link": "/docs/project/amzn-recommendation.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
                 "intro": "Conducted a comprehensive research project to investigate Amazon's personalization strategies for product recommendations and pricing, utilizing web scraping, statistical analysis, and machine learning techniques.",
                 "bulletPoints": [
                     "Developed a sophisticated data collection system simulating diverse user personas through manipulation of browser cookies and history.",
@@ -502,14 +782,29 @@
                     "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
                 ],
                 "techStack": [
-                    "python", "pandas", "numpy", "scipy", "scikit-learn", "matplotlib", "multiprocessing", "jupyter", "bash", "beautifulsoup"
+                    "python",
+                    "pandas",
+                    "numpy",
+                    "scipy",
+                    "scikit-learn",
+                    "matplotlib",
+                    "multiprocessing",
+                    "jupyter",
+                    "bash",
+                    "beautifulsoup"
                 ]
             },
             {
                 "title": "Effects of the Interest Rate on the Brazilian Stock Market",
-                "img": "/src/assets/imgs/project/interest-rate-br.jpg",
-                "report": { "title": "Report", "link": "/docs/project/interest-rate-br.pdf" },
-                "github": { "title": "GitHub", "link": "" },
+                "img": "/imgs/project/interest-rate-br.jpg",
+                "report": {
+                    "title": "Report",
+                    "link": "/docs/project/interest-rate-br.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
                 "intro": "Conducted an in-depth research project analyzing the impact of interest rates on various sectors of the Brazilian stock market using advanced time series analysis techniques.",
                 "bulletPoints": [
                     "Developed a custom web scraping application to collect historical stock index data from B3 (Brazilian stock exchange) and utilized government APIs for macroeconomic indicators.",
@@ -528,14 +823,28 @@
                     "Provided valuable insights into the complex dynamics of Brazil's financial markets through rigorous statistical analysis and modeling."
                 ],
                 "techStack": [
-                    "python", "jupyter", "pandas", "numpy", "matplotlib", "seaborn", "statsmodels", "scikit-learn", "yfinance"
+                    "python",
+                    "jupyter",
+                    "pandas",
+                    "numpy",
+                    "matplotlib",
+                    "seaborn",
+                    "statsmodels",
+                    "scikit-learn",
+                    "yfinance"
                 ]
             },
             {
                 "title": "Economic Incentives of Yelp's Fake Reviews",
-                "img": "/src/assets/imgs/project/yelp-fake-review.jpg",
-                "report": { "title": "Report", "link": "/docs/project/yelp-fake-review.pdf" },
-                "github": { "title": "GitHub", "link": "" },
+                "img": "/imgs/project/yelp-fake-review.jpg",
+                "report": {
+                    "title": "Report",
+                    "link": "/docs/project/yelp-fake-review.pdf"
+                },
+                "github": {
+                    "title": "GitHub",
+                    "link": ""
+                },
                 "intro": "Conducted a comprehensive research project analyzing restaurant competition and review fraud on Yelp in Paris using advanced data science and natural language processing techniques.",
                 "bulletPoints": [
                     "Developed custom web scraping tools and leveraged Yelp's API to collect extensive data on 13k+ restaurants, including 250k+ reviews, ratings, and geographical information.",
@@ -554,13 +863,20 @@
                     "Combined web scraping, statistical analysis, and natural language processing to provide a comprehensive view of restaurant review patterns and potential fraudulent activities."
                 ],
                 "techStack": [
-                    "python", "jupyter", "numpy", "pandas", "statsmodels", "matplotlib", "seaborn", "plotly"
+                    "python",
+                    "jupyter",
+                    "numpy",
+                    "pandas",
+                    "statsmodels",
+                    "matplotlib",
+                    "seaborn",
+                    "plotly"
                 ]
             }
         ],
         "achievements": [
             {
-                "title": "Pantheon-Sorbonne's Best Master Thesis Award",
+                "title": "Panthéon-Sorbonne's Best Master Thesis Award",
                 "subheader": "",
                 "date": "2022-09-01",
                 "paragraphs": [
@@ -596,7 +912,7 @@
                 ]
             },
             {
-                "title": "Kangaroo Mathmathics Olympiad",
+                "title": "Kangaroo Mathematics Olympiad",
                 "subheader": "Silver medal",
                 "date": "2016-08-01",
                 "paragraphs": [
@@ -606,48 +922,168 @@
             }
         ],
         "skills": [
-            { "key": "Programming", "value": "Python, C/C++, SQL." },
-            { "key": "Languages", "value": "Portuguese (native), English (fluent - C2), French (fluent - C1), Spanish (intermediary - B2)" }
+            {
+                "key": "Programming",
+                "value": "Python, C/C++, SQL."
+            },
+            {
+                "key": "Languages",
+                "value": "Portuguese (native), English (fluent - C2), French (fluent - C1), Spanish (intermediary - B2)"
+            }
         ],
         "techStack": {
-            "python": { "label": "Python", "link": "https://www.python.org/" },
-            "pytorch": { "label": "PyTorch", "link": "https://pytorch.org/" },
-            "pandas": { "label": "Pandas", "link": "https://pandas.pydata.org/" },
-            "polars": { "label": "Polars", "link": "https://pola.rs/" },
-            "jupyter": { "label": "Jupyter", "link": "https://jupyter.org/" },
-            "numpy": { "label": "NumPy", "link": "https://numpy.org/" },
-            "transformers": { "label": "Transformers", "link": "https://huggingface.co/transformers/" },
-            "langchain": { "label": "LangChain", "link": "https://www.langchain.com/" },
-            "llamaindex": { "label": "LlamaIndex", "link": "https://www.llamaindex.ai/" },
-            "git": { "label": "Git", "link": "https://git-scm.com/" },
-            "docker": { "label": "Docker", "link": "https://www.docker.com/" },
-            "gcp": { "label": "GCP", "link": "https://cloud.google.com/" },
-            "scikit-learn": { "label": "Scikit-Learn", "link": "https://scikit-learn.org/" },
-            "openai": { "label": "OpenAI", "link": "https://openai.com/" },
-            "pyspark": { "label": "PySpark", "link": "https://spark.apache.org/docs/latest/api/python/" },
-            "grpc": { "label": "gRPC", "link": "https://grpc.io/" },
-            "aws": { "label": "AWS", "link": "https://aws.amazon.com/" },
-            "aws-lambda": { "label": "AWS Lambda", "link": "https://aws.amazon.com/lambda/" },
-            "aws-s3": { "label": "AWS S3", "link": "https://aws.amazon.com/s3/" },
-            "aws-emr": { "label": "AWS EMR", "link": "https://aws.amazon.com/emr/" },
-            "aws-rds": { "label": "AWS RDS", "link": "https://aws.amazon.com/rds/" },
-            "tensorflow": { "label": "TensorFlow", "link": "https://www.tensorflow.org/" },
-            "aws-ec2": { "label": "AWS EC2", "link": "https://aws.amazon.com/ec2/" },
-            "aws-athena": { "label": "AWS Athena", "link": "https://aws.amazon.com/athena/" },
-            "aws-apigateway": { "label": "AWS API Gateway", "link": "https://aws.amazon.com/api-gateway/" },
-            "aws-dynamodb": { "label": "AWS DynamoDB", "link": "https://aws.amazon.com/dynamodb/" },
-            "airflow": { "label": "Apache Airflow", "link": "https://airflow.apache.org/" },
-            "javascript": { "label": "JavaScript", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-            "statsmodels": { "label": "StatsModels", "link": "https://www.statsmodels.org/" },
-            "matplotlib": { "label": "Matplotlib", "link": "https://matplotlib.org/" },
-            "seaborn": { "label": "Seaborn", "link": "https://seaborn.pydata.org/" },
-            "nltk": { "label": "NLTK", "link": "https://www.nltk.org/" },
-            "multiprocessing": { "label": "Multiprocessing", "link": "https://docs.python.org/3/library/multiprocessing.html" },
-            "scipy": { "label": "SciPy", "link": "https://www.scipy.org/" },
-            "bash": { "label": "Bash", "link": "https://www.gnu.org/software/bash/" },
-            "beautifulsoup": { "label": "Beautiful Soup", "link": "https://www.crummy.com/software/BeautifulSoup/" },
-            "yfinance": { "label": "yfinance", "link": "https://github.com/ranaroussi/yfinance" },
-            "plotly": { "label": "Plotly", "link": "https://plotly.com/python/" }
+            "python": {
+                "label": "Python",
+                "link": "https://www.python.org/"
+            },
+            "pytorch": {
+                "label": "PyTorch",
+                "link": "https://pytorch.org/"
+            },
+            "pandas": {
+                "label": "Pandas",
+                "link": "https://pandas.pydata.org/"
+            },
+            "polars": {
+                "label": "Polars",
+                "link": "https://pola.rs/"
+            },
+            "jupyter": {
+                "label": "Jupyter",
+                "link": "https://jupyter.org/"
+            },
+            "numpy": {
+                "label": "NumPy",
+                "link": "https://numpy.org/"
+            },
+            "transformers": {
+                "label": "Transformers",
+                "link": "https://huggingface.co/transformers/"
+            },
+            "langchain": {
+                "label": "LangChain",
+                "link": "https://www.langchain.com/"
+            },
+            "llamaindex": {
+                "label": "LlamaIndex",
+                "link": "https://www.llamaindex.ai/"
+            },
+            "git": {
+                "label": "Git",
+                "link": "https://git-scm.com/"
+            },
+            "docker": {
+                "label": "Docker",
+                "link": "https://www.docker.com/"
+            },
+            "gcp": {
+                "label": "GCP",
+                "link": "https://cloud.google.com/"
+            },
+            "scikit-learn": {
+                "label": "Scikit-Learn",
+                "link": "https://scikit-learn.org/"
+            },
+            "openai": {
+                "label": "OpenAI",
+                "link": "https://openai.com/"
+            },
+            "pyspark": {
+                "label": "PySpark",
+                "link": "https://spark.apache.org/docs/latest/api/python/"
+            },
+            "grpc": {
+                "label": "gRPC",
+                "link": "https://grpc.io/"
+            },
+            "aws": {
+                "label": "AWS",
+                "link": "https://aws.amazon.com/"
+            },
+            "aws-lambda": {
+                "label": "AWS Lambda",
+                "link": "https://aws.amazon.com/lambda/"
+            },
+            "aws-s3": {
+                "label": "AWS S3",
+                "link": "https://aws.amazon.com/s3/"
+            },
+            "aws-emr": {
+                "label": "AWS EMR",
+                "link": "https://aws.amazon.com/emr/"
+            },
+            "aws-rds": {
+                "label": "AWS RDS",
+                "link": "https://aws.amazon.com/rds/"
+            },
+            "tensorflow": {
+                "label": "TensorFlow",
+                "link": "https://www.tensorflow.org/"
+            },
+            "aws-ec2": {
+                "label": "AWS EC2",
+                "link": "https://aws.amazon.com/ec2/"
+            },
+            "aws-athena": {
+                "label": "AWS Athena",
+                "link": "https://aws.amazon.com/athena/"
+            },
+            "aws-apigateway": {
+                "label": "AWS API Gateway",
+                "link": "https://aws.amazon.com/api-gateway/"
+            },
+            "aws-dynamodb": {
+                "label": "AWS DynamoDB",
+                "link": "https://aws.amazon.com/dynamodb/"
+            },
+            "airflow": {
+                "label": "Apache Airflow",
+                "link": "https://airflow.apache.org/"
+            },
+            "javascript": {
+                "label": "JavaScript",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            "statsmodels": {
+                "label": "StatsModels",
+                "link": "https://www.statsmodels.org/"
+            },
+            "matplotlib": {
+                "label": "Matplotlib",
+                "link": "https://matplotlib.org/"
+            },
+            "seaborn": {
+                "label": "Seaborn",
+                "link": "https://seaborn.pydata.org/"
+            },
+            "nltk": {
+                "label": "NLTK",
+                "link": "https://www.nltk.org/"
+            },
+            "multiprocessing": {
+                "label": "Multiprocessing",
+                "link": "https://docs.python.org/3/library/multiprocessing.html"
+            },
+            "scipy": {
+                "label": "SciPy",
+                "link": "https://www.scipy.org/"
+            },
+            "bash": {
+                "label": "Bash",
+                "link": "https://www.gnu.org/software/bash/"
+            },
+            "beautifulsoup": {
+                "label": "Beautiful Soup",
+                "link": "https://www.crummy.com/software/BeautifulSoup/"
+            },
+            "yfinance": {
+                "label": "yfinance",
+                "link": "https://github.com/ranaroussi/yfinance"
+            },
+            "plotly": {
+                "label": "Plotly",
+                "link": "https://plotly.com/python/"
+            }
         }
     }
 }
