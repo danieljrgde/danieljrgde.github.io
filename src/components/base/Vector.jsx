@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { SvgIcon } from "@mui/material";
 
 const Vector = ({ variant, name, size, ...props }) => {
+    
     const [VectorComponent, setVectorComponent] = useState(null);
     const [error, setError] = useState(null);
 

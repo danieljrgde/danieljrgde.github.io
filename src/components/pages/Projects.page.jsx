@@ -1,6 +1,7 @@
 import { CardHeader, Grid } from "@mui/material";
 
-import ProjectGridItem from "@portfolio/components/hoc/project/ProjectGridItem";
+import ExperienceGridItem from "@portfolio/components/base/experience/ExperienceGridItem";
+import { Fragment } from "react";
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -21,19 +22,19 @@ const ProjectsPage = () => {
     const projects = t("data.projects", { returnObjects: true }) || [];
 
     return (
-        <>
+        <Fragment>
             <CardHeader
                 sx={styles.cardHeader}
                 title={t("components.ProjectsPage.title")}
-                titleTypographyProps={{ variant: "h4", fontWeight: 'bold', gutterBottom: true }}
+                titleTypographyProps={{ variant: "h4", fontWeight: "bold", gutterBottom: true }}
                 subheader={t("components.ProjectsPage.subheader")}
                 subheaderTypographyProps={{ variant: "body1", color: "text.secondary" }}
             />
 
             <Grid sx={styles.gridContainer}>
-                {projects.map((project, idx) => <ProjectGridItem key={idx} project={project} />)}
+                {projects.map((project, idx) => <ExperienceGridItem key={idx} img={project.img} title={project.title} experience={project} />)}
             </Grid>
-        </>
+        </Fragment>
     );
 };
 
