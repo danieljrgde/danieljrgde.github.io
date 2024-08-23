@@ -261,7 +261,7 @@
                 "titleHref": "https://www.telecom-paris.fr/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Diplôme d'Ingénieur | Computer Science",
+                "subheader": "Diplôme d'Ingénieur | Sciences Informatiques",
                 "subheaderEndAdornment": "Août 2020 - Sept 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
@@ -292,7 +292,7 @@
                 "titleHref": "https://www.pantheonsorbonne.fr/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Master of Science (M.Sc) | Financial Data Science",
+                "subheader": "Master of Science | Mathématiques Financières",
                 "subheaderEndAdornment": "Sept 2021 - Sept 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
@@ -323,8 +323,8 @@
                 "titleHref": "https://www5.usp.br/english/institutional/",
                 "titleEndAdornment": "São Paulo, Brésil",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Diplôme d'Ingénieur | Ingénierie Électrique - Contrôle et Automatisation",
-                "subheaderEndAdornment": "Jan 2017 - Dec 2022",
+                "subheader": "Diplôme d'Ingénieur | Génie Électrique",
+                "subheaderEndAdornment": "Jan 2017 - Déc 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "L'Université de São Paulo (USP) est une université publique de premier plan au Brésil et l'une des institutions les plus importantes d'Amérique Latine. Établie en 1934, elle est réputée pour ses contributions importantes à l'éducation, à la recherche et au développement de la société brésilienne. L'USP se classe régulièrement parmi les meilleures universités au niveau mondial, connue pour la production de diplômés influents et des résultats scientifiques significatifs, contribuant à 25 % de la production scientifique du Brésil. Avec un fort accent sur l'enseignement supérieur et la recherche scientifique, l'USP joue un rôle clé dans la formation du paysage intellectuel et culturel du Brésil."
@@ -363,12 +363,11 @@
                     "Membre du département de recherche en IA de l'entreprise, recherchant des algorithmes d'apprentissage profond multimodal pouvant être appliqués dans les secteurs financier et de la haute couture."
                 ],
                 "bulletPoints": [
-                    "Construction d'un modèle basé sur l'architecture transformer utilisant des informations textuelles et visuelles sur des vêtements pour fournir des recommandations de tenues vestimentaires.",
-                    "Conception d'un mécanisme d'attention personnalisé qui a amélioré la capacité du modèle à recommander des tenues basées sur une prompt textuelle.",
-                    "Amélioration de la généralisation et de la performance du modèle grâce à la collecte et à l'enrichissement d'échantillons d'entraînement via le web scraping et les techniques d'IA générative.",
-                    "Développement d'un système de Génération Augmentée par Récupération (RAG) pour améliorer les réponses des grands modèles de langage (LLMs) dans le domaine de l'ESG (Environnemental, Social et Gouvernance).",
-                    "Collaboration active avec des équipes techniquement diversifiées, implémentant l'IA pour des projets transversaux.",
-                    "Rédaction d'une newsletter interne trimestrielle détaillant les dernières avancées de l'IA et des projets internes, vulgarisant des concepts et informations complexes pour un large public."
+                    "Implémentation d'un réseau multimodal basé sur des transformers pour prédire la compatibilité des tenues vestimentaires.",
+                    "Développement des systèmes question-answering en utilisant l'architecture RAG (single et multi-agent) avec LangChain, LangGraph et LlamaIndex pour améliorer  la qualité des réponses des LLM.",
+                    "Mise en production d'un modèle GenAI de computer vision utilisant des techniques de diffusion pour l'inpainting d'images, générant ainsi des images réalistes de personnes portant des vêtements spécifiés via une API.",
+                    "Suivi actif des avancées en IA et implémentation des architectures proposées par des articles de recherche les plus récents.",
+                    "Rédaction d'une newsletter interne offrant une vue détaillée et accessible des concepts d'IA pour un large public."
                 ],
                 "technicalBulletPoints": [
                     "Recherche et développement d'un réseau multimodal basé sur des transformers pour l'apprentissage de représentations de tenue vestimentaire, atteignant 84% d'accuracy dans FITB et 96% d'AUC dans la prédiction de compatibilité des vêtements.",
@@ -413,16 +412,16 @@
                 "titleHref": "https://www.gravite.io/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Data Scientist",
+                "subheader": "ML Engineer (Contrat)",
                 "subheaderEndAdornment": "Mai 2023 - Sept 2023",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
-                    "Mission en freelance pour concevoir, développer et déployer la fonctionnalité d'IA de la startup pour identifier et formuler les points de douleur basés sur les retours clients."
+                    "Mission en contrat pour concevoir, développer et déployer la fonctionnalité d'IA de la startup pour identifier et formuler les points de douleur basés sur les retours clients."
                 ],
                 "bulletPoints": [
-                    "Conception d'un algorithme de modélisation thématique pour catégoriser les retours clients et identifier les principaux points problématiques de l'entreprise, entraînant une augmentation de 30% des KPI importants.",
-                    "Optimisation du pipeline d'analyse des retours grâce au traitement parallèle, réduisant le temps de traitement de 80%.",
-                    "Élaboration d'une métrique de pertinence personnalisée combinant la fréquence et la gravité des retours, permettant aux parties prenantes de hiérarchiser et de traiter efficacement les problèmes clients les plus critiques."
+                    "Conception d'un algorithme NLP de topic modeling pour la classification automatique des retours clients.",
+                    "Intégration de LLMs dans le processus d'analyse, augmentant la précision de la catégorisation des retours et facilitant l'identification de nouvelles tendances client.",
+                    "Développement d'un modèle end-to-end, couvrant l'entraînement, le déploiement et l'amélioration continue, en appliquant des pratiques de MLOps pour une intégration fluide en production."
                 ],
                 "technicalBulletPoints": [
                     "Conception d'un algorithme de topic modeling pour catégoriser les retours clients et identifier les principaux pain points, résultant en une augmentation de 30% des solutions actionnables pour répondre aux préoccupations des clients.",
@@ -464,10 +463,9 @@
                     "Travail au sein du département Produit, principalement sur la recherche des tendances du marché et l'application d'algorithmes d'apprentissage profond pour améliorer les connaissances sur le marché et les stratégies de gestion des risques."
                 ],
                 "bulletPoints": [
-                    "Recherche d'analyse de sentiment sur 6M+ de publications sur les réseaux sociaux pour vérifier leur corrélation avec les tendances du marché, proposant des métriques pour le développement d'un indice de sentiment.",
-                    "Implémentation d'un modèle de deep learning qui a détecté 13k comptes bots sur les plateformes de réseaux sociaux, permettant une analyse approfondie de leur influence sur le marché des crypto-monnaies.",
-                    "Étude de l'application d'algorithmes de détection d'anomalies sur des données de marché en temps réel, ouvrant la voie à des stratégies de gestion des risques plus robustes et à des capacités de surveillance du marché améliorées.",
-                    "Déploiement d'un pipeline PySpark haute performance pour analyser efficacement de grands volumes de données historiques de marché, conduisant à un processus de prise de décision accéléré."
+                    "Entraînement d'un modèle de deep learning pour l'analyse de sentiments du marché sur 6M+ de postes de réseaux sociaux, exploitant les techniques de transfer learning avec BERT-Base comme backbone.",
+                    "Application d'algorithmes de détection d'anomalies sur des données de trading, améliorant les stratégies de gestion des risques et la surveillance du marché.",
+                    "Déploiement d'un pipeline PySpark pour traiter et analyser un grand volume de données historiques de marché."
                 ],
                 "technicalBulletPoints": [
 
@@ -508,9 +506,9 @@
                     "Membre de l'équipe Data Analytics, concentré sur la surveillance et l'optimisation des pipelines Big Data pour les données de trading, avec un accent principal sur les marchés boursiers brésilien et américain."
                 ],
                 "bulletPoints": [
-                    "Conception d'une architecture Airflow scalable pour orchestrer l'utilisation de machines virtuelles pour l'exécution de scripts, améliorant le suivi des flux de données tout en réduisant les coûts d'infrastructure cloud de 25%.",
-                    "Développement d'un framework serverless pour surveiller l'ingestion, le traitement et l'enrichissement des données de trading, assurant un retour d'information quasi temps réel sur l'intégrité des données.",
-                    "Implémentation d'un pipeline CI/CD pour automatiser le déploiement des Airflow DAGs, facilitant les mises à jour."
+                    "Conception d'une architecture Airflow scalable pour orchestrer l'utilisation de machines virtuelles, améliorant le suivi des flux de données tout en réduisant les coûts d'infrastructure cloud.",
+                    "Architecture d'un framework serverless pour surveiller l'ingestion, le traitement et l'enrichissement des données de trading, assurant un retour d'information quasi temps réel sur l'intégrité des données.",
+                    "Implémentation d'une pipeline CI/CD pour automatiser le déploiement des DAGs Airflow, facilitant les mises à jour."
                 ],
                 "technicalBulletPoints": [
 

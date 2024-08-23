@@ -55,7 +55,7 @@ const ExperienceListItem = ({ img="", title="", titleSuffix="", titleEndAdornmen
                     </Box>
                 </Box>
             </ListItemButton>
-            <ExperienceModal
+            {isModalOpen && <ExperienceModal
                 open={isModalOpen}
                 onClose={handleModal}
                 img={experience.img}
@@ -73,7 +73,7 @@ const ExperienceListItem = ({ img="", title="", titleSuffix="", titleEndAdornmen
                 technicalBulletPoints={experience.technicalBulletPoints}
                 outro={experience.outro}
                 techStack={experience.techStack}
-            />
+            />}
         </>
     );
 };

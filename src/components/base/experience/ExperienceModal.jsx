@@ -120,7 +120,9 @@ const ExperienceModal = ({
     /*--- USE EFFECT ---------------*/
     /*------------------------------*/
 
-    useEffect(() => { technicalBulletPoints.length === 0 ? setIsTechJargon(false) : null }, []);
+    useEffect(() => {
+        technicalBulletPoints.length === 0 ? setIsTechJargon(false) : null;
+    }, [technicalBulletPoints, setIsTechJargon]);
 
 
 

@@ -23,7 +23,7 @@ const ProjectGridItem = ({ img, title, experience }) => {
                     <Typography gutterBottom variant="body1" fontWeight="bold">{title}</Typography>
                 </CardContent>
             </CardActionArea>
-            <ExperienceModal
+            {isModalOpen && <ExperienceModal
                 open={isModalOpen}
                 onClose={handleModal}
                 img={experience.img}
@@ -40,7 +40,7 @@ const ProjectGridItem = ({ img, title, experience }) => {
                 technicalBulletPoints={experience.technicalBulletPoints}
                 outro={experience.outro}
                 techStack={experience.techStack}
-            />
+            />}
         </Card>
     );
 };
