@@ -886,6 +886,11 @@
                 "valueHref": ""
             },
             {
+                "key": "Tech Stack",
+                "value": "Pandas, Polars, NumPy, Scikit-Learn, PyTorch, PySpark, LangChain, Git, Docker, GCP, AWS, MLflow, Jupyter, TensorFlow, Lightning, Transformers.",
+                "valueHref": ""
+            },
+            {
                 "key": "Languages",
                 "value": "Portuguese (native), English (fluent - C2), French (fluent - C1), Spanish (intermediary - B2)",
                 "valueHref": ""
