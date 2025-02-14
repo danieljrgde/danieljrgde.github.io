@@ -96,7 +96,6 @@ ExperiencesCard.propTypes = {
                 subheaderEndAdornmentIcon: PropTypes.string,
                 intro: PropTypes.arrayOf(PropTypes.string),
                 bulletPoints: PropTypes.arrayOf(PropTypes.string),
-                technicalBulletPoints: PropTypes.arrayOf(PropTypes.string),
                 outro: PropTypes.arrayOf(PropTypes.string),
                 techStack: PropTypes.arrayOf(PropTypes.string),
             })

@@ -70,7 +70,6 @@ const ExperienceListItem = ({ img="", title="", titleSuffix="", titleEndAdornmen
                 subheaderEndAdornmentIcon={experience.subheaderEndAdornmentIcon}
                 intro={experience.intro}
                 bulletPoints={experience.bulletPoints}
-                technicalBulletPoints={experience.technicalBulletPoints}
                 outro={experience.outro}
                 techStack={experience.techStack}
             />}
@@ -104,7 +103,6 @@ ExperienceListItem.propTypes = {
         subheaderEndAdornmentIcon: PropTypes.string,
         intro: PropTypes.arrayOf(PropTypes.string),
         bulletPoints: PropTypes.arrayOf(PropTypes.string),
-        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string),
         outro: PropTypes.arrayOf(PropTypes.string),
         techStack: PropTypes.arrayOf(PropTypes.string),
     })

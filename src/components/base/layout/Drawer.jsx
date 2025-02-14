@@ -1,13 +1,11 @@
 import { Avatar, Box, Button, Drawer as DrawerMUI, Link, List, ListItemButton, ListItemText, Stack, Tooltip, Typography } from "@mui/material";
 
 import DownloadIcon from '@mui/icons-material/Download';
-import DownloadResumeModal from "@portfolio/components/base/DownloadResumeModal";
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from "react-router-dom";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const styles = {
@@ -41,13 +39,13 @@ const styles = {
 
 const Drawer = ({ open, onClose }) => {
 
-    const { t } = useTranslation();
-    const [ isModalOpen, setIsModalOpen ] = useState(false);
+    const { t, i18n } = useTranslation();
     const tabs = t("components.Drawer.tabs", { returnObjects: true });
-    
-    
-    const handleModal = (ev) => {
-        setIsModalOpen(prev => !prev);
+    const resumePaths = t("components.Drawer.resume", { returnObjects: true });
+
+    const handleResume = () => {
+        console.log(resumePaths)
+        window.open(resumePaths[i18n.language], '_blank');
     };
 
     return (
@@ -71,9 +69,8 @@ const Drawer = ({ open, onClose }) => {
             </List>
             
             <Box sx={styles.downloadBtnBox}>
-                <Tooltip title={t("components.SideMenu.downloadResumeBtn.tooltip")}><Button onClick={handleModal} startIcon={<DownloadIcon />} variant="contained">{t("components.SideMenu.downloadResumeBtn.text")}</Button></Tooltip>
+                <Button onClick={handleResume} startIcon={<DownloadIcon />} variant="contained">{t("components.SideMenu.downloadResumeBtn.text")}</Button>
             </Box>
-            <DownloadResumeModal open={isModalOpen} onClose={handleModal} />
 
         </DrawerMUI>
     );

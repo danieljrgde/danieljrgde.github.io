@@ -1,9 +1,7 @@
-import { Avatar, Box, Card, CardContent, CardHeader, Chip, FormControlLabel, IconButton, Link, List, ListItem, Modal, Stack, Switch, Tooltip, Typography } from "@mui/material";
-import { useContext, useEffect } from "react";
+import { Avatar, Box, Card, CardContent, CardHeader, Chip, IconButton, Link, List, ListItem, Modal, Stack, Tooltip, Typography } from "@mui/material";
 
 import CloseIcon from "@mui/icons-material/Close";
 import Icon from "@portfolio/components/base/Icon";
-import { IsTechJargonContext } from "@portfolio/contexts/IsTechJargonContext";
 import PropTypes from "prop-types";
 import Vector from "@portfolio/components/base/Vector";
 import { useTranslation } from "react-i18next";
@@ -105,35 +103,12 @@ const ExperienceModal = ({
     subheaderEndAdornmentIcon = "",
     intro = [],
     bulletPoints = [],
-    technicalBulletPoints = [],
     outro = [],
     techStack = []
 }) => {
 
     const { t } = useTranslation();
     const techStackMap = t("data.techStack", { returnObjects: true });
-    const { isTechJargon, setIsTechJargon } = useContext(IsTechJargonContext);
-
-
-
-    /*------------------------------*/
-    /*--- USE EFFECT ---------------*/
-    /*------------------------------*/
-
-    useEffect(() => {
-        technicalBulletPoints.length === 0 ? setIsTechJargon(false) : null;
-    }, [technicalBulletPoints, setIsTechJargon]);
-
-
-
-    /*------------------------------*/
-    /*--- HANDLE FUNCTIONS ---------*/
-    /*------------------------------*/
-
-    const handleTechJargon = (ev) => {
-        setIsTechJargon(ev.target.checked);
-    };
-
 
 
     /*------------------------------*/
@@ -150,12 +125,6 @@ const ExperienceModal = ({
                     </Tooltip>
                 ))}
             </Stack>
-            {technicalBulletPoints.length !== 0 && (
-                <FormControlLabel
-                    control={<Switch checked={isTechJargon} onChange={handleTechJargon} />}
-                    label={<Typography variant="body2" color="text.secondary">{t("components.ExperienceModal.jargonSwitchLabel")}</Typography>}
-                />
-            )}
         </Box>
     );
 
@@ -192,7 +161,7 @@ const ExperienceModal = ({
 
     const renderContentBulletPoints = () => (
         <List sx={styles.contentBulletPointsContainer}>
-            {(isTechJargon ? technicalBulletPoints : bulletPoints).map((bulletPoint, idx) => (
+            {bulletPoints.map((bulletPoint, idx) => (
                 <ListItem key={idx} sx={styles.contentBulletPoint}>
                     <Typography variant="body2" color="text.secondary">{bulletPoint}</Typography>
                 </ListItem>
@@ -228,14 +197,14 @@ const ExperienceModal = ({
                 <CardContent sx={styles.cardContent}>
                     {img && attachments && renderInfoPanel()}
                     <Box sx={styles.contentBox}>
-                    <Box sx={styles.innerContentBox}>
-                        {renderContentHeader()}
-                        {(titleEndAdornment || subheaderEndAdornment) && renderAdornments()}
-                        {intro && renderContentIntro()}
-                        {bulletPoints && technicalBulletPoints && renderContentBulletPoints()}
-                        {outro && renderContentOutro()}
-                        {techStack && renderContentTechStack()}
-                    </Box>
+                        <Box sx={styles.innerContentBox}>
+                            {renderContentHeader()}
+                            {(titleEndAdornment || subheaderEndAdornment) && renderAdornments()}
+                            {intro && renderContentIntro()}
+                            {bulletPoints && renderContentBulletPoints()}
+                            {outro && renderContentOutro()}
+                            {techStack && renderContentTechStack()}
+                        </Box>
                     </Box>
                 </CardContent>
             </Card>
@@ -264,7 +233,6 @@ ExperienceModal.propTypes = {
     subheaderEndAdornmentIcon: PropTypes.string,
     intro: PropTypes.arrayOf(PropTypes.string),
     bulletPoints: PropTypes.arrayOf(PropTypes.string),
-    technicalBulletPoints: PropTypes.arrayOf(PropTypes.string),
     outro: PropTypes.arrayOf(PropTypes.string),
     techStack: PropTypes.arrayOf(PropTypes.string),
 };

@@ -1,12 +1,11 @@
-import { Box, Avatar, Typography, Stack, Tooltip, Link, Button } from "@mui/material";
+import { Avatar, Box, Button, Link, Stack, Tooltip, Typography } from "@mui/material";
+
+import DownloadIcon from '@mui/icons-material/Download';
+import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import { useTranslation } from "react-i18next";
-import DownloadIcon from '@mui/icons-material/Download';
-import DownloadResumeModal from "@portfolio/components/base/DownloadResumeModal";
 import { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 
 const styles = {
     container: {
@@ -33,11 +32,12 @@ const styles = {
 
 const SideMenu = () => {
 
-    const { t } = useTranslation();
-    const [ isModalOpen, setIsModalOpen ] = useState(false);
-    
-    const handleModal = (ev) => {
-        setIsModalOpen(prev => !prev);
+    const { t, i18n } = useTranslation();
+    const resumePaths = t("components.SideMenu.resume", { returnObjects: true });
+
+    const handleResume = () => {
+        console.log(resumePaths)
+        window.open(resumePaths[i18n.language], '_blank');
     };
 
     return (
@@ -49,8 +49,7 @@ const SideMenu = () => {
                 <Tooltip title={t("components.SideMenu.linkedin.title")}><Link href={t("components.SideMenu.linkedin.link")} target="_blank" rel="noreferrer"><LinkedInIcon /></Link></Tooltip>
                 <Tooltip title={t("components.SideMenu.github.title")}><Link href={t("components.SideMenu.github.link")} target="_blank" rel="noreferrer"><GitHubIcon /></Link></Tooltip>
             </Stack>
-            <Tooltip title={t("components.SideMenu.downloadResumeBtn.tooltip")}><Button onClick={handleModal} startIcon={<DownloadIcon />} variant="contained">{t("components.SideMenu.downloadResumeBtn.text")}</Button></Tooltip>
-            <DownloadResumeModal open={isModalOpen} onClose={handleModal} />
+            <Button onClick={handleResume} startIcon={<DownloadIcon />} variant="contained">{t("components.SideMenu.downloadResumeBtn.text")}</Button>
         </Box>
     );
 };

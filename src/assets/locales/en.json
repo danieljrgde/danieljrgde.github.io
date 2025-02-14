@@ -36,29 +36,6 @@
                 }
             }
         },
-        "ExperienceModal": {
-            "jargonSwitchLabel": "Tech Jargon"
-        },
-        "DownloadResumeModal": {
-            "title": "Are you technical?",
-            "corpus": "I made two versions of my resume: one with tech jargon and one without. This way, everyone can understand my background, no matter their tech know-how. Pick the one you like best and download it!",
-            "technicalBtnTxt": "Technical",
-            "notTechnicalBtnTxt": "Not technical",
-            "resume": {
-                "en": {
-                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
-                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
-                },
-                "fr": {
-                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Technical.pdf",
-                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (FR) - Not Technical.pdf"
-                },
-                "pt-BR": {
-                    "technical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Technical.pdf",
-                    "notTechnical": "/docs/resume/Daniel J. Deutsch - Resume (EN) - Not Technical.pdf"
-                }
-            }
-        },
         "Drawer": {
             "name": "Daniel J. Deutsch",
             "img": "/imgs/profile.jpg",
@@ -91,7 +68,10 @@
                     "label": "Resume",
                     "to": "/resume"
                 }
-            ]
+            ],
+            "resume": {
+                "en": "/docs/resume/Daniel J. Deutsch - Resume (EN).pdf"
+            }
         },
         "Footer": {
             "initials": "DJD",
@@ -146,16 +126,6 @@
                     "label": "English",
                     "value": "en",
                     "vectorName": "usa"
-                },
-                {
-                    "label": "French",
-                    "value": "fr",
-                    "vectorName": "france"
-                },
-                {
-                    "label": "Portuguese",
-                    "value": "pt-BR",
-                    "vectorName": "brazil"
                 }
             ]
         },
@@ -177,6 +147,9 @@
             "downloadResumeBtn": {
                 "text": "Resume pdf",
                 "tooltip": "Download"
+            },
+            "resume": {
+                "en": "/docs/resume/Daniel J. Deutsch - Resume (EN).pdf"
             }
         },
         "AboutPage": {
@@ -218,7 +191,7 @@
             },
             {
                 "key": "Preferred Roles",
-                "value": "Data Scientist | AI Research Engineer | ML Engineer",
+                "value": "Data Scientist | ML Engineer | Quantitative Engineer",
                 "valueHref": ""
             },
             {
@@ -238,7 +211,7 @@
             },
             {
                 "key": "Summary",
-                "value": "Experienced in AI research and the development of deep learning solutions. Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing clean, robust, and scalable code to design, engineer, and deploy machine learning systems.",
+                "value": "Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing robust and scalable machine learning systems.",
                 "valueHref": ""
             }
         ],
@@ -261,14 +234,13 @@
                 "titleHref": "https://www.telecom-paris.fr/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Master of Engineering | Computer Science",
+                "subheader": "Diplôme d'Ingénieur | Computer Science",
                 "subheaderEndAdornment": "Aug 2020 - Sep 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "Télécom Paris is a prestigious french Grande École and founding member of the Institut Polytechnique de Paris. Known for its rigorous academic standards and cutting-edge research, the school is renowned for shaping leaders in technology. Situated at the Paris-Saclay campus, Télécom Paris offers an exceptional blend of theoretical depth and practical experience, equipping students to tackle the most pressing challenges in the digital world."
                 ],
                 "bulletPoints": [],
-                "technicalBulletPoints": [],
                 "outro": [
                     "Coursework: Deep Learning, Machine Learning, Time Series, Statistics, Probability, Optimization Theory, Leadership, Management, Entrepreneurship."
                 ],
@@ -288,18 +260,17 @@
                         "icon": "LinkedIn"
                     }
                 ],
-                "title": "Panthéon-Sorbonne University",
+                "title": "Université Panthéon-Sorbonne",
                 "titleHref": "https://www.pantheonsorbonne.fr/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Master of Science | Financial Mathematics",
+                "subheader": "Master of Science | Finance, Technology & Data",
                 "subheaderEndAdornment": "Sep 2021 - Sep 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "The Université Paris 1 Panthéon-Sorbonne, often referred to as Panthéon-Sorbonne, is a prestigious multidisciplinary institution in France, specializing in economics and management. Located primarily in the historic Sorbonne and Panthéon areas of Paris, it has additional facilities across several Parisian districts. Established in 1971, it resulted from the merger of parts of the faculties of law and economics and the humanities, making it a key player in higher education and research. The university is a member of the Sorbonne Alliance and a founding member of Una Europa, reflecting its commitment to international collaboration and academic excellence."
                 ],
                 "bulletPoints": [],
-                "technicalBulletPoints": [],
                 "outro": [
                     "Coursework: Econometrics, Asset Pricing, Risk Management, Applied Machine Learning, Applied Big Data Analytics in Finance."
                 ],
@@ -319,18 +290,17 @@
                         "icon": "LinkedIn"
                     }
                 ],
-                "title": "University of São Paulo",
+                "title": "Escola Politécnica - Universidade de São Paulo",
                 "titleHref": "https://www5.usp.br/english/institutional/",
                 "titleEndAdornment": "São Paulo, Brazil",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Bachelor of Science | Electrical Engineering - Control and Automation",
-                "subheaderEndAdornment": "Jan 2017 - Dec 2022",
+                "subheader": "Diplôme d'Ingénieur & Bachelor's | Electrical Engineering",
+                "subheaderEndAdornment": "Jan 2017 - Mar 2023",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "The University of São Paulo (USP) is a premier public university in Brazil and one of the most important institutions in Latin America. Established in 1934, it is renowned for its extensive contributions to education, research, and the development of Brazilian society. USP consistently ranks among the top universities globally, known for producing influential alumni and significant scientific output, contributing to 25% of Brazil's scientific production. With a strong emphasis on higher education and scientific research, USP plays a pivotal role in shaping the intellectual and cultural landscape of Brazil."
                 ],
                 "bulletPoints": [],
-                "technicalBulletPoints": [],
                 "outro": [
                     "Coursework: Calculus, Linear Algebra, Probability Theory, Statistics, Applied Mathematics, Machine Learning, Data Science, Control Systems, Multivariable Control, Digital Signal Processing."
                 ],
@@ -356,27 +326,18 @@
                 "titleHref": "https://www.vo2-group.com/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "AI Research Engineer",
+                "subheader": "Data Scientist (Full-time)",
                 "subheaderEndAdornment": "Sep 2023 - Present",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries."
                 ],
                 "bulletPoints": [
-                    "Implemented a multimodal transformer-based neural network to predict outfit compatibility.",
-                    "Developed question-answering systems using RAG architecture (single and multi-agent) with LangChain, LangGraph, and LlamaIndex to improve LLM response quality.",
-                    "Deployed a GenAI computer vision model using diffusion techniques for image inpainting, generating realistic images of people wearing specified clothing via an API.",
-                    "Actively followed AI advancements and implemented architectures proposed by recent research papers.",
-                    "Wrote an internal newsletter offering a detailed and accessible view of AI concepts for a wide audience."
-                ],
-                "technicalBulletPoints": [
-                    "Researched and developed a multimodal transformer-based network for learning outfit-level representations, achieving 84% accuracy in FITB and 96% AUC in garment compatibility prediction.",
-                    "Engineered a hybrid attention mechanism for the transformer decoder, enhancing the model's integration of outfit-level text descriptions and garment features for more accurate and context-aware recommendations.",
-                    "Applied curriculum learning strategies for the outfit ranking loss, substantially improving recall at top-k metrics.",
-                    "Reduced overfitting by expanding the training set with 60k+ web-scraped samples, enhanced via LLaVA's image-to-text model and CLIP's zero-shot classification, improving model generalization and performance.",
-                    "Developed a Retrieval Augmented Generation (RAG) system to improve the responses of large language models in the field of Environmental, Social, and Governance data.",
-                    "Actively collaborated on cross-functional projects, working with various teams to apply AI to different business areas.",
-                    "Authored a quarterly internal newsletter detailing the latest advancements and internal projects in AI, making complex concepts and information accessible to a broad audience."
+                    "Developed a multi-agent question-answering system using LangChain, improving response accuracy and efficiency through optimised prompt engineering and data-retrieval.",
+                    "Engineered a multimodal neural network leveraging transformer architecture for text-conditioned generation tasks",
+                    "Utilized Machine Learning algorithms to model and analyze datasets, improving predictive capabilities and driving actionable insights for business applications.",
+                    "Conducted ongoing research on latest AI publications, anticipating trends and assessing applicability to internal projects.",
+                    "Effectively synthesized & communicated AI concepts and project results to cross-functional teams, facilitating collaboration and ensuring alignment on project goals and outcomes."
                 ],
                 "outro": [],
                 "techStack": [
@@ -419,14 +380,9 @@
                     "Contract mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback."
                 ],
                 "bulletPoints": [
-                    "Designed an NLP topic modeling algorithm for automatic classification of customer feedback.",
-                    "Integrated LLMs into the analysis process, increasing the accuracy of feedback categorization and facilitating the identification of new customer trends.",
-                    "Developed an end-to-end model, covering training, deployment, and continuous improvement, applying MLOps practices for seamless production integration."
-                ],
-                "technicalBulletPoints": [
-                    "Designed a topic modeling algorithm to categorize customer feedback and identify company's main points of improvement, resulting in a 30% increase in valuable KPIs.",
-                    "Optimized the feedback analysis pipeline through parallel processing, leading to an 80% reduction in processing time.",
-                    "Engineered a custom relevance scoring metric combining insight frequency and severity metrics, enabling stakeholders to efficiently prioritize and address the most critical customer issues."
+                    "Built and maintained an end-to-end ML pipeline with MLOps best practices, ensuring seamless model deployment, monitoring, and continuous improvement in production.",
+                    "Developed an NLP algorithm to cluster customer feedback by topic, identifying KPIs & pain points for data-driven decisions.",
+                    "Leveraged LLMs to enhance operational performance by automating text analysis tasks, improving efficiency in extracting insights from unstructured data."
                 ],
                 "techStack": [
                     "python",
@@ -463,15 +419,9 @@
                     "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies."
                 ],
                 "bulletPoints": [
-                    "Trained a deep learning model for market sentiment analysis on 6M+ social media posts, leveraging transfer learning techniques with BERT-Base as the backbone.",
                     "Applied anomaly detection algorithms on trading data, improving risk management strategies and market surveillance.",
-                    "Deployed a PySpark pipeline to efficiently process and analyze a large volume of historical market data."
-                ],
-                "technicalBulletPoints": [
-                    "Conducted sentiment analysis research on 6M+ social media posts to verify their correlation with market trends, proposing metrics for the development of a sentiment index.",
-                    "Implemented a Variational Autoencoder to detect 13k bot accounts in social media platforms, allowing an in-depth analysis of their influence on the crypto market.",
-                    "Investigated the application of anomaly detection algorithms on live market data, paving the way for more robust risk management strategies and improved market surveillance capabilities.",
-                    "Deployed a high-performance PySpark pipeline to efficiently analyze massive volumes of historical market data, leading to an accelerated decision-making process."
+                    " Deployed a PySpark pipeline on Hadoop to efficiently process and analyze large volumes of historical market data.",
+                    "Engineered and trained a deep learning model for sentiment analysis on 6M+ social media posts, achieving strong classification performance and providing valuable insights into social media's market impact."
                 ],
                 "techStack": [
                     "python",
@@ -512,9 +462,6 @@
                     "Designed a scalable Airflow architecture to orchestrate the use of virtual machines, improving data flow tracking while reducing cloud infrastructure costs.",
                     "Architected a serverless framework to monitor the ingestion, processing, and enrichment of trading data, ensuring near real-time feedback on data integrity.",
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, facilitating data flow updates."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",
@@ -565,9 +512,6 @@
                     "Collaborated on the development of APIs, websites, and mobile applications, meeting specific customer requirements.",
                     "Conducted code reviews and provided mentorship to junior developers, fostering a culture of continuous learning and improvement within the team."
                 ],
-                "technicalBulletPoints": [
-                    
-                ],
                 "techStack": [
                     "python",
                     "javascript",
@@ -602,9 +546,6 @@
                     "Assisted in the development and implementation of capital-raising strategies for the financing of engineering projects.",
                     "Developed and integrated a bank slip donation system on the website, expanding donation methods and increasing overall contributions.",
                     "Fostered relationships with alumni and corporate sponsors, enhancing long-term funding prospects for the association."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",
@@ -644,9 +585,6 @@
                     "Application of end-to-end learning, transfer learning, and multi-task learning.",
                     "Industry insights on leading AI teams and projects."
                 ],
-                "technicalBulletPoints": [
-                    
-                ],
                 "techStack": []
             },
             {
@@ -680,9 +618,6 @@
                     "Application of optimization algorithms including mini-batch gradient descent, Momentum, RMSprop, and Adam.",
                     "Practical implementation of neural networks using TensorFlow."
                 ],
-                "technicalBulletPoints": [
-                    
-                ],
                 "techStack": []
             },
             {
@@ -714,9 +649,6 @@
                     "Implementation of efficient, vectorized neural networks.",
                     "Identification and tuning of key parameters in neural network architecture.",
                     "Application of deep learning in practical scenarios."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": []
             },
@@ -752,9 +684,6 @@
                     "Impact of organizational structure and culture on project management.",
                     "Basics of change management in project contexts."
                 ],
-                "technicalBulletPoints": [
-                    
-                ],
                 "techStack": []
             }
         ],
@@ -766,11 +695,6 @@
                         "title": "Report",
                         "href": "/docs/project/bot-market-effects.pdf",
                         "icon": "Description"
-                    },
-                    {
-                        "title": "GitHub",
-                        "href": "",
-                        "icon": "GitHub"
                     }
                 ],
                 "title": "Effects of Social Media Bots on the Crypto Market",
@@ -784,9 +708,6 @@
                     "Performed sentiment analysis on social media content using BERT embeddings and neural networks to classify the emotional tone of posts.",
                     "Designed a custom engagement metric based on content metadata to analyze correlation with asset price fluctuations.",
                     "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",
@@ -810,11 +731,6 @@
                         "title": "Report",
                         "href": "/docs/project/amzn-recommendation.pdf",
                         "icon": "Description"
-                    },
-                    {
-                        "title": "GitHub",
-                        "href": "",
-                        "icon": "GitHub"
                     }
                 ],
                 "title": "Amazon's Secrets: User Data for Recommendations and Pricing?",
@@ -829,9 +745,6 @@
                     "Implemented a Random Forest classifier achieving 80% accuracy in predicting Amazon's buy-box recommendations, identifying key influencing factors.",
                     "Uncovered strong evidence of price steering practices while finding limited indications of price discrimination in Amazon's e-commerce strategies.",
                     "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",
@@ -853,11 +766,6 @@
                         "title": "Report",
                         "href": "/docs/project/interest-rate-br.pdf",
                         "icon": "Description"
-                    },
-                    {
-                        "title": "GitHub",
-                        "href": "",
-                        "icon": "GitHub"
                     }
                 ],
                 "title": "Effects of the Interest Rate on the Brazilian Stock Market",
@@ -872,9 +780,6 @@
                     "Optimized SARIMAX models using cross-validation and Akaike Information Criterion (AIC) for optimal hyperparameter selection.",
                     "Uncovered sector-specific sensitivities to interest rate changes, with real estate and consumer goods sectors showing the most significant responses.",
                     "Provided valuable insights into the complex dynamics of Brazil's financial markets through rigorous statistical analysis and modeling."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",
@@ -895,11 +800,6 @@
                         "title": "Report",
                         "href": "/docs/project/yelp-fake-review.pdf",
                         "icon": "Description"
-                    },
-                    {
-                        "title": "GitHub",
-                        "href": "",
-                        "icon": "GitHub"
                     }
                 ],
                 "title": "Economic Incentives of Yelp's Fake Reviews",
@@ -914,9 +814,6 @@
                     "Employed Python for data collection and processing, utilizing libraries such as pandas for data manipulation and scikit-learn for machine learning tasks.",
                     "Uncovered insights into the dynamics of online review platforms and factors influencing review fraud in the competitive Paris restaurant industry.",
                     "Combined web scraping, statistical analysis, and natural language processing to provide a comprehensive view of restaurant review patterns and potential fraudulent activities."
-                ],
-                "technicalBulletPoints": [
-                    
                 ],
                 "techStack": [
                     "python",

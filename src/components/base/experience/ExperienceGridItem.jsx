@@ -37,7 +37,6 @@ const ProjectGridItem = ({ img, title, experience }) => {
                 subheaderEndAdornmentIcon={experience.subheaderEndAdornmentIcon}
                 intro={experience.intro}
                 bulletPoints={experience.bulletPoints}
-                technicalBulletPoints={experience.technicalBulletPoints}
                 outro={experience.outro}
                 techStack={experience.techStack}
             />}
@@ -67,7 +66,6 @@ ProjectGridItem.propTypes = {
         subheaderEndAdornmentIcon: PropTypes.string,
         intro: PropTypes.arrayOf(PropTypes.string),
         bulletPoints: PropTypes.arrayOf(PropTypes.string),
-        technicalBulletPoints: PropTypes.arrayOf(PropTypes.string),
         outro: PropTypes.arrayOf(PropTypes.string),
         techStack: PropTypes.arrayOf(PropTypes.string),
     })
