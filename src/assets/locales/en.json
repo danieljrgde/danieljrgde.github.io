@@ -887,7 +887,7 @@
             },
             {
                 "key": "Tech Stack",
-                "value": "Pandas, Polars, NumPy, Scikit-Learn, PyTorch, PySpark, LangChain, Git, Docker, GCP, AWS, MLflow, Jupyter, TensorFlow, Lightning, Transformers.",
+                "value": "Pandas, Polars, NumPy, Scikit-Learn, PyTorch, PySpark, LangChain, Git, Docker, GCP, AWS, MLflow, Jupyter, TensorFlow, Lightning, Transformers, Matplotlib, SciPy.",
                 "valueHref": ""
             },
             {
