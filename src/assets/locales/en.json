@@ -460,7 +460,7 @@
                 ],
                 "bulletPoints": [
                     "Designed a scalable Airflow architecture to orchestrate the use of virtual machines, improving data flow tracking while reducing cloud infrastructure costs.",
-                    "Architected a serverless framework to monitor the ingestion, processing, and enrichment of trading data, ensuring near real-time feedback on data integrity.",
+                    "Architected a serverless framework to monitor the ingestion, processing, enrichment, and distribution of trading data, ensuring near real-time feedback on data integrity in the ETL pipeline.",
                     "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, facilitating data flow updates."
                 ],
                 "techStack": [
