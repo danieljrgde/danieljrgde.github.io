@@ -191,7 +191,7 @@
             },
             {
                 "key": "Preferred Roles",
-                "value": "Data Scientist | ML Engineer | Quantitative Engineer",
+                "value": "Data Scientist & Machine Learning Engineer",
                 "valueHref": ""
             },
             {
@@ -211,7 +211,7 @@
             },
             {
                 "key": "Summary",
-                "value": "Passionate about learning and mastering AI concepts, with a demonstrated ability to navigate through technical and complex fields. Highly proficient in Python, skilled in writing robust and scalable machine learning systems.",
+                "value": "Data Scientist with expertise in statistical modeling, causal inference, and production-grade machine learning in Python. Background spanning quantitative finance, NLP, and experimentation design across startup and enterprise environments, with a track record of translating complex analytical outputs into measurable business outcomes.",
                 "valueHref": ""
             }
         ],
@@ -264,7 +264,7 @@
                 "titleHref": "https://www.pantheonsorbonne.fr/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Master of Science | Finance, Technology & Data",
+                "subheader": "Master of Science | Quantitative Finance",
                 "subheaderEndAdornment": "Sep 2021 - Sep 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
@@ -309,6 +309,46 @@
         ],
         "workExperiences": [
             {
+                "img": "/imgs/work-experience/co2ai.jpg",
+                "attachments": [
+                    {
+                        "title": "Website",
+                        "href": "https://co2ai.com/",
+                        "icon": "Language"
+                    },
+                    {
+                        "title": "LinkedIn",
+                        "href": "https://www.linkedin.com/company/co2ai/",
+                        "icon": "LinkedIn"
+                    }
+                ],
+                "title": "CO2AI",
+                "titleHref": "https://co2ai.com/",
+                "titleEndAdornment": "Paris, France",
+                "titleEndAdornmentIcon": "Place",
+                "subheader": "Machine Learning Engineer (Full-time)",
+                "subheaderEndAdornment": "Mar 2025 - Feb 2026",
+                "subheaderEndAdornmentIcon": "DateRange",
+                "intro": [
+                    "Designed and maintained production-grade workflows for sustainability analytics, with a focus on scalable data pipelines and high-accuracy carbon footprint calculations."
+                ],
+                "bulletPoints": [
+                    "Automated complex entity resolution and mapping workflows leveraging a hybrid Transformer-fuzzy logic engine, increasing match accuracy by 20% and eliminating manual classification bottlenecks.",
+                    "Constructed weighted regression models for missing-data imputation across heterogeneous datasets, maximizing sample availability for downstream modeling while preserving statistical variance.",
+                    "Delivered production-grade Python modules within a 30+ engineer codebase, adhering to CI/CD pipelines, rigorous code review, and established software architecture standards."
+                ],
+                "outro": [],
+                "techStack": [
+                    "python",
+                    "docker",
+                    "dagster",
+                    "pandas",
+                    "aws",
+                    "datadog",
+                    "git"
+                ]
+            },
+            {
                 "img": "/imgs/work-experience/vo2-group.jpg",
                 "attachments": [
                     {
@@ -326,18 +366,17 @@
                 "titleHref": "https://www.vo2-group.com/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Data Scientist (Full-time)",
-                "subheaderEndAdornment": "Sep 2023 - Present",
+                "subheader": "Deep Learning Engineer (Full-time)",
+                "subheaderEndAdornment": "Sep 2023 - Sep 2024",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "Member of the company's AI Research department, researching multimodal deep learning algorithms that can be applied in the financial and high-fashion industries."
                 ],
                 "bulletPoints": [
-                    "Developed a multi-agent question-answering system using LangChain, improving response accuracy and efficiency through optimised prompt engineering and data-retrieval.",
-                    "Engineered a multimodal neural network leveraging transformer architecture for text-conditioned generation tasks",
-                    "Utilized Machine Learning algorithms to model and analyze datasets, improving predictive capabilities and driving actionable insights for business applications.",
-                    "Conducted ongoing research on latest AI publications, anticipating trends and assessing applicability to internal projects.",
-                    "Effectively synthesized & communicated AI concepts and project results to cross-functional teams, facilitating collaboration and ensuring alignment on project goals and outcomes."
+                    "Architected a multimodal Transformer network with a custom hybrid attention mechanism, integrating text and image tensors to achieve 96% AUC in high-dimensional compatibility prediction.",
+                    "Enhanced model generalization by constructing a proprietary dataset of 60k+ samples; utilized CLIP for zero-shot pseudo-labeling and LLaVA for synthetic captioning, reducing overfitting and improving validation accuracy by 5%.",
+                    "Implemented a RAG-based QA system using LangChain and Weaviate with hybrid search and prompt optimization, reducing hallucination rates by 35% and enabling reliable automated information retrieval.",
+                    "Presented the recommendation engine's architecture and business impact at VivaTech Paris 2024, translating multimodal AI concepts for executive and non-technical audiences."
                 ],
                 "outro": [],
                 "techStack": [
@@ -350,48 +389,12 @@
                     "transformers",
                     "langchain",
                     "llamaindex",
+                    "clip",
+                    "llava",
+                    "weaviate",
                     "git",
                     "docker",
                     "gcp"
-                ]
-            },
-            {
-                "img": "/imgs/work-experience/gravite.jpg",
-                "attachments": [
-                    {
-                        "title": "Website",
-                        "href": "https://www.gravite.io/",
-                        "icon": "Language"
-                    },
-                    {
-                        "title": "LinkedIn",
-                        "href": "https://www.linkedin.com/company/gravite-hq/",
-                        "icon": "LinkedIn"
-                    }
-                ],
-                "title": "Gravite.io",
-                "titleHref": "https://www.gravite.io/",
-                "titleEndAdornment": "Paris, France",
-                "titleEndAdornmentIcon": "Place",
-                "subheader": "ML Engineer (Contract)",
-                "subheaderEndAdornment": "May 2023 - Sep 2023",
-                "subheaderEndAdornmentIcon": "DateRange",
-                "intro": [
-                    "Contract mission to design, develop, and deploy the startup's AI feature for identifying and formulating pain points based on customer feedback."
-                ],
-                "bulletPoints": [
-                    "Built and maintained an end-to-end ML pipeline with MLOps best practices, ensuring seamless model deployment, monitoring, and continuous improvement in production.",
-                    "Developed an NLP algorithm to cluster customer feedback by topic, identifying KPIs & pain points for data-driven decisions.",
-                    "Leveraged LLMs to enhance operational performance by automating text analysis tasks, improving efficiency in extracting insights from unstructured data."
-                ],
-                "techStack": [
-                    "python",
-                    "scikit-learn",
-                    "openai",
-                    "jupyter",
-                    "pandas",
-                    "git",
-                    "docker"
                 ]
             },
             {
@@ -412,22 +415,23 @@
                 "titleHref": "https://www.kaiko.com/",
                 "titleEndAdornment": "Paris, France",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Data Scientist (Intern)",
+                "subheader": "Quantitative Research Analyst (Apprentice)",
                 "subheaderEndAdornment": "Sep 2021 - Sep 2022",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "Worked in the Product department, mainly performing market trends research and applying deep learning algorithms to enhance market insights and risk management strategies."
                 ],
                 "bulletPoints": [
-                    "Applied anomaly detection algorithms on trading data, improving risk management strategies and market surveillance.",
-                    " Deployed a PySpark pipeline on Hadoop to efficiently process and analyze large volumes of historical market data.",
-                    "Engineered and trained a deep learning model for sentiment analysis on 6M+ social media posts, achieving strong classification performance and providing valuable insights into social media's market impact."
+                    "Quantified the causal relationship between social signals and asset volatility by engineering a novel engagement-weighted sentiment metric derived from a BERT model fine-tuned on 6.6M+ posts to generate predictive features for alpha research.",
+                    "Investigated unsupervised anomaly detection methods (Isolation Forests, Autoencoders) on tick-level trading time-series, statistically flagging irregular patterns for market surveillance and compliance research.",
+                    "Processed terabytes of tick-level market data via PySpark on Hadoop, engineering statistical features for quantitative risk modeling and downstream analytical research pipelines."
                 ],
                 "techStack": [
                     "python",
                     "tensorflow",
                     "transformers",
                     "pyspark",
+                    "hadoop",
                     "jupyter",
                     "grpc",
                     "git",
@@ -452,16 +456,16 @@
                 "titleHref": "https://www.btgpactual.com/",
                 "titleEndAdornment": "São Paulo, Brazil",
                 "titleEndAdornmentIcon": "Place",
-                "subheader": "Data Engineer (Intern)",
+                "subheader": "Quantitative Data Engineer (Intern)",
                 "subheaderEndAdornment": "Dec 2019 - Aug 2020",
                 "subheaderEndAdornmentIcon": "DateRange",
                 "intro": [
                     "Member of the Data Analytics team, focused on monitoring and optimizing Big Data pipelines for trading data, with a primary emphasis on the Brazilian and US stock markets."
                 ],
                 "bulletPoints": [
-                    "Designed a scalable Airflow architecture to orchestrate the use of virtual machines, improving data flow tracking while reducing cloud infrastructure costs.",
-                    "Architected a serverless framework to monitor the ingestion, processing, enrichment, and distribution of trading data, ensuring near real-time feedback on data integrity in the ETL pipeline.",
-                    "Implemented a CI/CD pipeline to automate the deployment of Airflow DAGs, facilitating data flow updates."
+                    "Designed end-to-end ETL architectures for high-frequency trading data, normalizing multi-exchange datasets and optimizing ingestion workflows to support downstream quantitative research and ML feature generation.",
+                    "Implemented a serverless data validation framework for HFT ingestion pipelines (10 TBs/day), enforcing schema constraints, anomaly detection, and distribution-drift checks to protect trading and research systems from corrupted market data.",
+                    "Orchestrated dynamic EMR provisioning and distributed PySpark execution via Airflow, reducing compute overhead through automated cluster lifecycle management and fault-tolerant job design."
                 ],
                 "techStack": [
                     "python",
@@ -697,17 +701,14 @@
                         "icon": "Description"
                     }
                 ],
-                "title": "Effects of Social Media Bots on the Crypto Market",
+                "title": "Bot Detection & Causal Analysis of Artificial Sentiment on Crypto Markets",
                 "titleHref": "/docs/project/bot-market-effects.pdf",
                 "intro": [
                     "Conducted an in-depth research project investigating the influence of social media bots on cryptocurrency markets using advanced AI techniques and statistical analysis."
                 ],
                 "bulletPoints": [
-                    "Developed a custom data collection script to gather 6M+ market-related social media posts and stock price data for the top 50 cryptocurrencies.",
-                    "Implemented an innovative anomaly detection architecture using Variational Autoencoders and k-Nearest Neighbors to classify users as bots or humans, accounting for data imbalance.",
-                    "Performed sentiment analysis on social media content using BERT embeddings and neural networks to classify the emotional tone of posts.",
-                    "Designed a custom engagement metric based on content metadata to analyze correlation with asset price fluctuations.",
-                    "Leveraged AI and statistical methods to uncover insights into the relationship between social media bot activity and cryptocurrency market dynamics."
+                    "Isolated 13k bot accounts from a 162k user dataset by constructing a hybrid anomaly detection pipeline combining Variational Autoencoders and k-Nearest Neighbors on behavioral feature embeddings.",
+                    "Executed Granger Causality tests on stationary crypto time-series to evaluate whether bot-driven signals held predictive power over asset volatility, statistically refuting common market manipulation hypotheses."
                 ],
                 "techStack": [
                     "python",
@@ -733,18 +734,14 @@
                         "icon": "Description"
                     }
                 ],
-                "title": "Amazon's Secrets: User Data for Recommendations and Pricing?",
+                "title": "Algorithmic Fairness Audit in E-Commerce Search & Recommendation Systems",
                 "titleHref": "/docs/project/amzn-recommendation.pdf",
                 "intro": [
                     "Conducted a comprehensive research project to investigate Amazon's personalization strategies for product recommendations and pricing, utilizing web scraping, statistical analysis, and machine learning techniques."
                 ],
                 "bulletPoints": [
-                    "Developed a sophisticated data collection system simulating diverse user personas through manipulation of browser cookies and history.",
-                    "Gathered and analyzed search results for 60k+from Amazon, creating a robust dataset for investigation.",
-                    "Employed statistical measures including Jaccard Similarity Index and Kendall's τ coefficient to detect price steering and discrimination patterns.",
-                    "Implemented a Random Forest classifier achieving 80% accuracy in predicting Amazon's buy-box recommendations, identifying key influencing factors.",
-                    "Uncovered strong evidence of price steering practices while finding limited indications of price discrimination in Amazon's e-commerce strategies.",
-                    "Combined web scraping, statistical analysis, and machine learning to provide valuable insights into e-commerce personalization techniques."
+                    "Quantified algorithmic price steering across 10 distinct user personas by calculating Jaccard Similarity Indices and Kendall's τ coefficients, statistically proving that user browser history alters product search result rankings.",
+                    "Modeled Amazon's Buy-Box allocation using a Random Forest classifier achieving 80% accuracy, identifying price and seller rating as dominant drivers with implications for marketplace strategy and regulatory fairness assessments."
                 ],
                 "techStack": [
                     "python",
@@ -887,12 +884,17 @@
             },
             {
                 "key": "Tech Stack",
-                "value": "Pandas, Polars, NumPy, Scikit-Learn, PyTorch, PySpark, LangChain, Git, Docker, GCP, AWS, MLflow, Jupyter, TensorFlow, Lightning, Transformers, Matplotlib, SciPy.",
+                "value": "Python (PyTorch, NumPy, Pandas, SciPy, Scikit-Learn, Statsmodels, PySpark, Transformers), Git, Docker, GCP, AWS.",
+                "valueHref": ""
+            },
+            {
+                "key": "Domain Expertise",
+                "value": "NLP & Large Language Models, Time-Series Analysis, Anomaly Detection, Causal Inference, Automation.",
                 "valueHref": ""
             },
             {
                 "key": "Languages",
-                "value": "Portuguese (native), English (fluent - C2), French (fluent - C1), Spanish (intermediary - B2)",
+                "value": "English (fluent - C2), French (fluent - C1), Portuguese (native), Spanish (intermediate - B2).",
                 "valueHref": ""
             }
         ],
@@ -1048,6 +1050,30 @@
             "plotly": {
                 "label": "Plotly",
                 "href": "https://plotly.com/python/"
+            },
+            "clip": {
+                "label": "CLIP",
+                "href": "https://openai.com/research/clip"
+            },
+            "llava": {
+                "label": "LLaVA",
+                "href": "https://llava-vl.github.io/"
+            },
+            "weaviate": {
+                "label": "Weaviate",
+                "href": "https://weaviate.io/"
+            },
+            "hadoop": {
+                "label": "Hadoop",
+                "href": "https://hadoop.apache.org/"
+            },
+            "dagster": {
+                "label": "Dagster",
+                "href": "https://dagster.io/"
+            },
+            "datadog": {
+                "label": "Datadog",
+                "href": "https://www.datadoghq.com/"
             }
         }
     }
